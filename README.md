@@ -1,6 +1,6 @@
 # <img src="https://i.imgur.com/eej47rS.png" width="30"/> LOA Logs KR
 
-[![GitHub](https://img.shields.io/github/downloads/MaccolSolZico/loa-logs-kr/total?style=for-the-badge&color=%23ff9800)](https://github.com/MaccolSolZico/loa-logs-kr/releases/latest) [![Discord](https://img.shields.io/discord/1174544914139328572?color=%235865F2&label=Discord&style=for-the-badge)](https://discord.gg/RXvTMV2YHu)
+[![GitHub](https://img.shields.io/github/downloads/MaccolSolZico/loa-logs-kr/total?style=for-the-badge&color=%23ff9800)](https://github.com/MaccolSolZico/loa-logs-kr/releases/latest) [![Discord](https://img.shields.io/discord/1240116892228780073?color=%235865F2&label=Discord&style=for-the-badge)](https://discord.gg/ybujC3sjMy)
 
 
 [![GitHub](https://img.shields.io/github/v/release/MaccolSolZico/loa-logs-kr?style=flat-square)](https://github.com/MaccolSolZico/loa-logs-kr/releases)
@@ -93,7 +93,7 @@ A: rDPS is no longer working due to missing packets.
 
 #### Q: Help, my issue isn't listed here.
 
-A: Create an issue here on GitHub, or send a message in the #loa-logs-kr channel on Discord. [(invite)](https://discord.gg/sbSa3pkDF5)
+A: Create an issue here on GitHub, or send a message in the #loa-logs-kr channel on Discord. [(invite)](https://discord.gg/ybujC3sjMy)
 
 #### Q: Is it really "blazingly fast"?
 

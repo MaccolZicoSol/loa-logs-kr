@@ -56,8 +56,8 @@
             href="https://github.com/MaccolSolZico/loa-logs-kr/issues"
             target="_blank">issue</a>
             or send a message in the <code>#loa-logs-kr</code> channel on Discord at
-            <a class="text-accent-500 hover:underline" href="https://discord.gg/sbSa3pkDF5" target="_blank"
-            ><code>discord.gg/sbSa3pkDF5</code></a>
+            <a class="text-accent-500 hover:underline" href="https://discord.gg/ybujC3sjMy" target="_blank"
+            ><code>discord.gg/ybujC3sjMy</code></a>
         </p>
 
         <p class="mt-4 px-4 text-base">You can support me and this project by buying me a coffee. (Ko-fi supports PayPal)</p>
