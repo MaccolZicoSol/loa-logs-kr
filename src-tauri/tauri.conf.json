@@ -105,7 +105,7 @@
     "updater": {
       "active": true, 
       "endpoints": [
-        "https://github.com/MaccolSolZico/loa-details-kr/releases/latest/download/latest.json"
+        "https://raw.githubusercontent.com/MaccolSolZico/loa-logs-kr/master/latest.json"
       ],
       "dialog": false,
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDcxMzVBRjc2MTg1NzcyRjYKUldUMmNsY1lkcTgxY1E2Q1lvaUc4ZjE1cldWQVk1VVhBaFUyNzZJSGRMQ082ZHhSak1Gc2M0OWoK",
