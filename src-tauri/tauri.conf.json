@@ -108,7 +108,7 @@
         "https://snow.xyz/loa-logs/latest.json"
       ],
       "dialog": false,
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDZEODU5MzNEODY0ODg0REEKUldUYWhFaUdQWk9GYlczc3VSODJPK01RRTlYUER6NzU0eDE1WDYwcmJsY1d4d2EwblZHNlJ4dW8K",
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDcxMzVBRjc2MTg1NzcyRjYKUldUMmNsY1lkcTgxY1E2Q1lvaUc4ZjE1cldWQVk1VVhBaFUyNzZJSGRMQ082ZHhSak1Gc2M0OWoK",
       "windows": {
         "installMode": "passive"
       }
