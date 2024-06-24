@@ -1,8 +1,8 @@
 {
-    "version": "v0.0.1",
+    "version": "v0.0.2",
     "platforms": {
         "windows-x86_64": {
-            "url": "https://github.com/MaccolSolZico/loa-logs-kr/releases/download/v0.0.1/LOA.Logs_0.0.1_x64-setup.nsis.zip"
+            "url": "https://github.com/MaccolSolZico/loa-logs-kr/releases/download/v0.0.2/LOA.Logs_0.0.2_x64-setup.nsis.zip"
         }
     }
 }
