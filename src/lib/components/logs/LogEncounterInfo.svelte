@@ -44,7 +44,7 @@
         {#await getVersion() then version}
             {#if !$settings.general.hideLogo}
                 <div class="">
-                    LOA Logs v{version}
+                    LOA Logs KR v{version}
                 </div>
             {:else}
                 <div class="font-mono text-xs">
@@ -90,7 +90,7 @@
         </div>
         {#if $takingScreenshot && !$settings.general.hideLogo}
             <div class="font-mono text-xs">
-                {"github.com/snoww/loa-logs"}
+                {"github.com/MaccolSolZico/loa-logs-kr"}
             </div>
         {/if}
     </div>

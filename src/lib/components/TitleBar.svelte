@@ -4,7 +4,7 @@
 
 <div class="text-bold bg-zinc-900/[.6] px-2 py-px">
     <div class="flex items-end">
-        <div>LOA Logs</div>
+        <div>LOA Logs KR</div>
         <div class="ml-1 text-sm text-gray-500">
             {#await getVersion()}
                 ver

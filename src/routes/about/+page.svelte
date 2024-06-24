@@ -27,12 +27,12 @@
     </div>
     <div class="mx-8 my-4 tracking-tight text-gray-200">
         <p class="px-4 text-base">
-            LOA Logs is a "blazingly fast" open source Lost Ark DPS meter (<a
+            LOA Logs KR is a "blazingly fast" open source Lost Ark DPS meter (<a
             class="text-accent-500 hover:underline"
-            href="https://github.com/snoww/loa-logs"
-            target="_blank">snoww/loa-logs</a
+            href="https://github.com/MaccolSolZico/loa-logs-kr"
+            target="_blank">MaccolSolZico/loa-logs-kr</a
         >), written in Rust by
-            <a class="text-accent-500 hover:underline" href="https://github.com/snoww" target="_blank">Snow</a>. This
+            <a class="text-accent-500 hover:underline" href="https://github.com/MaccolSolZico" target="_blank">Snow</a>. This
             project is an opinionated flavor of
             <a
                 class="text-accent-500 hover:underline"
@@ -41,8 +41,8 @@
             by Herysia and Mathi, but should share very similar user interfaces and settings. The packet sniffing and
             processing
             has been completely ported over to Rust, with
-            <a class="text-accent-500 hover:underline" href="https://github.com/snoww/meter-core-rs" target="_blank"
-            ><code>meter-core-rs</code></a
+            <a class="text-accent-500 hover:underline" href="https://github.com/MaccolSolZico/meter-core-rs-kr" target="_blank"
+            ><code>meter-core-rs-kr</code></a
             >. A huge thanks to Herysia and Henjuro for their work on the original
             <a class="text-accent-500 hover:underline" href="https://github.com/lost-ark-dev/meter-core" target="_blank"
             ><code>meter-core</code></a
@@ -53,11 +53,11 @@
         <p class="mt-4 px-4 text-base">
             If you have any problems or suggestions, please open an <a
             class="text-accent-500 hover:underline"
-            href="https://github.com/snoww/loa-logs/issues"
+            href="https://github.com/MaccolSolZico/loa-logs-kr/issues"
             target="_blank">issue</a>
-            or send a message in the <code>#peepotalk</code> channel on Discord at
-            <a class="text-accent-500 hover:underline" href="https://discord.gg/HMtnzPFHTG" target="_blank"
-            ><code>discord.gg/HMtnzPFHTG</code></a>
+            or send a message in the <code>#loa-logs-kr</code> channel on Discord at
+            <a class="text-accent-500 hover:underline" href="https://discord.gg/sbSa3pkDF5" target="_blank"
+            ><code>discord.gg/sbSa3pkDF5</code></a>
         </p>
 
         <p class="mt-4 px-4 text-base">You can support me and this project by buying me a coffee. (Ko-fi supports PayPal)</p>

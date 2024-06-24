@@ -480,7 +480,7 @@
         {:else}
             <div class="flex items-center">
                 {#if !$settings.general.hideLogo}
-                    <div class="h-6">LOA Logs</div>
+                    <div class="h-6">LOA Logs KR</div>
                 {/if}
                 <div class="ml-1 text-xs text-gray-500">
                     {#await getVersion()}

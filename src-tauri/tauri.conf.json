@@ -7,8 +7,8 @@
     "distDir": "../build"
   },
   "package": {
-    "productName": "LOA Logs",
-    "version": "1.16.5"
+    "productName": "LOA Logs KR",
+    "version": "1.11.1"
   },
   "tauri": {
     "allowlist": {
@@ -69,7 +69,7 @@
         "icons/icon.ico"
       ],
       "identifier": "xyz.snow",
-      "longDescription": "LOA Logs - Modern DPS Meter for Lost Ark written in Rust.",
+      "longDescription": "LOA Logs KR - Modern DPS Meter for Lost Ark written in Rust.",
       "macOS": {
         "entitlements": null,
         "exceptionDomain": "",
@@ -77,7 +77,7 @@
         "providerShortName": null,
         "signingIdentity": null
       },
-      "shortDescription": "LOA Logs",
+      "shortDescription": "LOA Logs KR",
       "targets": [
         "nsis",
         "updater"
@@ -116,7 +116,7 @@
     "windows": [
       {
         "label": "main",
-        "title": "LOA Logs",
+        "title": "LOA Logs KR",
         "fullscreen": false,
         "width": 500,
         "height": 350,
@@ -130,7 +130,7 @@
       },
       {
         "label": "logs",
-        "title": "LOA Logs",
+        "title": "LOA Logs KR",
         "url": "logs",
         "minWidth": 650,
         "minHeight": 300,

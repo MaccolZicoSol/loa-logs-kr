@@ -227,7 +227,7 @@
         </div>
         <SettingItem
             name="Hide Logo in Screenshot"
-            description={'Hides the meter name "LOA Logs" in the screenshot.'}
+            description={'Hides the meter name "LOA Logs KR" in the screenshot.'}
             bind:setting={$settings.general.hideLogo} />
         <div>
             <label class="flex items-center">

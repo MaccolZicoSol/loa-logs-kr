@@ -55,7 +55,7 @@
     {transitionParams}
     bind:hidden>
     <div class="flex items-center justify-between py-4">
-        <div class="px-4 text-lg font-semibold uppercase text-gray-200">LOA Logs</div>
+        <div class="px-4 text-lg font-semibold uppercase text-gray-200">LOA Logs KR</div>
         <button on:click={() => (hidden = true)} class="px-4">
             <svg class="size-5 fill-gray-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960">
                 <path
