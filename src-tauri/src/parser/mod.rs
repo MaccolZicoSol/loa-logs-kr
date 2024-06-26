@@ -888,27 +888,27 @@ pub fn start(
                     debug_print(format_args!("raid zone id: {}", &pkt.zone_level));
                     match pkt.zone_level {
                         0 => {
-                            state.raid_difficulty = "Normal".to_string();
+                            state.raid_difficulty = "노말".to_string();
                             state.raid_difficulty_id = 0;
                         }
                         1 => {
-                            state.raid_difficulty = "Hard".to_string();
+                            state.raid_difficulty = "하드".to_string();
                             state.raid_difficulty_id = 1;
                         }
                         2 => {
-                            state.raid_difficulty = "Inferno".to_string();
+                            state.raid_difficulty = "헬".to_string();
                             state.raid_difficulty_id = 2;
                         }
                         3 => {
-                            state.raid_difficulty = "Challenge".to_string();
+                            state.raid_difficulty = "도전".to_string();
                             state.raid_difficulty_id = 3;
                         }
                         4 => {
-                            state.raid_difficulty = "Solo".to_string();
+                            state.raid_difficulty = "스페셜".to_string();
                             state.raid_difficulty_id = 4;
                         }
                         5 => {
-                            state.raid_difficulty = "The First".to_string();
+                            state.raid_difficulty = "더 퍼스트".to_string();
                             state.raid_difficulty_id = 5;
                         }
                         _ => {}
