@@ -44,10 +44,12 @@ export const bossList = [
 
 
     // guardian raids
-    "Veskal",
-    "Gargadeth",
-    "Sonavel",
-    "Hanumatan",
-    "Kungelanium",
-    "Deskaluda"
+    "아게오로스",
+    "베스칼",
+    "가르가디스",
+    "소나벨",
+    "하누마탄",
+    "칼엘리고스",
+    "쿤겔라니움",
+    "데스칼루다"
 ];

@@ -1,72 +1,72 @@
 export const encounterMap: { [key: string]: { [key: string]: Array<string> } } = {
-    Valtan: {
-        "Valtan G1": ["Dark Mountain Predator", "Destroyer Lucas", "Leader Lugaru"],
-        "Valtan G2": ["Demon Beast Commander Valtan", "Ravaged Tyrant of Beasts"]
+    "발탄": {
+        "발탄 1관문": ["검은 산의 포식자", "파괴자 루카스", "통솔자 루가루"],
+        "발탄 2관문": ["마수군단장 발탄", "찢겨진 마수의 군주"]
     },
-    Vykas: {
-        "Vykas G1": ["Incubus Morphe", "Nightmarish Morphe"],
-        "Vykas G2": ["Covetous Devourer Vykas"],
-        "Vykas G3": ["Covetous Legion Commander Vykas"]
+    "비아키스": {
+        "비아키스 1관문": ["인큐버스 모르페", "악몽의 모르페"],
+        "비아키스 2관문": ["욕망의 탐식자 비아키스"],
+        "비아키스 3관문": ["욕망군단장 비아키스"]
     },
-    Clown: {
-        "Clown G1": ["Saydon"],
-        "Clown G2": ["Kakul"],
-        "Clown G3": ["Kakul-Saydon", "Encore-Desiring Kakul-Saydon"]
+    "쿠크세이튼": {
+        "쿠크세이튼 1관문": ["세이튼"],
+        "쿠크세이튼 2관문": ["쿠크"],
+        "쿠크세이튼 3관문": ["쿠크세이튼", "앵콜을 외친 쿠크세이튼"]
     },
-    Brelshaza: {
-        "Brelshaza G1": ["Gehenna Helkasirs"],
-        "Brelshaza G2": ["Prokel", "Prokel's Spiritual Echo", "Ashtarot"],
-        "Brelshaza G3": ["Primordial Nightmare"],
-        "Brelshaza G4": ["Phantom Legion Commander Brelshaza"],
-        "Brelshaza G5": [
-            "Brelshaza, Monarch of Nightmares",
-            "Imagined Primordial Nightmare",
-            "Pseudospace Primordial Nightmare"
+    "아브렐슈드": {
+        "아브렐슈드 1관문": ["게헤나 헬카서스"],
+        "아브렐슈드 2관문": ["프로켈", "프로켈의 사념체", "아슈타로테"],
+        "아브렐슈드 3관문": ["태초의 악몽"],
+        "아브렐슈드 4관문": ["몽환군단장 아브렐슈드"],
+        "아브렐슈드 5관문": [
+            "악몽의 지배자 아브렐슈드",
+            "심상 태초의 악몽",
+            "아공간 태초의 악몽"
         ],
-        "Brelshaza G6": ["Phantom Legion Commander Brelshaza"]
+        "아브렐슈드 6관문": ["몽환군단장 아브렐슈드"]
     },
-    Kayangel: {
-        "Kayangel G1": ["Tienis"],
-        "Kayangel G2": ["Prunya"],
-        "Kayangel G3": ["Lauriel"]
+    "카양겔": {
+        "카양겔 1관문": ["티엔"],
+        "카양겔 2관문": ["프리우나"],
+        "카양겔 3관문": ["라우리엘"]
     },
-    Akkan: {
-        "Akkan G1": ["Griefbringer Maurug", "Evolved Maurug"],
-        "Akkan G2": ["Lord of Degradation Akkan"],
-        "Akkan G3": ["Plague Legion Commander Akkan", "Lord of Kartheon Akkan"]
+    "일리아칸": {
+        "일리아칸 1관문": ["비통의 지배자 마우르그", "진화된 마우르그"],
+        "일리아칸 2관문": ["쇠락의 군주 일리아칸"],
+        "일리아칸 3관문": ["질병군단장 일리아칸", "일리아칸, 카르테론의 군주"]
     },
-    Ivory: {
-        "Ivory Tower G1": ["Kaltaya, the Blooming Chaos"],
-        "Ivory Tower G2": ["Rakathus, the Lurking Arrogance"],
-        "Ivory Tower G3": ["Firehorn, Trampler of Earth"],
-        "Ivory Tower G4": [
-            "Lazaram, the Trailblazer",
-            "Subordinated Vertus",
-            "Subordinated Calventus",
-            "Subordinated Legoros",
-            "Brand of Subordination"
+    "상아탑": {
+        "상아탑 1관문": ["피어나는 혼돈, 칼테이야"],
+        "상아탑 2관문": ["웅크린 교만, 라카이서스"],
+        "상아탑 3관문": ["대지를 짓밟는 파이어혼"],
+        "상아탑 4관문": [
+            "길을 여는 자, 라자람",
+            "종속된 베르투스",
+            "종속된 칼벤투스",
+            "종속된 레기오로스",
+            "종속의 낙인"
         ]
     },
-    Thaemine: {
-        "Thaemine G1": ["Killineza the Dark Worshipper"],
-        "Thaemine G2": ["Valinak, Knight of Darkness", "Valinak, Taboo Usurper", "Valinak, Herald of the End"],
-        "Thaemine G3": ["Thaemine the Lightqueller", "Dark Greatsword"],
-        "Thaemine G4": ["Darkness Legion Commander Thaemine", "Thaemine Prokel", "Thaemine, Conqueror of Stars"]
+    "카멘": {
+        "카멘 1관문": ["칠흑의 숭배자, 킬리네사"],
+        "카멘 2관문": ["어둠의 기사, 발리나크", "금기를 삼킨 자, 발리나크", "종언을 고하는 자, 발리나크"],
+        "카멘 3관문": ["빛을 꺼트리는 자, 카멘", "어둠의 대검"],
+        "카멘 4관문": ["어둠군단장 카멘", "내부 카멘", "별을 제패한 자, 카멘"]
     },
-    Echidna: {
-        "Echidna G1": ["Red Doom Narkiel", "Agris"],
-        "Echidna G2": [
-            "Echidna",
-            "Covetous Master Echidna",
-            "Desire in Full Bloom, Echidna",
-            "Alcaone, the Twisted Venom",
-            "Agris, the Devouring Bog"
+    "에키드나": {
+        "에키드나 1관문": ["붉은 재앙, 다르키엘", "아그리스"],
+        "에키드나 2관문": [
+            "에키드나",
+            "욕망의 주인, 에키드나",
+            "만개한 욕망, 에키드나",
+            "뒤엉킨 맹독, 알키오네",
+            "삼키는 수렁, 아그리스"
         ]
     },
-    Behemoth: {
-        "Behemoth G1": ["Behemoth, the Storm Commander", "Despicable Skolakia", "Untrue Crimson Yoho", "Ruthless Lakadroff", "Vicious Argeos"],
-        "Behemoth G2": ["Behemoth, Cruel Storm Slayer"]
+    "베히모스": {
+        "베히모스 1관문": ["폭풍의 지휘관, 베히모스"],
+        "베히모스 2관문": ["잔혹한 폭풍의 처단자, 베히모스"]
     }
 };
 
-export const difficultyMap: Array<string> = ["Normal", "Hard", "Inferno", "Challenge", "Solo", "Trial", "Extreme", "The First"];
+export const difficultyMap: Array<string> = ["노말", "하드", "헬", "도전", "시련", "익스트림", "더 퍼스트"];
