@@ -17089,7 +17089,7 @@
   "480474": {
     "id": 480474,
     "name": "금기의 권속",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -17141,21 +17141,21 @@
   "480481": {
     "id": 480481,
     "name": "종말의 우레",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480482": {
     "id": 480482,
     "name": "종말의 우레",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480483": {
     "id": 480483,
     "name": "종말의 우레",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -17282,91 +17282,91 @@
   "480551": {
     "id": 480551,
     "name": "암흑 분신",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480552": {
     "id": 480552,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480553": {
     "id": 480553,
     "name": "거대한 암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480554": {
     "id": 480554,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480555": {
     "id": 480555,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480556": {
     "id": 480556,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480557": {
     "id": 480557,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480558": {
     "id": 480558,
     "name": "거대한 암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480559": {
     "id": 480559,
     "name": "거대한 암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480560": {
     "id": 480560,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480561": {
     "id": 480561,
     "name": "거대한 암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480562": {
     "id": 480562,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480563": {
     "id": 480563,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true,
     "hp": 35
@@ -17374,42 +17374,42 @@
   "480564": {
     "id": 480564,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480565": {
     "id": 480565,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480566": {
     "id": 480566,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480567": {
     "id": 480567,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480568": {
     "id": 480568,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480569": {
     "id": 480569,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true,
     "hp": 3
@@ -17417,7 +17417,7 @@
   "480570": {
     "id": 480570,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true,
     "hp": 3
@@ -17425,7 +17425,7 @@
   "480571": {
     "id": 480571,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true,
     "hp": 3
@@ -17433,7 +17433,7 @@
   "480572": {
     "id": 480572,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true,
     "hp": 3
@@ -17441,7 +17441,7 @@
   "480573": {
     "id": 480573,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true,
     "hp": 3
@@ -17449,7 +17449,7 @@
   "480574": {
     "id": 480574,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true,
     "hp": 3
@@ -17457,119 +17457,119 @@
   "480575": {
     "id": 480575,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480576": {
     "id": 480576,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480577": {
     "id": 480577,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480578": {
     "id": 480578,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480579": {
     "id": 480579,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480590": {
     "id": 480590,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480591": {
     "id": 480591,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480592": {
     "id": 480592,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480593": {
     "id": 480593,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480594": {
     "id": 480594,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480595": {
     "id": 480595,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480596": {
     "id": 480596,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480597": {
     "id": 480597,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480598": {
     "id": 480598,
     "name": "암흑검",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480599": {
     "id": 480599,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480588": {
     "id": 480588,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "480589": {
     "id": 480589,
     "name": "어둠군단장 카멘",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -27173,21 +27173,21 @@
   "485071": {
     "id": 485071,
     "name": "욕망의 주인, 에키드나",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485072": {
     "id": 485072,
     "name": "욕망의 주인, 에키드나",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485073": {
     "id": 485073,
     "name": "욕망의 주인, 에키드나",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -27210,7 +27210,7 @@
   "485076": {
     "id": 485076,
     "name": "투영의 거울",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -27224,14 +27224,14 @@
   "485078": {
     "id": 485078,
     "name": "욕망의 주인, 에키드나",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485079": {
     "id": 485079,
     "name": "욕망의 주인, 에키드나",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -27293,7 +27293,7 @@
   "485088": {
     "id": 485088,
     "name": "투영의 거울",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -27335,14 +27335,14 @@
   "485094": {
     "id": 485094,
     "name": "욕망의 주인, 에키드나",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485095": {
     "id": 485095,
     "name": "욕망의 주인, 에키드나",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -27425,7 +27425,7 @@
   "485199": {
     "id": 485199,
     "name": "욕망의 주인, 에키드나",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -27474,7 +27474,7 @@
   "485192": {
     "id": 485192,
     "name": "투영의 거울",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -27495,7 +27495,7 @@
   "485189": {
     "id": 485189,
     "name": "욕망의 주인, 에키드나",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -27558,56 +27558,56 @@
   "485180": {
     "id": 485180,
     "name": "투영의 거울",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485179": {
     "id": 485179,
     "name": "투영의 거울",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485178": {
     "id": 485178,
     "name": "투영의 거울",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485177": {
     "id": 485177,
     "name": "투영의 거울",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485176": {
     "id": 485176,
     "name": "투영의 거울",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485175": {
     "id": 485175,
     "name": "투영의 거울",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485174": {
     "id": 485174,
     "name": "투영의 거울",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485173": {
     "id": 485173,
     "name": "투영의 거울",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -27642,14 +27642,14 @@
   "485168": {
     "id": 485168,
     "name": "투영의 거울",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485167": {
     "id": 485167,
     "name": "투영의 거울",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -27796,7 +27796,7 @@
   "485146": {
     "id": 485146,
     "name": "욕망의 주인, 에키드나",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -27831,35 +27831,35 @@
   "485141": {
     "id": 485141,
     "name": "투영의 거울",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485140": {
     "id": 485140,
     "name": "욕망의 주인, 에키드나",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485129": {
     "id": 485129,
     "name": "욕망의 주인, 에키드나",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485128": {
     "id": 485128,
     "name": "욕망의 주인, 에키드나",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485127": {
     "id": 485127,
     "name": "욕망의 주인, 에키드나",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -27930,7 +27930,7 @@
   "485060": {
     "id": 485060,
     "name": "홍염의 고르곤",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -27983,7 +27983,7 @@
   "485068": {
     "id": 485068,
     "name": "홍염의 고르곤",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -28009,7 +28009,7 @@
   "485109": {
     "id": 485109,
     "name": "홍염의 고르곤",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -28104,7 +28104,7 @@
   "485135": {
     "id": 485135,
     "name": "홍염의 고르곤",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -74878,7 +74878,7 @@
   "284091": {
     "id": 284091,
     "name": "라자람의 근원",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -74907,14 +74907,14 @@
   "494841": {
     "id": 494841,
     "name": "라자람의 근원",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "494842": {
     "id": 494842,
     "name": "라자람의 근원",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -74942,7 +74942,7 @@
   "494846": {
     "id": 494846,
     "name": "종속의 낙인",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
@@ -74956,42 +74956,42 @@
   "494852": {
     "id": 494852,
     "name": "라자람의 근원",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "494853": {
     "id": 494853,
     "name": "라자람의 근원",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "494854": {
     "id": 494854,
     "name": "라자람의 근원",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "494855": {
     "id": 494855,
     "name": "라자람의 근원",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "494856": {
     "id": 494856,
     "name": "라자람의 근원",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "494870": {
     "id": 494870,
     "name": "라자람의 근원",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -75069,14 +75069,14 @@
   "494882": {
     "id": 494882,
     "name": "용암기둥",
-    "grade": "boss",
+    "grade": "normal",
     "type": "summoned",
     "pushimmune": true
   },
   "494883": {
     "id": 494883,
     "name": "용암기둥",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -75090,35 +75090,35 @@
   "494885": {
     "id": 494885,
     "name": "용암기둥",
-    "grade": "boss",
+    "grade": "normal",
     "type": "summoned",
     "pushimmune": true
   },
   "494886": {
     "id": 494886,
     "name": "용암기둥",
-    "grade": "boss",
+    "grade": "normal",
     "type": "summoned",
     "pushimmune": true
   },
   "494887": {
     "id": 494887,
     "name": "용암기둥",
-    "grade": "boss",
+    "grade": "normal",
     "type": "summoned",
     "pushimmune": true
   },
   "494888": {
     "id": 494888,
     "name": "용암기둥",
-    "grade": "boss",
+    "grade": "normal",
     "type": "summoned",
     "pushimmune": true
   },
   "494889": {
     "id": 494889,
     "name": "용암기둥",
-    "grade": "boss",
+    "grade": "normal",
     "type": "summoned",
     "pushimmune": true
   },
@@ -75408,7 +75408,7 @@
   "494724": {
     "id": 494724,
     "name": "피어나는 혼돈, 칼테이야",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -75430,7 +75430,7 @@
   "494756": {
     "id": 494756,
     "name": "피어나는 혼돈, 칼테이야",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -81053,7 +81053,7 @@
   "480258": {
     "id": 480258,
     "name": "거대 욕망 덩어리",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true,
     "hp": 5
@@ -89641,7 +89641,7 @@
   "480602": {
     "id": 480602,
     "name": "서커스 공",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -90297,7 +90297,7 @@
   "480708": {
     "id": 480708,
     "name": "세토",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 3
@@ -90305,7 +90305,7 @@
   "480709": {
     "id": 480709,
     "name": "세토",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 3
@@ -90313,7 +90313,7 @@
   "480710": {
     "id": 480710,
     "name": "갈고리",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -90321,14 +90321,14 @@
   "480711": {
     "id": 480711,
     "name": "초대형 서커스 망치",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "480712": {
     "id": 480712,
     "name": "해골 폭탄",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -90391,7 +90391,7 @@
   "480721": {
     "id": 480721,
     "name": "초대형 서커스 망치",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -90762,7 +90762,7 @@
   "480775": {
     "id": 480775,
     "name": "해골이 그려져있는 폭탄",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -90783,7 +90783,7 @@
   "480778": {
     "id": 480778,
     "name": "해골이 그려져있는 폭탄",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -90977,14 +90977,14 @@
   "480823": {
     "id": 480823,
     "name": "아브렐슈드의 큐브",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "480824": {
     "id": 480824,
     "name": "아브렐슈드의 큐브",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 5
@@ -91205,14 +91205,14 @@
   "480882": {
     "id": 480882,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221461": {
     "id": 4221461,
     "name": "태초의 악몽",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91220,7 +91220,7 @@
   "4221462": {
     "id": 4221462,
     "name": "태초의 악몽",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91244,7 +91244,7 @@
   "4221465": {
     "id": 4221465,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -91283,7 +91283,7 @@
   "4221470": {
     "id": 4221470,
     "name": "아브렐슈드",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91291,7 +91291,7 @@
   "4221471": {
     "id": 4221471,
     "name": "아브렐슈드",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91299,7 +91299,7 @@
   "4221472": {
     "id": 4221472,
     "name": "아브렐슈드",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91307,7 +91307,7 @@
   "4221601": {
     "id": 4221601,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91315,7 +91315,7 @@
   "4221602": {
     "id": 4221602,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91323,7 +91323,7 @@
   "4221603": {
     "id": 4221603,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91331,7 +91331,7 @@
   "4221604": {
     "id": 4221604,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91339,7 +91339,7 @@
   "4221605": {
     "id": 4221605,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91347,14 +91347,14 @@
   "4221606": {
     "id": 4221606,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221607": {
     "id": 4221607,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91385,7 +91385,7 @@
   "4221611": {
     "id": 4221611,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -91400,28 +91400,28 @@
   "4221613": {
     "id": 4221613,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221614": {
     "id": 4221614,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "hp": 10
   },
   "4221615": {
     "id": 4221615,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "hp": 10
   },
   "4221616": {
     "id": 4221616,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91437,7 +91437,7 @@
   "4221618": {
     "id": 4221618,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91445,7 +91445,7 @@
   "4221619": {
     "id": 4221619,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91453,7 +91453,7 @@
   "4221620": {
     "id": 4221620,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91461,7 +91461,7 @@
   "4221621": {
     "id": 4221621,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91469,32 +91469,32 @@
   "4221622": {
     "id": 4221622,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221623": {
     "id": 4221623,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "4221624": {
     "id": 4221624,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "4221625": {
     "id": 4221625,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "4221626": {
     "id": 4221626,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "4221627": {
@@ -91516,7 +91516,7 @@
   "4221630": {
     "id": 4221630,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91531,7 +91531,7 @@
   "4221632": {
     "id": 4221632,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91546,21 +91546,21 @@
   "4221634": {
     "id": 4221634,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221635": {
     "id": 4221635,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221636": {
     "id": 4221636,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -91592,68 +91592,68 @@
   "4221641": {
     "id": 4221641,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "4221642": {
     "id": 4221642,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "4221643": {
     "id": 4221643,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "4221644": {
     "id": 4221644,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "4221645": {
     "id": 4221645,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "4221646": {
     "id": 4221646,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "4221647": {
     "id": 4221647,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "4221648": {
     "id": 4221648,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "4221649": {
     "id": 4221649,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "4221650": {
     "id": 4221650,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221651": {
     "id": 4221651,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -91735,154 +91735,154 @@
   "4221671": {
     "id": 4221671,
     "name": "지면 폭발",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221672": {
     "id": 4221672,
     "name": "지면 폭발",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221673": {
     "id": 4221673,
     "name": "지면 폭발",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221674": {
     "id": 4221674,
     "name": "지면 폭발",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221675": {
     "id": 4221675,
     "name": "지면 폭발",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221676": {
     "id": 4221676,
     "name": "지면 폭발",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221677": {
     "id": 4221677,
     "name": "지면 폭발",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221678": {
     "id": 4221678,
     "name": "빛의 가호",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221679": {
     "id": 4221679,
     "name": "지면 폭발",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221680": {
     "id": 4221680,
     "name": "수호타일 소환",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221681": {
     "id": 4221681,
     "name": "지면 폭발",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221682": {
     "id": 4221682,
     "name": "지면 폭발",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221683": {
     "id": 4221683,
     "name": "지면 폭발",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221684": {
     "id": 4221684,
     "name": "지면 폭발",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221685": {
     "id": 4221685,
     "name": "합체 조건 체크용",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221686": {
     "id": 4221686,
     "name": "1구역 마스킹 버프 부여",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221687": {
     "id": 4221687,
     "name": "2구역 마스킹 버프 부여",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221688": {
     "id": 4221688,
     "name": "3구역 마스킹 버프 부여",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221689": {
     "id": 4221689,
     "name": "4구역 마스킹 버프 부여",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221690": {
     "id": 4221690,
     "name": "시드_보스 타이밍 마스킹 버프 부여",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221691": {
     "id": 4221691,
     "name": "지면 폭발",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "4221692": {
     "id": 4221692,
     "name": "에스더 게이지 획득용",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -92229,7 +92229,7 @@
   "4808131": {
     "id": 4808131,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -92317,56 +92317,56 @@
   "42216000": {
     "id": 42216000,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "hp": 10
   },
   "42216001": {
     "id": 42216001,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "42216002": {
     "id": 42216002,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "42216003": {
     "id": 42216003,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "42216004": {
     "id": 42216004,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "42216005": {
     "id": 42216005,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "42216006": {
     "id": 42216006,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "42216007": {
     "id": 42216007,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "42216008": {
     "id": 42216008,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "42216009": {
@@ -92378,13 +92378,13 @@
   "42216010": {
     "id": 42216010,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster"
   },
   "42216011": {
     "id": 42216011,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -92392,7 +92392,7 @@
   "42216012": {
     "id": 42216012,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -92400,7 +92400,7 @@
   "42216013": {
     "id": 42216013,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -92408,7 +92408,7 @@
   "42216014": {
     "id": 42216014,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "hp": 10
   },
@@ -92496,7 +92496,7 @@
   "42245070": {
     "id": 42245070,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -92559,56 +92559,56 @@
   "42245079": {
     "id": 42245079,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "42245080": {
     "id": 42245080,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "42245081": {
     "id": 42245081,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "42245082": {
     "id": 42245082,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "42245083": {
     "id": 42245083,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "42245084": {
     "id": 42245084,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "42245085": {
     "id": 42245085,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "42245086": {
     "id": 42245086,
     "name": "아브렐슈드",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -92657,7 +92657,7 @@
   "42245093": {
     "id": 42245093,
     "name": "몽환의 파편",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -92665,7 +92665,7 @@
   "42245094": {
     "id": 42245094,
     "name": "몽환의 파편",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -92777,21 +92777,21 @@
   "422361201": {
     "id": 422361201,
     "name": "차원이동체",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "422361202": {
     "id": 422361202,
     "name": "차원이동체",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "422361203": {
     "id": 422361203,
     "name": "차원이동체",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -93693,7 +93693,7 @@
   "494621": {
     "id": 494621,
     "name": "화염의 수호자",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -93701,7 +93701,7 @@
   "494622": {
     "id": 494622,
     "name": "빙결의 수호자",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -93709,7 +93709,7 @@
   "494623": {
     "id": 494623,
     "name": "자연의 수호자",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -93812,7 +93812,7 @@
   "494666": {
     "id": 494666,
     "name": "빛의 결정체",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -93820,7 +93820,7 @@
   "494667": {
     "id": 494667,
     "name": "빛을 흡수한 빛의 결정체",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -93828,7 +93828,7 @@
   "494668": {
     "id": 494668,
     "name": "빛을 흡수한 빛의 결정체",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -93836,7 +93836,7 @@
   "494669": {
     "id": 494669,
     "name": "빛을 흡수한 빛의 결정체",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 10
@@ -96017,21 +96017,21 @@
   "480906": {
     "id": 480906,
     "name": "죽음의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "480907": {
     "id": 480907,
     "name": "쇠락의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "480908": {
     "id": 480908,
     "name": "처형날",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -96046,7 +96046,7 @@
   "480910": {
     "id": 480910,
     "name": "자이언트 질병 웜",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 5
@@ -96110,7 +96110,7 @@
   "480919": {
     "id": 480919,
     "name": "쇠락의 권속",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -96125,21 +96125,21 @@
   "480921": {
     "id": 480921,
     "name": "쇠락의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "480922": {
     "id": 480922,
     "name": "쇠락의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "480923": {
     "id": 480923,
     "name": "쇠락의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -96178,7 +96178,7 @@
   "480929": {
     "id": 480929,
     "name": "굶주린 공허의 처형자",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -96235,28 +96235,28 @@
   "480937": {
     "id": 480937,
     "name": "죽음의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "480938": {
     "id": 480938,
     "name": "죽음의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "480939": {
     "id": 480939,
     "name": "쇠락의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "480940": {
     "id": 480940,
     "name": "쇠락의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -96297,7 +96297,7 @@
   "480946": {
     "id": 480946,
     "name": "쇠락의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -96311,14 +96311,14 @@
   "480948": {
     "id": 480948,
     "name": "쇠락의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "480949": {
     "id": 480949,
     "name": "쇠락의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -96375,14 +96375,14 @@
   "480957": {
     "id": 480957,
     "name": "죽음의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "480958": {
     "id": 480958,
     "name": "죽음의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -96396,28 +96396,28 @@
   "480960": {
     "id": 480960,
     "name": "쇠락의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "480961": {
     "id": 480961,
     "name": "쇠락의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "480962": {
     "id": 480962,
     "name": "쇠락의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "480963": {
     "id": 480963,
     "name": "쇠락의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -96466,14 +96466,14 @@
   "481074": {
     "id": 481074,
     "name": "죽음의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "481075": {
     "id": 481075,
     "name": "죽음의 비석",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -96544,7 +96544,7 @@
   "480999": {
     "id": 480999,
     "name": "쇠락의 권속",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -96572,21 +96572,21 @@
   "481054": {
     "id": 481054,
     "name": "쇠락의 권속",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "481055": {
     "id": 481055,
     "name": "쇠락의 권속",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "481056": {
     "id": 481056,
     "name": "쇠락의 권속",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -96637,7 +96637,7 @@
   "481063": {
     "id": 481063,
     "name": "쇠락의 권속",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -96693,14 +96693,14 @@
   "481072": {
     "id": 481072,
     "name": "쇠락의 권속",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "481073": {
     "id": 481073,
     "name": "쇠락의 권속",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -96762,14 +96762,14 @@
   "481007": {
     "id": 481007,
     "name": "급류파도",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "481008": {
     "id": 481008,
     "name": "쇠락의 지휘관",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 5
@@ -96935,7 +96935,7 @@
   "481033": {
     "id": 481033,
     "name": "부패의 인도자 사베로크",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true,
     "hp": 5
