@@ -444,13 +444,13 @@ pub fn start(
                     debug_print(format_args!("raid begin: {}", pkt.raid_id));
                     match pkt.raid_id {
                         308226 | 308227 | 308239 | 308339 => {
-                            state.raid_difficulty = "Trial".to_string();
+                            state.raid_difficulty = "시련".to_string();
                             state.raid_difficulty_id = 7;
                         }
                         308428 | 308429 | 308420 | 308410 | 308411 | 308414 | 308422 | 308424
                         | 308421 | 308412 | 308423 | 308426 | 308416 | 308419 | 308415 | 308437
                         | 308417 | 308418 | 308425 | 308430 => {
-                            state.raid_difficulty = "Challenge".to_string();
+                            state.raid_difficulty = "도전".to_string();
                             state.raid_difficulty_id = 8;
                         }
                         _ => {
