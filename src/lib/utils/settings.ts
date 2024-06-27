@@ -77,8 +77,8 @@ export const defaultSettings = {
         }
     },
     meter: {
-        bossHp: true,
-        bossHpBar: true,
+        bossHp: false,
+        bossHpBar: false,
         splitBossHpBar: false,
         abbreviateHeader: true,
         showTimeUntilKill: false,

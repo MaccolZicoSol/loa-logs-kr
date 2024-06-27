@@ -87,7 +87,7 @@
     }
 </script>
 
-<div class="h-7 border-y border-black bg-zinc-900/[.3]">
+<div class="h-7 border-y border-black bg-zinc-900/[.3] hidden">
     {#if bossHPBars !== 0}
         {#if bossShield > 0}
             <div class="absolute -z-10 h-7 bg-neutral-400" style="width: 100%;" />

@@ -5,7 +5,7 @@
 
 <div class="flex flex-col space-y-4 divide-y-[1px]">
     <div class="mt-4 flex flex-col space-y-2 px-2">
-        <SettingItem
+        <!-- <SettingItem
             name="Boss HP"
             description="Show the HP bar for the current boss"
             bind:setting={$settings.meter.bossHp} />
@@ -16,7 +16,7 @@
         <SettingItem
             name="Split Boss HP Bar"
             description="Add vertical bars to the boss hp at 25%, 50%, and 75% intervals."
-            bind:setting={$settings.meter.splitBossHpBar} />
+            bind:setting={$settings.meter.splitBossHpBar} /> -->
         <SettingItem
             name="Abbreviate Header"
             description="Abbreviates the Total DMG and Total DPS numbers in the header"
