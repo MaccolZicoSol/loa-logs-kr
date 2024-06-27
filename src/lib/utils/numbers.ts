@@ -33,18 +33,18 @@ export function round2(num: number, decimalPlaces = 1): number {
 }
 
 export function abbreviateNumber(n: number) {
-    if (n >= 1e3 && n < 1e6) return (n / 1e3).toFixed(1) + "k";
-    if (n >= 1e6 && n < 1e9) return +(n / 1e6).toFixed(1) + "m";
-    if (n >= 1e9 && n < 1e12) return +(n / 1e9).toFixed(1) + "b";
-    if (n >= 1e12) return +(n / 1e12).toFixed(1) + "t";
+    if (n >= 1e4 && n < 1e7) return (n / 1e4).toFixed(1) + "만";
+    if (n >= 1e7 && n < 1e8) return +(n / 1e4).toFixed(0) + "만";
+    if (n >= 1e8 && n < 1e11) return +(n / 1e8).toFixed(1) + "억";
+    if (n >= 1e11) return +(n / 1e8).toFixed(0) + "억";
     else return tryParseInt(n).toFixed(0);
 }
 
 export function abbreviateNumberSplit(n: number) {
-    if (n >= 1e3 && n < 1e6) return [+(n / 1e3).toFixed(1), "k"];
-    if (n >= 1e6 && n < 1e9) return [+(n / 1e6).toFixed(1), "m"];
-    if (n >= 1e9 && n < 1e12) return [+(n / 1e9).toFixed(1), "b"];
-    if (n >= 1e12) return [+(n / 1e12).toFixed(1), "t"];
+    if (n >= 1e4 && n < 1e7) return [+(n / 1e4).toFixed(1), "만"];
+    if (n >= 1e7 && n < 1e8) return [+(n / 1e4).toFixed(0), "만"];
+    if (n >= 1e8 && n < 1e11) return [+(n / 1e8).toFixed(1), "억"];
+    if (n >= 1e11) return [+(n / 1e8).toFixed(0), "억"];
     else return [tryParseInt(n).toFixed(0), ""];
 }
 
