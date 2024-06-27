@@ -6,12 +6,10 @@
 [![GitHub](https://img.shields.io/github/v/release/MaccolSolZico/loa-logs-kr?style=flat-square)](https://github.com/MaccolSolZico/loa-logs-kr/releases)
 [![GitHub](https://img.shields.io/github/license/MaccolSolZico/loa-logs-kr?style=flat-square)](https://github.com/MaccolSolZico/loa-logs-kr/blob/master/LICENSE)
 
-[<img src="static/kofi.png" alt="Ko-fi" width="230"/>](https://ko-fi.com/synow)
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/synow)
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/maccolsolzico)
 
 
-LOA Logs KR is a "blazingly fast" open source Lost Ark DPS meter, written in Rust by [Snow](https://github.com/MaccolSolZico). 
+LOA Logs KR is a "blazingly fast" open source Lost Ark DPS meter, written in Rust by [MaccolSolZico](https://github.com/MaccolSolZico). 
 
 This project is an opinionated flavor of [LOA Details](https://github.com/lost-ark-dev/loa-details) by Herysia and Mathi, but should share very similar user interfaces and settings. The packet sniffing and processing has been completely ported over to Rust, with [`meter-core-rs-kr`](https://github.com/MaccolSolZico/meter-core-rs-kr). The Rust port could not be made without Herysia and Henjuro's work on [`meter-core`](https://github.com/lost-ark-dev/meter-core).
 
@@ -30,7 +28,9 @@ https://github.com/MaccolSolZico/loa-logs-kr/releases
 
 # Supporting the Project
 
-You can support me directly by buying me a [coffee.](https://www.buymeacoffee.com/synow)
+You can support me directly by buying me a [coffee.](https://www.buymeacoffee.com/maccolsolzico)
+
+You can support loa-logs' Snow [coffee.](https://www.buymeacoffee.com/synow)
 
 # FAQ
 #### Q: METER NOT WORKING AFTER MAJOR PATCH!!!

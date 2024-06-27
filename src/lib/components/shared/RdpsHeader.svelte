@@ -32,7 +32,7 @@
                 {:else if $rdpsEventDetails === "requesting_stats"}
                     <span class="text-gray-200">Requesting RDPS Data...</span>
                 {:else if $rdpsEventDetails === "api_error"}
-                    <span class="text-gray-200">Stats Server Internal Error, Please @Snow</span>
+                    <span class="text-gray-200">Stats Server Internal Error, Please @MaccolSolZico</span>
                 {:else}
                     <span>Error: {$rdpsEventDetails}</span>
                 {/if}

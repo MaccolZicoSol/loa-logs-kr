@@ -32,7 +32,7 @@
             href="https://github.com/MaccolSolZico/loa-logs-kr"
             target="_blank">MaccolSolZico/loa-logs-kr</a
         >), written in Rust by
-            <a class="text-accent-500 hover:underline" href="https://github.com/MaccolSolZico" target="_blank">Snow</a>. This
+            <a class="text-accent-500 hover:underline" href="https://github.com/MaccolSolZico" target="_blank">MaccolSolZico</a>. This
             project is an opinionated flavor of
             <a
                 class="text-accent-500 hover:underline"
@@ -60,21 +60,12 @@
             ><code>discord.gg/ybujC3sjMy</code></a>
         </p>
 
-        <p class="mt-4 px-4 text-base">You can support me and this project by buying me a coffee. (Ko-fi supports PayPal)</p>
-        <div>
-            <a href="https://ko-fi.com/synow" target="_blank"
-            ><img
-                class="mt-2 px-4 w-[260px]"
-                src="/kofi.png"
-                alt="Ko-fi" /></a>
-        </div>
-        <div>
-            <a href="https://www.buymeacoffee.com/synow" target="_blank"
-            ><img
-                class="mt-2 px-4"
-                src="/bmac.png"
-                alt="Buy Me A Coffee" /></a>
-        </div>
+        <p class="mt-4 px-4 text-base">You can support me and this project by buying me a coffee.</p>
+        <a href="https://www.buymeacoffee.com/maccolsolzico" target="_blank"
+        ><img
+            class="mt-2 px-4"
+            src="/bmac.png"
+            alt="Buy Me A Coffee" /></a>
 
         <p class="mt-4 px-4">
             Current version:

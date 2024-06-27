@@ -69,12 +69,9 @@
             <a href="/about" class="hover:text-accent-500" on:click={() => (hidden = true)}> About </a>
             <a href="/settings" class="hover:text-accent-500" on:click={() => (hidden = true)}> Settings </a>
             <a href="/changelog" class="hover:text-accent-500" on:click={() => (hidden = true)}> Changelog </a>
-            <a
-                href="https://ko-fi.com/synow"
-                class="hover:text-accent-500"
-                target="_blank"
-                on:click={() => (hidden = true)}>
-                <div class="inline-flex items-center space-x-1">
+            <a href="https://www.buymeacoffee.com/maccolsolzico" class="hover:text-accent-500" target="_blank"
+               on:click={() => (hidden = true)}>
+                <div class="inline-flex space-x-1 items-center">
                     <div>Donate</div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-2 fill-gray-300" viewBox="0 0 512 512">
                         <path
