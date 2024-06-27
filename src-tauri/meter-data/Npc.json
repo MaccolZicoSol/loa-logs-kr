@@ -45045,28 +45045,28 @@
   "620502": {
     "id": 620502,
     "name": "비열한 스콜라키아",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "620503": {
     "id": 620503,
     "name": "거짓된 핏빛의 요호",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "620504": {
     "id": 620504,
     "name": "무자비한 라칸드로프",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "620505": {
     "id": 620505,
     "name": "악랄한 아게오로스",
-    "grade": "boss",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
