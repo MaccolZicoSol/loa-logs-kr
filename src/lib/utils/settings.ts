@@ -24,7 +24,7 @@ export const defaultSettings = {
         showBosses: false,
         splitLines: false,
         underlineHovered: false,
-        accentColor: "theme-pink",
+        accentColor: "theme-violet",
         rawSocket: false,
         autoIface: true,
         ifDesc: "",
