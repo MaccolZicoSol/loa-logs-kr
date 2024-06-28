@@ -124,7 +124,7 @@
             </div>
             {#if $settings.meter.showTimeUntilKill}
                 <div
-                    class="flex space-x-1 tracking-tighter text-gray-400"
+                    class="flex space-x-1 tracking-tighter text-gray-400 hidden"
                     use:menuTooltip={{ content: `Expected Time to Kill` }}>
                     <div data-tauri-drag-region>TTK</div>
                     <div data-tauri-drag-region>
