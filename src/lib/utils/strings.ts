@@ -4,7 +4,8 @@ import { round2 } from "./numbers";
 import { missingInfo } from "./stores";
 
 export function isValidName(word: string) {
-    return /^\p{Lu}/u.test(word);
+    // return /^\p{Lu}/u.test(word);
+    return word;
 }
 
 export function removeUnknownHtmlTags(input: string) {
