@@ -65,7 +65,7 @@
                     ? 'border-zinc-500'
                     : 'border-zinc-800'}"
                 on:click={() => setTab(MeterTab.DAMAGE)}>
-                Damage
+                데미지
             </button>
             <button
                 class="h-6 border-0 border-b-[3px] px-2 {tab === MeterTab.RDPS
@@ -79,14 +79,14 @@
                     ? 'border-zinc-500'
                     : 'border-zinc-800'}"
                 on:click={() => setTab(MeterTab.PARTY_BUFFS)}>
-                Party Buffs
+                파티 버프
             </button>
             <button
                 class="h-6 flex-shrink-0 border-0 border-b-[3px] px-1.5 {tab === MeterTab.SELF_BUFFS
                     ? 'border-zinc-500'
                     : 'border-zinc-800'}"
                 on:click={() => setTab(MeterTab.SELF_BUFFS)}>
-                Self Buffs
+                자버프
             </button>
             {#if $settings.general.showTanked}
                 <button
@@ -94,7 +94,7 @@
                         ? 'border-zinc-500'
                         : 'border-zinc-800'}"
                     on:click={() => setTab(MeterTab.TANK)}>
-                    Tanked
+                    받은 피해량
                 </button>
             {/if}
             {#if $settings.general.showBosses}

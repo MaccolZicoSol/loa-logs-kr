@@ -61,7 +61,7 @@
                 {encounterDuration}
             </div>
             <div class="flex space-x-1 tracking-tighter text-gray-300">
-                <div>Total DMG:</div>
+                <div>총 데미지:</div>
                 {#if $settings.logs.abbreviateHeader}
                     <div class="text-white">
                         {abbreviateNumber(totalDamageDealt)}
@@ -73,7 +73,7 @@
                 {/if}
             </div>
             <div class="flex space-x-1 tracking-tighter text-gray-300">
-                <div>Total DPS:</div>
+                <div>총 DPS:</div>
                 {#if $settings.logs.abbreviateHeader}
                     <div class="text-white">
                         {abbreviateNumber(dps)}

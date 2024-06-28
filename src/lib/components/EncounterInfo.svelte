@@ -96,7 +96,7 @@
                 data-tauri-drag-region
                 class="flex space-x-1 tracking-tighter text-gray-400"
                 use:menuTooltip={{ content: `Total Damage ${totalDamageDealt.toLocaleString()}` }}>
-                <div class="flex-shrink-0" data-tauri-drag-region>T. DMG</div>
+                <div class="flex-shrink-0" data-tauri-drag-region>총 데미지</div>
                 {#if $settings.meter.abbreviateHeader}
                     <div data-tauri-drag-region>
                         {abbreviateNumber(totalDamageDealt)}
@@ -108,7 +108,7 @@
                 {/if}
             </div>
             <div class="flex space-x-1 tracking-tighter text-gray-400" use:menuTooltip={{ content: `Total DPS` }}>
-                <div class="flex-shrink-0" data-tauri-drag-region>T. DPS</div>
+                <div class="flex-shrink-0" data-tauri-drag-region>총 DPS</div>
                 {#if $settings.meter.abbreviateHeader}
                     <div data-tauri-drag-region>
                         {abbreviateNumber(dps)}
