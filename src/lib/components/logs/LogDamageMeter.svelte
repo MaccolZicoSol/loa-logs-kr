@@ -598,7 +598,7 @@
                                 <div class="text-center">
                                     <svg
                                         aria-hidden="true"
-                                        class="mx-auto mb-4 h-14 w-14 text-gray-200"
+                                        class="mx-auto mb-4 h-14 w-16 text-gray-200"
                                         fill="none"
                                         stroke="currentColor"
                                         viewBox="0 0 24 24"
@@ -641,33 +641,80 @@
         <div class="px relative top-0 overflow-x-auto overflow-y-visible">
             {#if tab === MeterTab.DAMAGE}
                 {#if state === MeterState.PARTY}
-                    {#if $settings.logs.splitPartyDamage && encounterPartyInfo && Object.keys(encounterPartyInfo).length >= 2}
-                        <LogDamageMeterPartySplit
-                            {players}
-                            {encounterPartyInfo}
-                            {topDamageDealt}
-                            {totalDamageDealt}
-                            {anyFrontAtk}
-                            {anyBackAtk}
-                            {anySupportBuff}
-                            {anySupportIdentity}
-                            {anySupportBrand}
-                            {anyRdpsData}
-                            end={encounter.lastCombatPacket}
-                            {isSolo}
-                            {inspectPlayer} />
-                    {:else}
-                        <table class="relative w-full table-fixed">
-                            <thead
-                                class="z-30 h-6"
-                                on:contextmenu|preventDefault={() => {
-                                    console.log("titlebar clicked");
-                                }}>
-                                <tr class="bg-zinc-900">
-                                    <th class="w-7 px-2 font-normal" />
-                                    <th class="w-14 px-2 text-left font-normal" />
-                                    <th class="w-full" />
-                                    <LogDamageMeterHeader
+                    <table class="relative w-full table-fixed">
+                        <thead
+                            class="z-30 h-6"
+                            on:contextmenu|preventDefault={() => {
+                                console.log("titlebar clicked");
+                            }}>
+                            <tr class="bg-zinc-900">
+                                <th class="w-7 px-2 font-normal" />
+                                <th class="w-16 px-2 text-left font-normal" />
+                                <th class="w-full" />
+                                {#if anyDead && $settings.logs.deathTime}
+                                    <th class="w-18 font-normal" use:tooltip={{ content: "Dead for" }}>Dead for</th>
+                                {/if}
+                                {#if $settings.logs.damage}
+                                    <th class="w-16 font-normal" use:tooltip={{ content: "Damage Dealt" }}>DMG</th>
+                                {/if}
+                                {#if $settings.logs.dps}
+                                    <th class="w-16 font-normal" use:tooltip={{ content: "Damage per second" }}>DPS</th>
+                                {/if}
+                                {#if !isSolo && $settings.logs.damagePercent}
+                                    <th class="w-14 font-normal" use:tooltip={{ content: "Damage %" }}>D%</th>
+                                {/if}
+                                {#if $settings.logs.critRate}
+                                    <th class="w-14 font-normal" use:tooltip={{ content: "Crit %" }}>CRIT</th>
+                                {/if}
+                                {#if $settings.logs.critDmg}
+                                    <th class="w-14 font-normal" use:tooltip={{ content: "% Damage that Crit" }}
+                                        >CDMG
+                                    </th>
+                                {/if}
+                                {#if anyFrontAtk && $settings.logs.frontAtk}
+                                    <th class="w-14 font-normal" use:tooltip={{ content: "Front Attack %" }}>F.A</th>
+                                {/if}
+                                {#if anyBackAtk && $settings.logs.backAtk}
+                                    <th class="w-14 font-normal" use:tooltip={{ content: "Back Attack %" }}>B.A</th>
+                                {/if}
+                                {#if anySupportBuff && $settings.logs.percentBuffBySup}
+                                    <th class="w-14 font-normal" use:tooltip={{ content: "% Damage buffed by Support" }}
+                                        >Buff%
+                                    </th>
+                                {/if}
+                                {#if anySupportBrand && $settings.logs.percentBrand}
+                                    <th class="w-14 font-normal" use:tooltip={{ content: "% Damage buffed by Brand" }}
+                                        >B%
+                                    </th>
+                                {/if}
+                                {#if anySupportIdentity && $settings.logs.percentIdentityBySup}
+                                    <th
+                                        class="w-14 font-normal"
+                                        use:tooltip={{ content: "% Damage buffed by Support Identity" }}
+                                        >Iden%
+                                    </th>
+                                {/if}
+                                {#if anyRdpsData && $settings.logs.ssyn}
+                                    <th
+                                        class="w-14 font-normal"
+                                        use:tooltip={{ content: "% Damage gained from Support" }}
+                                    >sSyn%
+                                    </th>
+                                {/if}
+                                {#if $settings.logs.counters}
+                                    <th class="w-14 font-normal" use:tooltip={{ content: "Counters" }}>CTR</th>
+                                {/if}
+                            </tr>
+                        </thead>
+                        <tbody class="relative z-10">
+                            {#each players as player, i (player.name)}
+                                <tr
+                                    class="h-7 px-2 py-1 {$settings.general.underlineHovered ? 'hover:underline' : ''}"
+                                    on:click={() => inspectPlayer(player.name)}>
+                                    <LogDamageMeterRow
+                                        entity={player}
+                                        percentage={playerDamagePercentages[i]}
+                                        {totalDamageDealt}
                                         {anyDead}
                                         {multipleDeaths}
                                         {anyFrontAtk}

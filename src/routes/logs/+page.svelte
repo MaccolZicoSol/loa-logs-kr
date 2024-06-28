@@ -390,8 +390,8 @@
                                 {formatDurationFromMs(encounter.duration)}
                             </td>
                             <td class="px-3 py-3 text-right text-xs">
-                                {formatTimestampDate(encounter.fightStart)}
-                                {formatTimestampTime(encounter.fightStart)}
+                                <p>{formatTimestampDate(encounter.fightStart)}</p>
+                                <p>{formatTimestampTime(encounter.fightStart)}</p>
                             </td>
                         </tr>
                     {:else}
