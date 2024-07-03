@@ -377,11 +377,7 @@ pub fn get_skill_name_and_icon(
                     }
                 }
                 if let Some(skill) = SKILL_DATA.get(summon_source_skill.first().unwrap_or(&0)) {
-                    (
-                        skill.name.clone() + " (Summon)",
-                        skill.icon.clone(),
-                        Some(summon_source_skill.clone()),
-                    )
+                    (skill.name.clone() + " (소환수)", skill.icon.clone())
                 } else {
                     (skill_name, "".to_string(), None)
                 }

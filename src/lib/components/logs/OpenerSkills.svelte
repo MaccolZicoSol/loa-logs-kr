@@ -11,7 +11,7 @@
         .sort((a, b) => b.totalDamage - a.totalDamage)
         .filter(
             (skill) =>
-                !skill.name.includes("(Summon)") &&
+                !skill.name.includes("(소환수)") &&
                 skill.name !== "Weapon Attack" &&
                 !skill.name.includes("Basic Attack") &&
                 skill.name !== "Bleed" &&
