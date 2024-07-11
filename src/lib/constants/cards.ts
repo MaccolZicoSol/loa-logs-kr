@@ -15,7 +15,8 @@ export const cardMap: { [key: string]: string } = {
     "19284": "광대",
     "19285": "환희",
     "19286": "재상",
-    "19287": "제후"
+    "19287": "제후",
+    "19288": "황후의 기사"
 };
 
 export const cardIconMap: { [key: string]: string } = {
@@ -35,7 +36,8 @@ export const cardIconMap: { [key: string]: string } = {
     "19284": "AR_CardDeck_ToolTip_15.png",
     "19285": "AR_CardDeck_ToolTip_16.png",
     "19286": "AR_CardDeck_ToolTip_17.png",
-    "19287": "AR_CardDeck_ToolTip_14.png"
+    "19287": "AR_CardDeck_ToolTip_14.png",
+    "19288": "AR_CardDeck_ToolTip_18.png"
 };
 
 // not including emperor
@@ -56,4 +58,5 @@ export const cardIds = [
     19285,
     19286,
     19287,
+    19288,
 ];
