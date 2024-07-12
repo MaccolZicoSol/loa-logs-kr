@@ -15976,7 +15976,7 @@
   "620451": {
     "id": 620451,
     "name": "혼돈의 뇌룡옥",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
