@@ -28,9 +28,16 @@ https://github.com/MaccolSolZico/loa-logs-kr/releases
 
 # Supporting the Project
 
-You can support me directly by buying me a [coffee.](https://www.buymeacoffee.com/maccolsolzico)
+한섭 제작자에게 커피를 선물해서 지원할 수 있습니다.
+<br/>
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/maccolsolzico)
 
-You can support loa-logs' Snow's [coffee.](https://www.buymeacoffee.com/synow)
+You can support loa-logs' Snow's
+<br/>
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/synow)
+[<img src="static/kofi.png" alt="Ko-fi" width="230"/>](https://ko-fi.com/synow)
+
+You can also support LOA Details' Herysia's [Patreon.](https://patreon.com/Herysia)
 
 # FAQ
 #### Q: METER NOT WORKING AFTER MAJOR PATCH!!!
