@@ -910,15 +910,15 @@
     "levels": {
       "1": {
         "desc": "일반 스킬의 피해량이 <FONT COLOR='#99ff99'>25%</FONT> 증가하고 방어 태세의 실드량이 <FONT COLOR='#99ff99'>30%</FONT> 증가한다. 방어 태세 중 적을 타격 및 피격 시 <FONT COLOR='#ffff99'>10</FONT>초 동안 적에게 주는 피해량이 <FONT COLOR='#99ff99'>2%</FONT> 증가하는 효과를 획득한다. 피해량 증가 효과는 <FONT COLOR='#ffff99'>3</FONT>회까지 중첩되며 <FONT COLOR='#ffff99'>1</FONT>초에 <FONT COLOR='#ffff99'>1</FONT>회만 획득한다.",
-        "values": [500041, 1000, 2500, 3000]
+        "values": [500041, 1000, 2500, 3000, 500041]
       },
       "2": {
         "desc": "일반 스킬의 피해량이 <FONT COLOR='#99ff99'>27.5%</FONT> 증가하고 방어 태세의 실드량이 <FONT COLOR='#99ff99'>40%</FONT> 증가한다. 방어 태세 중 적을 타격 및 피격 시 <FONT COLOR='#ffff99'>10</FONT>초 동안 적에게 주는 피해량이 <FONT COLOR='#99ff99'>3%</FONT> 증가하는 효과를 획득한다. 피해량 증가 효과는 <FONT COLOR='#ffff99'>3</FONT>회까지 중첩되며 <FONT COLOR='#ffff99'>1</FONT>초에 <FONT COLOR='#ffff99'>1</FONT>회만 획득한다.",
-        "values": [500042, 1000, 2750, 4000]
+        "values": [500042, 1000, 2750, 4000, 500042]
       },
       "3": {
         "desc": "일반 스킬의 피해량이 <FONT COLOR='#99ff99'>30%</FONT> 증가하고 방어 태세의 실드량이 <FONT COLOR='#99ff99'>50%</FONT> 증가한다. 방어 태세 중 적을 타격 및 피격 시 <FONT COLOR='#ffff99'>10</FONT>초 동안 적에게 주는 피해량이 <FONT COLOR='#99ff99'>4%</FONT> 증가하는 효과를 획득한다. 피해량 증가 효과는 <FONT COLOR='#ffff99'>3</FONT>회까지 중첩되며 <FONT COLOR='#ffff99'>1</FONT>초에 <FONT COLOR='#ffff99'>1</FONT>회만 획득한다.",
-        "values": [500043, 1000, 3000, 5000]
+        "values": [500043, 1000, 3000, 5000, 500043]
       }
     },
     "featuretype": 100,
