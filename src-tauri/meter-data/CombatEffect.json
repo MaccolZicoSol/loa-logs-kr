@@ -25646,7 +25646,7 @@
       {
         "ratio": 10000,
         "cooldown": 0,
-        "conditions": [{"type":"status_effect_on",  "actor":"self",  "arg":2283420}],
+        "conditions": [{"type":"status_effect_on",  "actor":"self",  "arg":2283421}],
         "actions": [{"type":"modify_damage",  "actor":"target",  "args":[300,  0,  0,  0,  0,  0]}]
       }
     ]
@@ -25657,7 +25657,7 @@
       {
         "ratio": 10000,
         "cooldown": 0,
-        "conditions": [{"type":"status_effect_on",  "actor":"self",  "arg":2283420}],
+        "conditions": [{"type":"status_effect_on",  "actor":"self",  "arg":2283422}],
         "actions": [{"type":"modify_damage",  "actor":"target",  "args":[300,  0,  0,  0,  0,  0]}]
       }
     ]
@@ -25668,7 +25668,7 @@
       {
         "ratio": 10000,
         "cooldown": 0,
-        "conditions": [{"type":"status_effect_on",  "actor":"self",  "arg":2283420}],
+        "conditions": [{"type":"status_effect_on",  "actor":"self",  "arg":2283423}],
         "actions": [{"type":"modify_damage",  "actor":"target",  "args":[400,  0,  0,  0,  0,  0]}]
       }
     ]
@@ -25679,7 +25679,7 @@
       {
         "ratio": 10000,
         "cooldown": 0,
-        "conditions": [{"type":"status_effect_on",  "actor":"self",  "arg":2283420}],
+        "conditions": [{"type":"status_effect_on",  "actor":"self",  "arg":2283424}],
         "actions": [{"type":"modify_damage",  "actor":"target",  "args":[500,  0,  0,  0,  0,  0]}]
       }
     ]
@@ -43852,7 +43852,7 @@
         "ratio": 10000,
         "cooldown": 0,
         "conditions": [],
-        "actions": [{"type":"modify_damage",  "actor":"target",  "args":[1500,  0,  0,  0,  0,  0]}]
+        "actions": [{"type":"modify_damage",  "actor":"target",  "args":[2500,  0,  0,  0,  0,  0]}]
       }
     ]
   },

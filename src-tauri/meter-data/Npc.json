@@ -32240,7 +32240,7 @@
   },
   "485200": {
     "id": 485200,
-    "name": "",
+    "name": "죽음의 왕 일리아칸",
     "grade": "commander",
     "type": "monster",
     "pushimmune": true,
@@ -32249,161 +32249,161 @@
   "485201": {
     "id": 485201,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485202": {
     "id": 485202,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485203": {
     "id": 485203,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485204": {
     "id": 485204,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485205": {
     "id": 485205,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485206": {
     "id": 485206,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485207": {
     "id": 485207,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485208": {
     "id": 485208,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485209": {
     "id": 485209,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485210": {
     "id": 485210,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485211": {
     "id": 485211,
     "name": "",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485212": {
     "id": 485212,
     "name": "",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485213": {
     "id": 485213,
     "name": "",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485214": {
     "id": 485214,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485215": {
     "id": 485215,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485216": {
     "id": 485216,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485217": {
     "id": 485217,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485218": {
     "id": 485218,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485219": {
     "id": 485219,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485220": {
     "id": 485220,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485221": {
     "id": 485221,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485222": {
     "id": 485222,
     "name": "",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485223": {
     "id": 485223,
     "name": "",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -32436,75 +32436,77 @@
   "485228": {
     "id": 485228,
     "name": "",
-    "grade": "normal",
-    "type": "monster"
+    "grade": "named",
+    "type": "monster",
+    "pushimmune": true
   },
   "485229": {
     "id": 485229,
     "name": "",
-    "grade": "normal",
-    "type": "monster"
+    "grade": "named",
+    "type": "monster",
+    "pushimmune": true
   },
   "485230": {
     "id": 485230,
     "name": "",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485231": {
     "id": 485231,
     "name": "",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485232": {
     "id": 485232,
     "name": "",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485233": {
     "id": 485233,
     "name": "",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485234": {
     "id": 485234,
     "name": "",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485235": {
     "id": 485235,
     "name": "",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485236": {
     "id": 485236,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485237": {
     "id": 485237,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485238": {
     "id": 485238,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -32515,10 +32517,178 @@
     "type": "monster",
     "pushimmune": true
   },
+  "485240": {
+    "id": 485240,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485241": {
+    "id": 485241,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485242": {
+    "id": 485242,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485243": {
+    "id": 485243,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485244": {
+    "id": 485244,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485245": {
+    "id": 485245,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485246": {
+    "id": 485246,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485247": {
+    "id": 485247,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485248": {
+    "id": 485248,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485249": {
+    "id": 485249,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485250": {
+    "id": 485250,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485251": {
+    "id": 485251,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485252": {
+    "id": 485252,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485253": {
+    "id": 485253,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485254": {
+    "id": 485254,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485255": {
+    "id": 485255,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485256": {
+    "id": 485256,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485257": {
+    "id": 485257,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485258": {
+    "id": 485258,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485259": {
+    "id": 485259,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485260": {
+    "id": 485260,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485261": {
+    "id": 485261,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485262": {
+    "id": 485262,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485263": {
+    "id": 485263,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
   "485281": {
     "id": 485281,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -32536,121 +32706,289 @@
   },
   "485300": {
     "id": 485300,
-    "name": "",
+    "name": "짓밟는 자, 에기르",
     "grade": "commander",
     "type": "monster",
     "pushimmune": true,
-    "hp": 100
+    "hp": 300
   },
   "485301": {
     "id": 485301,
     "name": "",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485302": {
     "id": 485302,
     "name": "",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485303": {
     "id": 485303,
     "name": "",
-    "grade": "commander",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485311": {
     "id": 485311,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485312": {
     "id": 485312,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485313": {
     "id": 485313,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485314": {
+    "id": 485314,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485315": {
+    "id": 485315,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485316": {
+    "id": 485316,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485317": {
+    "id": 485317,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485318": {
+    "id": 485318,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485319": {
+    "id": 485319,
+    "name": "",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485320": {
     "id": 485320,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485321": {
     "id": 485321,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485322": {
+    "id": 485322,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485323": {
+    "id": 485323,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485324": {
+    "id": 485324,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485325": {
+    "id": 485325,
+    "name": "",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485327": {
     "id": 485327,
     "name": "",
-    "grade": "named",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485330": {
     "id": 485330,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485331": {
     "id": 485331,
     "name": "",
-    "grade": "normal",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485332": {
     "id": 485332,
     "name": "",
-    "grade": "normal",
+    "grade": "seed",
     "type": "monster",
     "pushimmune": true
   },
   "485333": {
     "id": 485333,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485334": {
     "id": 485334,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485335": {
     "id": 485335,
     "name": "",
-    "grade": "boss",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
   "485336": {
     "id": 485336,
     "name": "",
-    "grade": "named",
+    "grade": "seed",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485342": {
+    "id": 485342,
+    "name": "",
+    "grade": "seed",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485343": {
+    "id": 485343,
+    "name": "",
+    "grade": "seed",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485344": {
+    "id": 485344,
+    "name": "",
+    "grade": "seed",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485345": {
+    "id": 485345,
+    "name": "",
+    "grade": "seed",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485337": {
+    "id": 485337,
+    "name": "",
+    "grade": "seed",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485338": {
+    "id": 485338,
+    "name": "",
+    "grade": "seed",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485339": {
+    "id": 485339,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485340": {
+    "id": 485340,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485341": {
+    "id": 485341,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485346": {
+    "id": 485346,
+    "name": "",
+    "grade": "seed",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485347": {
+    "id": 485347,
+    "name": "",
+    "grade": "seed",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485348": {
+    "id": 485348,
+    "name": "",
+    "grade": "seed",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485349": {
+    "id": 485349,
+    "name": "",
+    "grade": "normal",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "485350": {
+    "id": 485350,
+    "name": "",
+    "grade": "normal",
     "type": "monster",
     "pushimmune": true
   },
@@ -48767,6 +49105,30 @@
     "type": "monster",
     "pushimmune": true,
     "hp": 3
+  },
+  "306036": {
+    "id": 306036,
+    "name": "분노한 악마개",
+    "grade": "normal",
+    "type": "monster"
+  },
+  "306037": {
+    "id": 306037,
+    "name": "부패한 악마개",
+    "grade": "normal",
+    "type": "monster"
+  },
+  "306038": {
+    "id": 306038,
+    "name": "탐욕스러운 악마개",
+    "grade": "normal",
+    "type": "monster"
+  },
+  "306039": {
+    "id": 306039,
+    "name": "혼돈의 가고일",
+    "grade": "normal",
+    "type": "monster"
   },
   "307000": {
     "id": 307000,
@@ -111181,6 +111543,18 @@
     "grade": "normal",
     "type": "townsfolk"
   },
+  "960000012": {
+    "id": 960000012,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "960000013": {
+    "id": 960000013,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
   "978600000": {
     "id": 978600000,
     "name": "",
@@ -167389,6 +167763,26 @@
     "name": "",
     "grade": "normal",
     "type": "townsfolk"
+  },
+  "62047": {
+    "id": 62047,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "62048": {
+    "id": 62048,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "62049": {
+    "id": 62049,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
   },
   "70000": {
     "id": 70000,

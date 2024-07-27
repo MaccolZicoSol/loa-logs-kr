@@ -5094,7 +5094,8 @@
     "0": "honor_title",
     "1": "item_move",
     "2": "pet_summon",
-    "3": "duel_invite"
+    "3": "duel_invite",
+    "4": "auction_avg_price"
   },
   "cooppeoplelevel": {
     "0": "none",
@@ -6119,7 +6120,8 @@
     "195": "smartping_move",
     "196": "smartping_warn",
     "197": "action_identity_multi",
-    "198": "action_identity2_multi"
+    "198": "action_identity2_multi",
+    "199": "action_justguard_multi"
   },
   "efkey_hotkeyuitype": {
     "0": "action",
@@ -11315,7 +11317,8 @@
     "7": "pvp_level",
     "8": "zonelevel",
     "9": "stage_per_reward_boost",
-    "10": "epicgate_enteruiname"
+    "10": "epicgate_enteruiname",
+    "11": "guild_mission"
   },
   "mailtag": {
     "0": "none",
@@ -13936,7 +13939,8 @@
     "13": "rvr_instance_waiting_lines_reject",
     "14": "rvr_instance_waiting_lines_diff_realm",
     "15": "rvr_instance_waiting_lines_cancel",
-    "16": "rvr_instance_waiting_lines_force"
+    "16": "rvr_instance_waiting_lines_force",
+    "17": "world_transfer"
   },
   "partyleavetype": {
     "0": "self_leave",
@@ -16329,6 +16333,9 @@
     "5064": "combobox_controller_macro_esther_link_skill_2",
     "5065": "shortcut_action_identity_multiple_key",
     "5066": "shortcut_action_identity2_multiple_key",
+    "5067": "shortcut_action_justguard_multiple_key",
+    "5068": "shortcut_action_justguard",
+    "5069": "shortcut_controller_action_justguard",
     "6000": "shortcut_consumeitem_1",
     "6001": "shortcut_battleitem_1",
     "6002": "shortcut_battleitem_2",
@@ -16770,6 +16777,7 @@
     "20073": "title_key_identity",
     "20074": "title_key_skill_etc",
     "20075": "title_controller_mod_change",
+    "20076": "title_key_special_action",
     "25000": "bar_one",
     "25001": "bar_two",
     "25002": "bar_three",
