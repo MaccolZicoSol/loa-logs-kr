@@ -127178,7 +127178,7 @@
   "27960": {
     "id": 27960,
     "name": "블러드 피어싱",
-    "desc": "",
+    "desc": "전방으로 점프한 뒤 지면에 혈기 에너지를 주입하며 <$MACRO physic @1:2270500/>의 피해를 주고 사방으로 혈기 에너지를 폭발시켜 <$MACRO physic @1:2270501/>의 피해를 준다.",
     "classid": 403,
     "icon": "ark_passive_dm_5.png",
     "identitycategory": "demonic_demon",
@@ -128106,7 +128106,8 @@
     "desc": "",
     "classid": 304,
     "icon": "so_skill_01_23.png",
-    "identitycategory": "forcemaster_soul"
+    "identitycategory": "forcemaster_soul",
+    "groups": [27, 33]
   },
   "39000": {
     "id": 39000,
@@ -128742,7 +128743,7 @@
     "desc": "차지가 가능하며, 오버차지 발사 시 거대한 펜리르의 전령을 불러 <$MACRO physic @1:282301/>의 피해를 지속적으로 주고, 즉시 발사 시 작은 펜리르의 전령이 불려지며, <$MACRO physic @1:282303/>의 피해를 지속적으로 준다.",
     "classid": 502,
     "icon": "he_skill_01_22.png",
-    "groups": [27, 28, 30, 36, 100, 200, 510003, 991001, 991011, 991021, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
+    "groups": [27, 28, 30, 36, 100, 200, 510003, 991001, 991011, 991021, 2285200, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
   },
   "28240": {
     "id": 28240,
@@ -128750,7 +128751,7 @@
     "desc": "금빛 매 <FONT COLOR='#ffff99'>4</FONT>마리를 소환해 자신 주위로 회전시켜 회오리를 생성해 공격한다. 회오리는 점차 강해지며 적에게 최대 <FONT COLOR='#ffbb00'><$CALC_COMMA ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 282400/>/10000)+((<$TABLE_SKILLEFFECT ValueA 282400/> + <$TABLE_SKILLEFFECT ValueB 282400/>)/2))*2 +((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 282401/>/10000)+((<$TABLE_SKILLEFFECT ValueA 282401/> + <$TABLE_SKILLEFFECT ValueB 282401/>)/2))*2 + ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 282402/>/10000)+((<$TABLE_SKILLEFFECT ValueA 282402/> + <$TABLE_SKILLEFFECT ValueB 282402/>)/2))*2 +((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 282403/>/10000)+((<$TABLE_SKILLEFFECT ValueA 282403/> + <$TABLE_SKILLEFFECT ValueB 282403/>)/2))*2 + ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 282404/>/10000)+((<$TABLE_SKILLEFFECT ValueA 282404/> + <$TABLE_SKILLEFFECT ValueB 282404/>)/2))*2 + ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 282405/>/10000)+((<$TABLE_SKILLEFFECT ValueA 282405/> + <$TABLE_SKILLEFFECT ValueB 282405/>)/2))/></FONT>의 피해를 주고 공중에 띄운다. 회오리 생성 후 <FONT COLOR='#99ff99'><$MACRO bufftime @1:282410/></FONT>초간 피격 당해도 풀리지 않는 은신 상태가 되며, 이동할 경우 모험가 및 몬스터와 충돌이 무시된다.",
     "classid": 502,
     "icon": "he_skill_01_24.png",
-    "groups": [27, 28, 30, 36, 100, 200, 510003, 991001, 991011, 991021, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
+    "groups": [27, 28, 30, 36, 100, 200, 510003, 991001, 991011, 991021, 2285200, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
   },
   "28250": {
     "id": 28250,
@@ -129077,7 +129078,7 @@
     "desc": "주변에 여러 개의 폭발물들을 공중에 뿌린 뒤 핸드건을 연사하여 <$MACRO physic @1:292500/>의 피해 및 <$MACRO physic @1:292501/>의 폭파 피해를 주고 공중에 띄운다.",
     "classid": 503,
     "icon": "dh_skill_01_23.png",
-    "groups": [27, 28, 30, 36, 100, 200, 520003, 991001, 991011, 991021, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
+    "groups": [27, 28, 30, 36, 100, 200, 520003, 991001, 991011, 991021, 2295200, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
   },
   "29260": {
     "id": 29260,
@@ -129121,7 +129122,7 @@
     "desc": "장갑탄을 발사할 수 있는 대구경 라이플을 소환해 <FONT COLOR='#ffff99'>3</FONT>발의 탄환을 발사한다. 최초 <FONT COLOR='#ffff99'>2</FONT>발의 탄환은 각 발당 탄환에 직접 피격되는 적에게 <$MACRO physic @1:292801/>의 피해를 주고, 탄환이 지나간 궤적 주위에 후폭풍이 생겨 후폭풍에 피격된 적에게 <$MACRO physic @1:292803/>의 피해를 주고 탄환이 지나간 위치로 끌려가며, 마지막 공격에 직접 피격되는 적에게 <$MACRO physic @1:292811/> 피해를 주고, 후폭풍에 피격되는 적에게 <$MACRO physic @1:292813/>의 피해를 주고 날려버려, 최대 <FONT COLOR='#ffbb00'><$CALC_COMMA ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 292801/>/10000)+((<$TABLE_SKILLEFFECT ValueA 292801/> + <$TABLE_SKILLEFFECT ValueB 292801/>)/2))*2 + ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 292803/>/10000)+((<$TABLE_SKILLEFFECT ValueA 292803/> + <$TABLE_SKILLEFFECT ValueB 292803/>)/2))*2 + ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 292811/>/10000)+((<$TABLE_SKILLEFFECT ValueA 292811/> + <$TABLE_SKILLEFFECT ValueB 292811/>)/2)) + ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 292813/>/10000)+((<$TABLE_SKILLEFFECT ValueA 292813/> + <$TABLE_SKILLEFFECT ValueB 292813/>)/2)) /></FONT>의 피해를 준다.",
     "classid": 503,
     "icon": "dh_skill_01_27.png",
-    "groups": [27, 28, 30, 36, 100, 200, 520003, 991001, 991011, 991021, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
+    "groups": [27, 28, 30, 36, 100, 200, 520003, 991001, 991011, 991021, 2295200, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
   },
   "29290": {
     "id": 29290,
@@ -129536,7 +129537,7 @@
     "desc": "하늘로 <FONT COLOR='#ffff99'>20</FONT>발의 미사일을 발사하여 마우스 위치에 미사일이 날아와 폭발해 최대 <FONT COLOR='#ffbb00'><$CALC_COMMA ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 302310/>/10000)+((<$TABLE_SKILLEFFECT ValueA 302310/> + <$TABLE_SKILLEFFECT ValueB 302310/>)/2))*20/></FONT>의 피해를 준다.",
     "classid": 504,
     "icon": "bs_skill_01_23.png",
-    "groups": [27, 28, 30, 36, 100, 200, 530003, 991001, 991011, 991021, 2301000, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
+    "groups": [27, 28, 30, 36, 100, 200, 530003, 991001, 991011, 991021, 2301000, 2305200, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
   },
   "30240": {
     "id": 30240,
@@ -129589,7 +129590,7 @@
     "desc": "예광포를 발사해 <FONT COLOR='#ffff99'>20</FONT>초 동안 유지되는 헤비 터렛을 소환한다. 헤비 터렛은 주변의 적에게 위성 포격과 레이저를 발사하여 각각 <FONT COLOR='#00ccff'><$CALC_COMMA ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 90000805/>/10000)+((<$TABLE_SKILLEFFECT ValueA 90000805/> + <$TABLE_SKILLEFFECT ValueB 90000805/>)/2))*4/></FONT>, <FONT COLOR='#00ccff'><$CALC_COMMA ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 90000808/>/10000)+((<$TABLE_SKILLEFFECT ValueA 90000808/> + <$TABLE_SKILLEFFECT ValueB 90000808/>)/2))*4/></FONT>의 피해를 준다.",
     "classid": 504,
     "icon": "bs_skill_01_26.png",
-    "groups": [27, 36, 200, 530003, 991001, 991011, 991021, 2301000, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
+    "groups": [27, 36, 200, 530003, 991001, 991011, 991021, 2301000, 2305200, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
   },
   "30285": {
     "id": 30285,
@@ -130043,7 +130044,7 @@
     "desc": "공격 방향을 등진 채 뒤돌아 서서 범위 내의 가장 가까운 적 <FONT COLOR='#ffff99'>1</FONT>명을 결투의 대상으로 삼는다. 결투의 대상으로 지정된 적은 <FONT COLOR='#ffff99'><$CALC_COMMA %1 <$TABLE_SKILLBUFF Duration 382598/>/1000 /></FONT>초간 이동 속도가 <FONT COLOR='#99ff99'><$MACRO buffstat0_100 @1:382598/>%</FONT>, 공격 속도가 <FONT COLOR='#99ff99'><$MACRO buffstat0_100 @1:382599/>%</FONT> 감소하며 <FONT COLOR='#ff9999'>황혼의 눈</FONT> 디버프가 부여된다. <FONT COLOR='#ffff99'>2</FONT>초의 카운트다운 이후 빠르게 허리에서 리볼버를 뽑아 사격하여 <FONT COLOR='#ff9999'>황혼의 눈</FONT> 디버프가 부여된 대상에게는 <$MACRO physic @1:382502/>의 피해와 무력화 [중상] 및 부위파괴 <FONT COLOR='#99ff99'>2</FONT>레벨을, 디버프가 없는 대상에게는 <$MACRO physic @1:382501/>의 피해를 가한다. 사격 공격 적중 시, 적에게 부여되어 있던 <FONT COLOR='#ff9999'>황혼의 눈</FONT> 디버프는 제거된다.",
     "classid": 512,
     "icon": "dh_skill_01_44.png",
-    "groups": [27, 28, 30, 36, 100, 200, 550003, 991001, 991011, 991021, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
+    "groups": [27, 28, 30, 36, 100, 200, 550003, 991001, 991011, 991021, 2385200, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
   },
   "38260": {
     "id": 38260,
@@ -130069,7 +130070,7 @@
     "desc": "빠르게 뒤로 이동하며 전방을 향해 조준한 후, <FONT COLOR='#ffff99'>1</FONT>발의 탄환을 발사한다. 탄환이 적에게 적중할 경우 커다란 후폭풍을 생성하며 범위 내의 적에게 <$MACRO physic @1:382801/>의 피해를 준다.",
     "classid": 512,
     "icon": "dh_skill_01_45.png",
-    "groups": [27, 28, 30, 36, 100, 200, 550003, 991001, 991011, 991021, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
+    "groups": [27, 28, 30, 36, 100, 200, 550003, 991001, 991011, 991021, 2385200, 10000000, 11000000, 11000002, 12000002, 14000000, 14000001, 15000000]
   },
   "38340": {
     "id": 38340,
@@ -134075,7 +134076,7 @@
     "desc": "지정된 위치에 신호를 보내 폭탄을 투하하며 <FONT COLOR='#ffff99'>5</FONT>회에 걸쳐 <FONT COLOR='#ffbb00'><$CALC_COMMA (((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)*(<$TABLE_SKILLEFFECT ValueF 359301/>/10000)+((<$TABLE_SKILLEFFECT ValueA 359301/> + <$TABLE_SKILLEFFECT ValueB 359301/>)/2)))*5/></FONT>의 피해를 준다.",
     "classid": 505,
     "icon": "sc_skill_01_30.png",
-    "groups": [27, 28, 30, 36, 100, 201, 540003, 991001, 991011, 991021, 10000000, 11000000, 12000002, 14000000, 14000001, 15000000]
+    "groups": [27, 28, 30, 36, 100, 201, 540003, 991001, 991011, 991021, 2355200, 10000000, 11000000, 12000002, 14000000, 14000001, 15000000]
   },
   "35940": {
     "id": 35940,
@@ -134083,7 +134084,7 @@
     "desc": "드론에게 자폭 명령을 내린다. 드론은 즉시 <FONT COLOR='#99ff99'>현재 위치</FONT>에서 자폭하여 주변에 <$MACRO physic @1:90001600/>의 피해를 준다.\n\n<FONT COLOR='#ff9999'>※ 스킬 종료 이후 드론은 어태치 상태로 스카우터 위치에 재생성되며, 드론이 파이널 익스플로전 명령을 수행 중일 때에는 드론 스킬 및 합작 스킬, 하이퍼 싱크를 사용할 수 없습니다.</FONT>",
     "classid": 505,
     "icon": "sc_skill_01_31.png",
-    "groups": [27, 28, 30, 36, 100, 201, 540003, 991001, 991011, 991021, 10000000, 11000000, 12000002, 14000000, 14000001, 15000000]
+    "groups": [27, 28, 30, 36, 100, 201, 540003, 991001, 991011, 991021, 2355200, 10000000, 11000000, 12000002, 14000000, 14000001, 15000000]
   },
   "35941": {
     "id": 35941,
@@ -134091,7 +134092,7 @@
     "desc": "",
     "classid": 505,
     "icon": "",
-    "groups": [28, 30, 36, 100, 201, 540003, 991001, 991011, 991021, 11000000, 12000002, 14000000, 14000001, 15000000],
+    "groups": [28, 30, 36, 100, 201, 540003, 991001, 991011, 991021, 2355200, 11000000, 12000002, 14000000, 14000001, 15000000],
     "summonsourceskill": [
       35060,
       35070,
@@ -134861,8 +134862,8 @@
   },
   "46660": {
     "id": 46660,
-    "name": "",
-    "desc": "",
+    "name": "영혼 참수",
+    "desc": "전방으로 빠르게 이동한 후 사방에서 난무 공격을 펼치며 적에게 최대 <FONT COLOR='#ffbb00'><$CALC_COMMA (((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)*(<$TABLE_SKILLEFFECT ValueF 2461000/>/10000)+((<$TABLE_SKILLEFFECT ValueA 2461000/> + <$TABLE_SKILLEFFECT ValueB 2461000/>)/2)))*5/></FONT>의 피해를 준 뒤, 공간을 갈라버린 후 <$MACRO physic @1:2461005/>의 피해를 입힌 뒤 공간이 부숴지며 적에게 <$MACRO physic @1:2461006/>의 피해를 주고 날려버린다.",
     "classid": 405,
     "icon": "ark_passive_se_7.png",
     "identitycategory": "soul_eater_killer",
