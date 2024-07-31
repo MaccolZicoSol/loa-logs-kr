@@ -46,10 +46,10 @@
             target="_blank"><code>Discord</code></a>에 메시지를 보내주세요.
         </p>
 
-        <p class="mt-4 px-4 text-base">한국 서버 개발자에게 지원하고 싶으시면 커피 한 잔을 사주세요.</p>
+        <p class="mt-4 px-4 text-base">한국서버 개발자에게 기프티콘을 선물해서 지원할 수 있습니다.</p>
         
-        <a href="https://www.buymeacoffee.com/maccolsolzico" target="_blank"><img class="mt-2 px-4" src="/bmac.png"
-                alt="Buy Me A Coffee" /></a>
+        <a href="https://open.kakao.com/me/meter" target="_blank"><img class="mt-2 px-4" src="/kakaotalk.png"
+            alt="Kakao Talk" width="100"/></a>
 
         <p class="mt-4 px-4">
             현재 버전:

@@ -28,9 +28,9 @@ https://github.com/MaccolSolZico/loa-logs-kr/releases
 
 # Supporting the Project
 
-한섭 제작자에게 커피를 선물해서 지원할 수 있습니다.
+한섭 개발자에게 기프티콘을 선물해서 지원할 수 있습니다.
 <br/>
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/maccolsolzico)
+[<img src="static/kakaotalk.png" alt="KakaoTalk" width="60"/>](https://open.kakao.com/me/meter)
 
 You can support loa-logs' Snow's
 <br/>

@@ -69,7 +69,7 @@
             <a href="/about" class="hover:text-accent-500" on:click={() => (hidden = true)}> 소개 </a>
             <a href="/settings" class="hover:text-accent-500" on:click={() => (hidden = true)}> 설정 </a>
             <a href="/changelog" class="hover:text-accent-500" on:click={() => (hidden = true)}> 업데이트 내역 </a>
-            <a href="https://www.buymeacoffee.com/maccolsolzico" class="hover:text-accent-500" target="_blank"
+            <a href="https://open.kakao.com/me/meter" class="hover:text-accent-500" target="_blank"
                on:click={() => (hidden = true)}>
                 <div class="inline-flex space-x-1 items-center">
                     <div>기프티콘 선물하기</div>
