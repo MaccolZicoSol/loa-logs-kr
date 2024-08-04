@@ -92,20 +92,20 @@
     {#if encounterDbInfo}
         <div class="flex items-center space-x-2">
             <div>Database Size:</div>
-            <div class="font-mono">
+            <div class="font-gothic">
                 {encounterDbInfo.size}
             </div>
         </div>
         <div class="flex items-center space-x-2">
             <div use:tooltip={{ content: "Total encounters" }}>Total Encounters Saved:</div>
-            <div class="font-mono">
+            <div class="font-gothic">
                 {encounterDbInfo.totalEncounters.toLocaleString()}
             </div>
         </div>
         {#if encounterDbInfo.totalEncounters - encounterDbInfo.totalEncountersFiltered > 0}
             <div class="flex items-center space-x-2">
                 <div use:tooltip={{ content: "Total encounters > minimum duration" }}>Total Encounters Filtered:</div>
-                <div class="font-mono">
+                <div class="font-gothic">
                     {encounterDbInfo.totalEncountersFiltered.toLocaleString()}
                 </div>
             </div>

@@ -704,7 +704,7 @@ function skillCastBreakdownTooltip(
         const buffString = getFormattedBuffString(groupedBuffs, iconPath);
 
         table += "<tr>";
-        table += `<td class="font-mono">#${i + 1}</td>`;
+        table += `<td class="font-gothic">#${i + 1}</td>`;
         let mods = "";
         if (hit.crit) {
             mods += "C ";
@@ -719,8 +719,8 @@ function skillCastBreakdownTooltip(
             mods += "F ";
             modInfo.fa++;
         }
-        table += `<td class="font-mono">${mods.trim() ? mods : "-"}</td>`;
-        table += `<td class="font-mono">${abbreviateNumber(hit.damage)}</td>`;
+        table += `<td class="font-gothic">${mods.trim() ? mods : "-"}</td>`;
+        table += `<td class="font-gothic">${abbreviateNumber(hit.damage)}</td>`;
         table += `<td>${buffString}</td>`;
         table += "</tr>";
     }

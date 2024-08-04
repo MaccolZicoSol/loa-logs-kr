@@ -6,7 +6,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Noto Sans KR Variable", ...defaultTheme.fontFamily.sans]
+                sans: ["Noto Sans KR Variable", ...defaultTheme.fontFamily.sans],
+                gothic: ["Nanum Gothic Coding", ...defaultTheme.fontFamily.sans]
             },
             fontSize: {
                 xxs: "0.938rem", // 15px

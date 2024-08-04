@@ -39,7 +39,7 @@
                     {/if}
                     {bossName}
                 {/if}
-            </span><span class="ml-2 font-mono text-xs">{date}</span>
+            </span><span class="ml-2 font-gothic text-xs">{date}</span>
         </div>
         {#await getVersion() then version}
             {#if !$settings.general.hideLogo}
@@ -47,7 +47,7 @@
                     LOA Logs KR v{version}
                 </div>
             {:else}
-                <div class="font-mono text-xs">
+                <div class="font-gothic text-xs">
                     v{version}
                 </div>
             {/if}
@@ -89,7 +89,7 @@
             </div>
         </div>
         {#if $takingScreenshot && !$settings.general.hideLogo}
-            <div class="font-mono text-xs">
+            <div class="font-gothic text-xs">
                 {"github.com/MaccolSolZico/loa-logs-kr"}
             </div>
         {/if}

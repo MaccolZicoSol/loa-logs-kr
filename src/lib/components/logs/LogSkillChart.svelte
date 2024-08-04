@@ -191,21 +191,37 @@
                 <table class="mt-2 w-[60rem] table-fixed">
                     <thead>
                         <tr>
-                            <td class="w-12 font-semibold" use:tooltip={{ content: "Each damage tick" }}>Hits</td>
-                            <td class="w-16 font-semibold" use:tooltip={{ content: "Time since previous damage tick" }}
-                                >Ticks</td>
-                            <td class="w-12 font-semibold" use:tooltip={{ content: "Hit modifiers, e.g. Crit, BA, FA" }}
-                                >Mods</td>
-                            <td class="w-16 font-semibold" use:tooltip={{ content: "Hit damage" }}>DMG</td>
-                            <td class="w-full font-semibold">
-                                <span use:tooltip={{ content: "Party Buffs" }}>
-                                    <button
-                                        class={$buffType === "party" ? "text-accent-500" : "hover:text-accent-500"}
-                                        on:click={() => {
-                                            $buffType = "party";
-                                        }}>
-                                        Party
-                                    </button>
+                            <td class="h-7 font-gothic">#{i + 1}</td>
+                            {#if i === 0}
+                                <td class="font-gothic">
+                                    <span use:tooltip={{ content: `${formatDurationFromMs(hit.timestamp)}s` }}>
+                                        +{round((hit.timestamp - skillCast.timestamp) / 1000)}s
+                                    </span>
+                                </td>
+                            {:else}
+                                <td class="font-gothic">
+                                    <span use:tooltip={{ content: `${formatDurationFromMs(hit.timestamp)}s` }}>
+                                        +{round((hit.timestamp - skillCast.hits[i - 1].timestamp) / 1000)}s
+                                    </span>
+                                </td>
+                            {/if}
+                            <td class="font-gothic">
+                                {#if hit.crit}
+                                    <span use:tooltip={{ content: "Critical Hit" }}>C</span>
+                                {/if}
+                                {#if hit.backAttack}
+                                    <span use:tooltip={{ content: "Back Attack" }}>B</span>
+                                {/if}
+                                {#if hit.frontAttack}
+                                    <span use:tooltip={{ content: "Front Attack" }}>F</span>
+                                {/if}
+                                {#if !hit.crit && !hit.backAttack && !hit.frontAttack}
+                                    -
+                                {/if}
+                            </td>
+                            <td class="font-gothic">
+                                <span use:tooltip={{ content: hit.damage.toLocaleString() }}>
+                                    {abbreviateNumber(hit.damage)}
                                 </span>
                                 |
                                 <span use:tooltip={{ content: "Self Buffs, including Relic Sets" }}>

@@ -1,5 +1,6 @@
 <script lang="ts">
     import "@fontsource-variable/noto-sans-kr";
+    import '@fontsource/nanum-gothic-coding';
     import "../app.css";
     import { onDestroy, onMount } from "svelte";
     import { listen, type UnlistenFn } from "@tauri-apps/api/event";

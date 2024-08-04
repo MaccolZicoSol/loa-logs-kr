@@ -43,6 +43,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource-variable/noto-sans-kr": "^5.0.6",
+		"@fontsource/nanum-gothic-coding": "^5.0.18",
 		"@popperjs/core": "^2.11.7",
 		"@tauri-apps/api": "^1.5.6",
 		"@tauri-apps/cli": "^1.5.14",
