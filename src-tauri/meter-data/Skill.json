@@ -128630,7 +128630,8 @@
     "desc": "주기적으로 주위의 적을 공격하는 실버호크를 소환한다. 실버호크 소환 중 강력한 특수 스킬을 사용할 수 있고, 자신 및 <FONT COLOR='#ffff99'>24m</FONT> 범위 내에 있는 파티원의 이동 속도가 <FONT COLOR='#99ff99'><$MACRO buffstat0_100 @1:281582/>%</FONT> 증가한다.",
     "classid": 502,
     "icon": "he_skill_01_19.png",
-    "identitycategory": "hawkeye_normal"
+    "identitycategory": "hawkeye_normal",
+    "groups": [27, 33]
   },
   "28157": {
     "id": 28157,

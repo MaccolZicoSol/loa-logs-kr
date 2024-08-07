@@ -48491,6 +48491,18 @@
     "type": "monster",
     "pushimmune": true
   },
+  "300014": {
+    "id": 300014,
+    "name": "변절한 불꽃 정령",
+    "grade": "normal",
+    "type": "monster"
+  },
+  "300015": {
+    "id": 300015,
+    "name": "화염 악마",
+    "grade": "normal",
+    "type": "monster"
+  },
   "301000": {
     "id": 301000,
     "name": "용암 아귀",
