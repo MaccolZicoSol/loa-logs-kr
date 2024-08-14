@@ -578,7 +578,7 @@ fn migration_full_text_search(tx: &Transaction) -> Result<(), rusqlite::Error> {
 
         CREATE VIRTUAL TABLE encounter_search USING fts5(
             current_boss, players, columnsize=0, detail=full,
-            tokenize='trigram remove_diacritics 1',
+            tokenize='unicode61 remove_diacritics 1',
             content=encounter_preview, content_rowid=id
         );
         INSERT INTO encounter_search(encounter_search) VALUES('rebuild');
@@ -616,7 +616,7 @@ fn load_encounters_preview(
     let conn = get_db_connection(&path).expect("could not get db connection");
     let mut params = vec![];
 
-    let join_clause = if search.len() > 2 {
+    let join_clause = if search.len() > 1 {
         let escaped_search = search
             .split_whitespace()
             .map(|word| format!("\"{}\"", word.replace("\"", "")))

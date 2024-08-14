@@ -44,14 +44,14 @@
 
         return (evt: Event & { currentTarget: EventTarget & HTMLInputElement }) => {
             clearTimeout(timer);
-            const timeout = search.length >= 3 ? milliseconds : 0;
+            const timeout = search.length >= 2 ? milliseconds : 0;
             timer = setTimeout(() => fn(evt), timeout);
             // currentTarget is null because the event expires
         };
     }
 
     const handleSearchInput = debounce(() => {
-        $searchStore = search.length >= 3 ? search : "";
+        $searchStore = search.length >= 2 ? search : "";
     }, 300);
 
     const isFilterButton = (element: HTMLElement) => {
