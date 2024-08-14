@@ -32189,6 +32189,207 @@
     "pushimmune": true,
     "hp": 3
   },
+  "514400": {
+    "id": 514400,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514401": {
+    "id": 514401,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514402": {
+    "id": 514402,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514403": {
+    "id": 514403,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514404": {
+    "id": 514404,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514405": {
+    "id": 514405,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514406": {
+    "id": 514406,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514407": {
+    "id": 514407,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514410": {
+    "id": 514410,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514411": {
+    "id": 514411,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514412": {
+    "id": 514412,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514420": {
+    "id": 514420,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514421": {
+    "id": 514421,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514430": {
+    "id": 514430,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514431": {
+    "id": 514431,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514432": {
+    "id": 514432,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514433": {
+    "id": 514433,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514440": {
+    "id": 514440,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514441": {
+    "id": 514441,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514450": {
+    "id": 514450,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514451": {
+    "id": 514451,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514455": {
+    "id": 514455,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514456": {
+    "id": 514456,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514457": {
+    "id": 514457,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514458": {
+    "id": 514458,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514459": {
+    "id": 514459,
+    "name": "발각된 말벌 내통자",
+    "grade": "normal",
+    "type": "summoned"
+  },
+  "514460": {
+    "id": 514460,
+    "name": "발각된 말벌 내통자",
+    "grade": "normal",
+    "type": "summoned"
+  },
+  "514461": {
+    "id": 514461,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
+  "514462": {
+    "id": 514462,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
   "990371": {
     "id": 990371,
     "name": "",
@@ -97353,6 +97554,14 @@
   },
   "494698": {
     "id": 494698,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true,
+    "hp": 10
+  },
+  "494699": {
+    "id": 494699,
     "name": "",
     "grade": "boss",
     "type": "monster",
@@ -166551,6 +166760,320 @@
     "type": "townsfolk",
     "pushimmune": true
   },
+  "52602": {
+    "id": 52602,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52603": {
+    "id": 52603,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "52604": {
+    "id": 52604,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52605": {
+    "id": 52605,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52606": {
+    "id": 52606,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52607": {
+    "id": 52607,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52608": {
+    "id": 52608,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52609": {
+    "id": 52609,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52610": {
+    "id": 52610,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52611": {
+    "id": 52611,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52612": {
+    "id": 52612,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52613": {
+    "id": 52613,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52614": {
+    "id": 52614,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52615": {
+    "id": 52615,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "52616": {
+    "id": 52616,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52617": {
+    "id": 52617,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52618": {
+    "id": 52618,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52619": {
+    "id": 52619,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52620": {
+    "id": 52620,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52621": {
+    "id": 52621,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52622": {
+    "id": 52622,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52623": {
+    "id": 52623,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52624": {
+    "id": 52624,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52625": {
+    "id": 52625,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52626": {
+    "id": 52626,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52627": {
+    "id": 52627,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52628": {
+    "id": 52628,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52629": {
+    "id": 52629,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52630": {
+    "id": 52630,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52631": {
+    "id": 52631,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52632": {
+    "id": 52632,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52633": {
+    "id": 52633,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52634": {
+    "id": 52634,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52635": {
+    "id": 52635,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52636": {
+    "id": 52636,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52637": {
+    "id": 52637,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52638": {
+    "id": 52638,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52639": {
+    "id": 52639,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52640": {
+    "id": 52640,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52641": {
+    "id": 52641,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52642": {
+    "id": 52642,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52643": {
+    "id": 52643,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52644": {
+    "id": 52644,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52645": {
+    "id": 52645,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52646": {
+    "id": 52646,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52647": {
+    "id": 52647,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52648": {
+    "id": 52648,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52649": {
+    "id": 52649,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52650": {
+    "id": 52650,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52651": {
+    "id": 52651,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52652": {
+    "id": 52652,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "52653": {
+    "id": 52653,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
   "61000": {
     "id": 61000,
     "name": "",
@@ -176484,6 +177007,13 @@
     "name": "",
     "grade": "normal",
     "type": "townsfolk"
+  },
+  "99954": {
+    "id": 99954,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
   },
   "99955": {
     "id": 99955,
@@ -217978,20 +218508,6 @@
     "grade": "normal",
     "type": "townsfolk"
   },
-  "49106": {
-    "id": 49106,
-    "name": "",
-    "grade": "epic_raid",
-    "type": "townsfolk",
-    "pushimmune": true
-  },
-  "49107": {
-    "id": 49107,
-    "name": "",
-    "grade": "normal",
-    "type": "townsfolk",
-    "pushimmune": true
-  },
   "49108": {
     "id": 49108,
     "name": "",
@@ -218609,6 +219125,13 @@
     "id": 49259,
     "name": "",
     "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49263": {
+    "id": 49263,
+    "name": "",
+    "grade": "seed",
     "type": "townsfolk",
     "pushimmune": true
   },

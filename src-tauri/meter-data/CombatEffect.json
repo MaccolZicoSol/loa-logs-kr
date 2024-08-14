@@ -13181,50 +13181,6 @@
       }
     ]
   },
-  "2390901": {
-    "id": 2390901,
-    "effects": [
-      {
-        "ratio": 10000,
-        "cooldown": 0,
-        "conditions": [{"type":"skill_identity_category",  "actor":"self",  "arg":9}],
-        "actions": [{"type":"exec_after_skill",  "actor":"self",  "args":[2390901,  0,  0,  0,  0,  0]}]
-      }
-    ]
-  },
-  "2390902": {
-    "id": 2390902,
-    "effects": [
-      {
-        "ratio": 10000,
-        "cooldown": 0,
-        "conditions": [{"type":"skill_identity_category",  "actor":"self",  "arg":9}],
-        "actions": [{"type":"exec_after_skill",  "actor":"self",  "args":[2390902,  0,  0,  0,  0,  0]}]
-      }
-    ]
-  },
-  "2390903": {
-    "id": 2390903,
-    "effects": [
-      {
-        "ratio": 10000,
-        "cooldown": 0,
-        "conditions": [{"type":"skill_identity_category",  "actor":"self",  "arg":9}],
-        "actions": [{"type":"exec_after_skill",  "actor":"self",  "args":[2390903,  0,  0,  0,  0,  0]}]
-      }
-    ]
-  },
-  "2390904": {
-    "id": 2390904,
-    "effects": [
-      {
-        "ratio": 10000,
-        "cooldown": 0,
-        "conditions": [{"type":"current_skill_group",  "actor":"self",  "arg":2390900}],
-        "actions": [{"type":"exec_start_skill",  "actor":"self",  "args":[2390904,  0,  0,  0,  0,  0]}]
-      }
-    ]
-  },
   "160300": {
     "id": 160300,
     "effects": [
@@ -26151,12 +26107,12 @@
     "effects": [
       {
         "ratio": 10000,
-        "cooldown": 1000,
+        "cooldown": 500,
         "conditions": [
           {"type":"identity_stance", "actor":"self", "arg":2},
           {"type":"current_skill_group", "actor":"self", "arg":2360080}
         ],
-        "actions": [{"type":"exec_active_effect_when_damage",  "actor":"self",  "args":[2360080,  0,  0,  0,  0,  0]}]
+        "actions": [{"type":"exec_active_effect_when_damage",  "actor":"caster",  "args":[2360080,  0,  0,  0,  0,  0]}]
       }
     ]
   },
@@ -26165,12 +26121,12 @@
     "effects": [
       {
         "ratio": 10000,
-        "cooldown": 1000,
+        "cooldown": 500,
         "conditions": [
           {"type":"identity_stance", "actor":"self", "arg":2},
           {"type":"current_skill_group", "actor":"self", "arg":2360080}
         ],
-        "actions": [{"type":"exec_active_effect_when_damage",  "actor":"self",  "args":[2360081,  0,  0,  0,  0,  0]}]
+        "actions": [{"type":"exec_active_effect_when_damage",  "actor":"caster",  "args":[2360081,  0,  0,  0,  0,  0]}]
       }
     ]
   },
@@ -26179,12 +26135,12 @@
     "effects": [
       {
         "ratio": 10000,
-        "cooldown": 1000,
+        "cooldown": 500,
         "conditions": [
           {"type":"identity_stance", "actor":"self", "arg":2},
           {"type":"current_skill_group", "actor":"self", "arg":2360080}
         ],
-        "actions": [{"type":"exec_active_effect_when_damage",  "actor":"self",  "args":[2360082,  0,  0,  0,  0,  0]}]
+        "actions": [{"type":"exec_active_effect_when_damage",  "actor":"caster",  "args":[2360082,  0,  0,  0,  0,  0]}]
       }
     ]
   },
@@ -26193,12 +26149,12 @@
     "effects": [
       {
         "ratio": 10000,
-        "cooldown": 1000,
+        "cooldown": 500,
         "conditions": [
           {"type":"identity_stance", "actor":"self", "arg":2},
           {"type":"current_skill_group", "actor":"self", "arg":2360080}
         ],
-        "actions": [{"type":"exec_active_effect_when_damage",  "actor":"self",  "args":[2360083,  0,  0,  0,  0,  0]}]
+        "actions": [{"type":"exec_active_effect_when_damage",  "actor":"caster",  "args":[2360083,  0,  0,  0,  0,  0]}]
       }
     ]
   },
@@ -26207,12 +26163,12 @@
     "effects": [
       {
         "ratio": 10000,
-        "cooldown": 1000,
+        "cooldown": 500,
         "conditions": [
           {"type":"identity_stance", "actor":"self", "arg":2},
           {"type":"current_skill_group", "actor":"self", "arg":2360080}
         ],
-        "actions": [{"type":"exec_active_effect_when_damage",  "actor":"self",  "args":[2360084,  0,  0,  0,  0,  0]}]
+        "actions": [{"type":"exec_active_effect_when_damage",  "actor":"caster",  "args":[2360084,  0,  0,  0,  0,  0]}]
       }
     ]
   },
@@ -59300,20 +59256,6 @@
           {"type":"current_skill_group", "actor":"self", "arg":2170080}
         ],
         "actions": [{"type":"modify_damage",  "actor":"target",  "args":[1000,  0,  0,  0,  0,  0]}]
-      }
-    ]
-  },
-  "2170090": {
-    "id": 2170090,
-    "effects": [
-      {
-        "ratio": 10000,
-        "cooldown": 5000,
-        "conditions": [
-          {"type":"identity_stance", "actor":"self", "arg":0},
-          {"type":"current_skill_group", "actor":"self", "arg":2170090}
-        ],
-        "actions": [{"type":"exec_active_effect_when_damage",  "actor":"caster",  "args":[2170090,  0,  0,  0,  0,  0]}]
       }
     ]
   },

@@ -9923,6 +9923,7 @@
     "30302": "useup_misc_messenger_medal",
     "30303": "useup_misc_pheon",
     "30304": "useup_misc_jumping_token",
+    "30305": "useup_misc_crimsonnail_chart_piece",
     "30401": "useup_battle_item_common",
     "30402": "useup_battle_item_dungeon",
     "30403": "useup_battle_item_raid",
@@ -10448,6 +10449,7 @@
     "2106": "cumulative_worldtree_leaf",
     "2107": "cumulative_orpheus_star",
     "2108": "cumulative_memory_marble",
+    "2109": "cumulative_crimsonnail_chart_piece",
     "2200": "town",
     "2201": "town_item",
     "2202": "town_ticket",
@@ -10649,7 +10651,8 @@
   "itemlevelorigin": {
     "0": "equip_change",
     "1": "admin",
-    "2": "setup"
+    "2": "setup",
+    "3": "jumping"
   },
   "itemmovetag": {
     "0": "none",
@@ -22523,6 +22526,11 @@
     "16": "customize_part",
     "17": "ultimate_skill",
     "18": "super_skill"
+  },
+  "zoneadjustabletype": {
+    "0": "enable",
+    "1": "disable",
+    "2": "partial"
   },
   "zonebindstate": {
     "0": "void",

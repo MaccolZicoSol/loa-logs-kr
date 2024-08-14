@@ -24863,6 +24863,76 @@
     "classid": 0,
     "icon": ""
   },
+  "102529": {
+    "id": 102529,
+    "name": "",
+    "desc": "",
+    "classid": 0,
+    "icon": ""
+  },
+  "4222045": {
+    "id": 4222045,
+    "name": "",
+    "desc": "",
+    "classid": 0,
+    "icon": ""
+  },
+  "4222046": {
+    "id": 4222046,
+    "name": "",
+    "desc": "",
+    "classid": 0,
+    "icon": ""
+  },
+  "4222047": {
+    "id": 4222047,
+    "name": "",
+    "desc": "",
+    "classid": 0,
+    "icon": ""
+  },
+  "4222048": {
+    "id": 4222048,
+    "name": "",
+    "desc": "",
+    "classid": 0,
+    "icon": ""
+  },
+  "4276701": {
+    "id": 4276701,
+    "name": "",
+    "desc": "",
+    "classid": 0,
+    "icon": ""
+  },
+  "4276702": {
+    "id": 4276702,
+    "name": "",
+    "desc": "",
+    "classid": 0,
+    "icon": ""
+  },
+  "4276703": {
+    "id": 4276703,
+    "name": "",
+    "desc": "",
+    "classid": 0,
+    "icon": ""
+  },
+  "4276704": {
+    "id": 4276704,
+    "name": "",
+    "desc": "",
+    "classid": 0,
+    "icon": ""
+  },
+  "4276501": {
+    "id": 4276501,
+    "name": "",
+    "desc": "",
+    "classid": 0,
+    "icon": ""
+  },
   "412318": {
     "id": 412318,
     "name": "",
@@ -127169,7 +127239,7 @@
   "27950": {
     "id": 27950,
     "name": "스톰 그라인딩",
-    "desc": "전방으로 잠식 에너지를 주입한 무기를 던져 <$MACRO physic @1:2271001/>의 피해를 준다. 공격이 적중한 지점에서 회전하며 최대 <FONT COLOR='#ffbb00'><$CALC (((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)*(<$TABLE_SKILLEFFECT ValueF 2271003/>/10000)+((<$TABLE_SKILLEFFECT ValueA 2271003/> + <$TABLE_SKILLEFFECT ValueB 2271003/>)/2)))*13/></FONT>의 피해를 주고 기운이 모인 뒤 폭발하여 <$MACRO physic @1:2271005/>의 피해를 준다.",
+    "desc": "전방으로 잠식 에너지를 주입한 무기를 던져 <$MACRO physic @1:2271001/>의 피해를 준다. 공격이 적중한 지점에서 회전하며 최대 <FONT COLOR='#ffbb00'><$CALC_COMMA (((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)*(<$TABLE_SKILLEFFECT ValueF 2271003/>/10000)+((<$TABLE_SKILLEFFECT ValueA 2271003/> + <$TABLE_SKILLEFFECT ValueB 2271003/>)/2)))*13/></FONT>의 피해를 주고 기운이 모인 뒤 폭발하여 <$MACRO physic @1:2271005/>의 피해를 주고 적을 날려버린다.",
     "classid": 403,
     "icon": "ark_passive_dm_9.png",
     "identitycategory": "demonic_normal",
@@ -134120,7 +134190,7 @@
     "classid": 505,
     "icon": "ability_217.png",
     "identitycategory": "scouter_hyper_sync",
-    "groups": [27, 33]
+    "groups": [27, 33, 2351101]
   },
   "35703": {
     "id": 35703,
@@ -136554,8 +136624,8 @@
   },
   "31051": {
     "id": 31051,
-    "name": "",
-    "desc": "",
+    "name": "저무는 달",
+    "desc": "필법의 힘을 모아 크게 바닥에 붓을 내리쳐 자신과 주변 <FONT COLOR='#ffff99'>24m</FONT>이내의 파티원에게 <$MACRO bufftime @1:310502/>초간 적에게 주는 피해량을 <FONT COLOR='#99ff99'><$MACRO buffstat0_100 @1:310502/>%</FONT> 증가시킨다.",
     "classid": 602,
     "icon": "yy_skill_01_3.png",
     "identitycategory": "yinyangshi_yin",
@@ -138306,13 +138376,6 @@
     "classid": 0,
     "icon": "island_icon_63.png"
   },
-  "43150": {
-    "id": 43150,
-    "name": "",
-    "desc": "",
-    "classid": 0,
-    "icon": "po_skill_01_7.png"
-  },
   "42180": {
     "id": 42180,
     "name": "선물 뿌리기",
@@ -138529,6 +138592,48 @@
     "desc": "충동 제어 상태에 들어간다.\n충동 제어 상태에 들어가면 <$MACRO bufftime @1:13027/>초간 받는 대미지 <FONT COLOR='#99ff99'><$MACRO buffstat1_100 @1:13027/>%</FONT> 감소, 피격 이상, 상태이상 면역이 되지만 이동 속도가 <FONT COLOR='#ff9999'><$MACRO buffstat0_100 @1:13027/>%</FONT> 감소한다.",
     "classid": 0,
     "icon": "buff_422.png"
+  },
+  "43420": {
+    "id": 43420,
+    "name": "유혹하기",
+    "desc": "꿀벌을 유혹한다.",
+    "classid": 0,
+    "icon": "po_skill_01_7.png"
+  },
+  "43430": {
+    "id": 43430,
+    "name": "벌꿀봉 받아랏!",
+    "desc": "전방으로 돌진하며 벌꿀봉을 찔러 적을 날려버린다.\n일부 장애물 적중 시 장애물을 파괴할 수 있다.",
+    "classid": 0,
+    "icon": "po_skill_01_137.png"
+  },
+  "43431": {
+    "id": 43431,
+    "name": "유도 독침",
+    "desc": "전방으로 유도 독침을 발사한다. 독침에 맞으면 경직 발생 및 시야가 좁아진다.",
+    "classid": 0,
+    "icon": "po_skill_01_138.png"
+  },
+  "43432": {
+    "id": 43432,
+    "name": "꿀벌 방패",
+    "desc": "꿀벌 방패를 사용해 공격을 <FONT COLOR='#99ff99'>1</FONT>회 막아낸다.",
+    "classid": 0,
+    "icon": "po_skill_01_147.png"
+  },
+  "43433": {
+    "id": 43433,
+    "name": "로열젤리 부스터",
+    "desc": "로열젤리 부스터를 사용하여 일정 시간 동안 이동속도가 증가한다.",
+    "classid": 0,
+    "icon": "po_skill_01_139.png"
+  },
+  "43434": {
+    "id": 43434,
+    "name": "꿀벌의 비행",
+    "desc": "전방으로 비행하며 장애물을 넘어갈 수 있다.",
+    "classid": 0,
+    "icon": "po_skill_01_140.png"
   },
   "46670": {
     "id": 46670,
