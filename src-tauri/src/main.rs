@@ -822,8 +822,8 @@ fn load_encounter(window: tauri::Window, id: String) -> Encounter {
                     .collect::<Vec<_>>();
 
                 if version[0] > 1
-                    || (version[0] == 1 && version[1] >= 14)
-                    || (version[0] == 1 && version[1] == 13 && version[2] >= 5)
+                    || (version[0] == 1 && version[1] >= 2)
+                    || (version[0] == 1 && version[1] == 1 && version[2] >= 12)
                 {
                     compressed = true;
                 }
