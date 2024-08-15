@@ -726,7 +726,7 @@ function skillCastBreakdownTooltip(
     }
     table += "</tbody></table>";
     output += `<div>
-    Crit: <span class='font-semibold'>${round((modInfo.crit / skillCast.hits.length) * 100)}%</span>
+    Crit: <span class='font-semibold'>${skillCast.hits.length !== 0 ? round((modInfo.crit / skillCast.hits.length) * 100): 0}%</span>
     | CDMG: <span class='font-semibold'>${totalDamage !== 0 ? round((modInfo.critDamage / totalDamage) * 100) : 0}%</span>`;
     if (modInfo.ba > 0) {
         output += ` | BA: <span class='font-semibold'>${round((modInfo.ba / skillCast.hits.length) * 100)}%</span>`;

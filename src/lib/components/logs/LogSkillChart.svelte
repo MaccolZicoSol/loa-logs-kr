@@ -164,7 +164,7 @@
                     >{abbreviateNumber(totalDamage)}</span>
             </div>
             <div>
-                Crit: <span class="font-semibold">{round((modInfo.crit / skillCast.hits.length) * 100)}%</span>
+                Crit: <span class="font-semibold">{round(skillCast.hits.length !== 0 ? (modInfo.crit / skillCast.hits.length) * 100 : 0)}%</span>
                 | CDMG:
                 <span class="font-semibold"
                     >{round(totalDamage !== 0 ? (modInfo.critDamage / totalDamage) * 100 : 0)}%</span>
