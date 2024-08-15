@@ -65,8 +65,8 @@
                         class="absolute left-0 -z-10 h-6 px-2 py-1"
                         class:shadow-md={!$takingScreenshot}
                         style="background-color: {i % 2 === 1 && $settings.general.splitLines
-                            ? RGBLinearShade(HexToRgba($colors['Arcanist'].color, 0.6))
-                            : HexToRgba($colors['Arcanist'].color, 0.6)}; width: {relativeDrawPercentages[i]}%" />
+                            ? RGBLinearShade(HexToRgba($colors['아르카나'].color, 0.6))
+                            : HexToRgba($colors['아르카나'].color, 0.6)}; width: {relativeDrawPercentages[i]}%" />
                 </tr>
             {/each}
         </tbody>

@@ -756,7 +756,7 @@
                     <table class="relative w-full table-fixed">
                         <LogPlayerBreakdown entity={player} duration={encounter.duration} {totalDamageDealt} />
                     </table>
-                    {#if player.class === "Arcanist"}
+                    {#if player.class === "아르카나"}
                         <table class="relative w-full table-fixed">
                             <ArcanistCardTable {player} duration={encounter.duration} />
                         </table>

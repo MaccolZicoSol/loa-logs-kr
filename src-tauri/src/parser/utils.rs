@@ -337,7 +337,7 @@ pub fn get_skill_name_and_icon(
     entity_id: u64,
 ) -> (String, String, Option<Vec<u32>>) {
     if (*skill_id == 0) && (*skill_effect_id == 0) {
-        ("출혈".to_string(), "buff_168.png".to_string())
+        ("출혈".to_string(), "buff_168.png".to_string(), None)
     } else if (*skill_effect_id != 0) && (*skill_effect_id == *skill_id) {
         return if let Some(effect) = SKILL_EFFECT_DATA.get(skill_effect_id) {
             if let Some(item_name) = effect.item_name.as_ref() {
@@ -377,7 +377,11 @@ pub fn get_skill_name_and_icon(
                     }
                 }
                 if let Some(skill) = SKILL_DATA.get(summon_source_skill.first().unwrap_or(&0)) {
-                    (skill.name.clone() + " (소환수)", skill.icon.clone())
+                    (
+                        skill.name.clone() + " (소환수)",
+                        skill.icon.clone(),
+                        Some(summon_source_skill.clone()),
+                    )
                 } else {
                     (skill_name, "".to_string(), None)
                 }
@@ -401,13 +405,7 @@ pub fn get_skill_name_and_icon(
 pub fn get_skill_name(skill_id: &u32) -> String {
     SKILL_DATA
         .get(skill_id)
-        .map_or(skill_id.to_string(), |skill| { 
-            if skill.name.is_empty() {
-                skill_id.to_string()
-            } else {
-                skill.name.clone()
-            }
-        })
+        .map_or(skill_id.to_string(), |skill| skill.name.clone())
 }
 
 pub fn get_skill(skill_id: &u32) -> Option<SkillData> {
@@ -937,12 +935,12 @@ pub fn insert_data(
                 let data = identity_log;
                 let duration_seconds = (data[data.len() - 1].0 - data[0].0) / 1000;
                 let max = match entity.class.as_str() {
-                    "Summoner" => 7_000.0,
-                    "Souleater" => 3_000.0,
+                    "서머너" => 7_000.0,
+                    "소울이터" => 3_000.0,
                     _ => 10_000.0,
                 };
                 let stats: String = match entity.class.as_str() {
-                    "Arcanist" => {
+                    "아르카나" => {
                         let mut cards: HashMap<u32, u32> = HashMap::new();
                         let mut log: Vec<(i32, (f32, u32, u32))> = Vec::new();
                         for i in 1..data.len() {
@@ -982,7 +980,7 @@ pub fn insert_data(
 
                         serde_json::to_string(&identity_stats).unwrap()
                     }
-                    "Artist" | "Bard" => {
+                    "도화가" | "바드" => {
                         let mut log: Vec<(i32, (f32, u32))> = Vec::new();
 
                         for i in 1..data.len() {

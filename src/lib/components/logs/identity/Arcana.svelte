@@ -80,7 +80,7 @@
         },
         series: [
             {
-                color: $colors["Arcanist"].color,
+                color: $colors["아르카나"].color,
                 type: "line",
                 data: data.map((item) => (item as [number, [number, number, number]])[1][0]),
                 showSymbol: false,

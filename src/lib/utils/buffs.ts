@@ -444,7 +444,7 @@ export function addBardBubbles(key: string, buff: Buff, syn: StatusEffect) {
     }
 }
 
-const supportClasses = [classNameToClassId["Paladin"], classNameToClassId["Bard"], classNameToClassId["Artist"]];
+const supportClasses = [classNameToClassId["홀리나이트"], classNameToClassId["바드"], classNameToClassId["도화가"]];
 
 function isSupportBuff(statusEffect: StatusEffect) {
     if (!statusEffect.source.skill) {

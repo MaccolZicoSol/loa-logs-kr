@@ -10,9 +10,9 @@
     let identityStats: IdentityStats = JSON.parse(localPlayer.skillStats.identityStats!);
 </script>
 
-{#if localPlayer.class === "Arcanist"}
+{#if localPlayer.class === "아르카나"}
     <Arcana {identityStats} {duration} player={localPlayer}/>
-{:else if localPlayer.class === "Artist" || localPlayer.class === "Bard"}
+{:else if localPlayer.class === "도화가" || localPlayer.class === "바드"}
     <ArtistBard className={localPlayer.class} {identityStats} />
 {:else}
     <GenericClass className={localPlayer.class} {identityStats} />

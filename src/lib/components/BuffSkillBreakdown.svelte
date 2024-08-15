@@ -24,7 +24,7 @@
         playerName = formatPlayerName(player, $settings.general.showNames, $settings.general.showGearScore, false);
 
         skills = Object.values(player.skills).sort((a, b) => b.totalDamage - a.totalDamage);
-        if (player.class === "Arcanist") {
+        if (player.class === "아르카나") {
             skills = skills.filter((skill) => !cardIds.includes(skill.id));
         }
         if (Object.hasOwn($colors, player.class)) {

@@ -56,7 +56,7 @@
     }
 
     skills = Object.values(entity.skills).sort((a, b) => b.totalDamage - a.totalDamage);
-    if (entity.class === "Arcanist") {
+    if (entity.class === "아르카나") {
         skills = skills.filter((skill) => !cardIds.includes(skill.id));
     }
 
