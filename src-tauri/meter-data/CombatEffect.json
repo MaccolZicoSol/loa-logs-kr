@@ -15235,7 +15235,7 @@
     "effects": [
       {
         "ratio": 10000,
-        "cooldown": 0,
+        "cooldown": 200,
         "conditions": [
           {"type":"skill_effect_group_set", "actor":"self", "arg":2250500},
           {"type":"current_skill", "actor":"self", "arg":25038}
@@ -15249,7 +15249,7 @@
     "effects": [
       {
         "ratio": 10000,
-        "cooldown": 0,
+        "cooldown": 200,
         "conditions": [
           {"type":"skill_effect_group_set", "actor":"self", "arg":2250500},
           {"type":"current_skill", "actor":"self", "arg":25038}
@@ -15263,7 +15263,7 @@
     "effects": [
       {
         "ratio": 10000,
-        "cooldown": 0,
+        "cooldown": 200,
         "conditions": [
           {"type":"skill_effect_group_set", "actor":"self", "arg":2250500},
           {"type":"current_skill", "actor":"self", "arg":25038}
