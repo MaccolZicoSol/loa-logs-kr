@@ -16044,14 +16044,15 @@
   },
   "123010": {
     "id": 123010,
-    "name": "",
+    "name": "잊힌 유적의 검투사",
     "grade": "named",
     "type": "monster",
-    "pushimmune": true
+    "pushimmune": true,
+    "hp": 4
   },
   "123020": {
     "id": 123020,
-    "name": "",
+    "name": "잊힌 유적의 전사",
     "grade": "normal",
     "type": "monster"
   },
@@ -29076,7 +29077,7 @@
   },
   "512053": {
     "id": 512053,
-    "name": "",
+    "name": "매운맛에 이성을 잃은 바훈투르",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true,
@@ -29084,7 +29085,7 @@
   },
   "512054": {
     "id": 512054,
-    "name": "",
+    "name": "바훈투르",
     "grade": "normal",
     "type": "townsfolk"
   },
@@ -32191,21 +32192,21 @@
   },
   "514400": {
     "id": 514400,
-    "name": "",
+    "name": "꿀뚝뚝 벌집봉",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
   },
   "514401": {
     "id": 514401,
-    "name": "",
+    "name": "꿀뚝뚝 벌집봉",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
   },
   "514402": {
     "id": 514402,
-    "name": "",
+    "name": "꿀뚝뚝 벌집봉",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
@@ -32247,49 +32248,49 @@
   },
   "514410": {
     "id": 514410,
-    "name": "",
+    "name": "왕눈이 거미",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
   },
   "514411": {
     "id": 514411,
-    "name": "",
+    "name": "왕눈이 거미",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
   },
   "514412": {
     "id": 514412,
-    "name": "",
+    "name": "왕눈이 거미",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
   },
   "514420": {
     "id": 514420,
-    "name": "",
+    "name": "시련의 기사",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
   },
   "514421": {
     "id": 514421,
-    "name": "",
+    "name": "시련의 기사",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
   },
   "514430": {
     "id": 514430,
-    "name": "",
+    "name": "꿀바른 거북이",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
   },
   "514431": {
     "id": 514431,
-    "name": "",
+    "name": "꿀바른 거북이",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
@@ -32310,42 +32311,42 @@
   },
   "514440": {
     "id": 514440,
-    "name": "",
+    "name": "달콤한 파도",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
   },
   "514441": {
     "id": 514441,
-    "name": "",
+    "name": "달콤한 파도",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
   },
   "514450": {
     "id": 514450,
-    "name": "",
+    "name": "꿀 덩어리",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
   },
   "514451": {
     "id": 514451,
-    "name": "",
+    "name": "꿀 덩어리",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
   },
   "514455": {
     "id": 514455,
-    "name": "",
+    "name": "꿀 덩어리",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
   },
   "514456": {
     "id": 514456,
-    "name": "",
+    "name": "꿀 덩어리",
     "grade": "boss",
     "type": "monster",
     "pushimmune": true
@@ -32413,27 +32414,6 @@
   },
   "990374": {
     "id": 990374,
-    "name": "",
-    "grade": "boss",
-    "type": "monster",
-    "pushimmune": true
-  },
-  "485401": {
-    "id": 485401,
-    "name": "",
-    "grade": "commander",
-    "type": "monster",
-    "pushimmune": true
-  },
-  "485402": {
-    "id": 485402,
-    "name": "",
-    "grade": "boss",
-    "type": "monster",
-    "pushimmune": true
-  },
-  "485511": {
-    "id": 485511,
     "name": "",
     "grade": "boss",
     "type": "monster",
@@ -49671,6 +49651,38 @@
     "grade": "epic_raid",
     "type": "townsfolk",
     "pushimmune": true
+  },
+  "742300": {
+    "id": 742300,
+    "name": "우세르",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true,
+    "hp": 5
+  },
+  "742301": {
+    "id": 742301,
+    "name": "비누스 정예 전사",
+    "grade": "normal",
+    "type": "monster"
+  },
+  "742302": {
+    "id": 742302,
+    "name": "비누스 정예 전사",
+    "grade": "normal",
+    "type": "monster"
+  },
+  "742303": {
+    "id": 742303,
+    "name": "비누스 정예 전사",
+    "grade": "normal",
+    "type": "monster"
+  },
+  "742304": {
+    "id": 742304,
+    "name": "비누스 정예 전사",
+    "grade": "normal",
+    "type": "monster"
   },
   "504800": {
     "id": 504800,
@@ -93155,6 +93167,13 @@
     "pushimmune": true,
     "hp": 10
   },
+  "480608": {
+    "id": 480608,
+    "name": "",
+    "grade": "boss",
+    "type": "monster",
+    "pushimmune": true
+  },
   "480611": {
     "id": 480611,
     "name": "쿠크",
@@ -104149,6 +104168,27 @@
     "type": "summoned",
     "pushimmune": true
   },
+  "30034": {
+    "id": 30034,
+    "name": "",
+    "grade": "underling",
+    "type": "summoned",
+    "pushimmune": true
+  },
+  "30035": {
+    "id": 30035,
+    "name": "",
+    "grade": "underling",
+    "type": "summoned",
+    "pushimmune": true
+  },
+  "30036": {
+    "id": 30036,
+    "name": "",
+    "grade": "underling",
+    "type": "summoned",
+    "pushimmune": true
+  },
   "30038": {
     "id": 30038,
     "name": "",
@@ -104461,6 +104501,13 @@
     "name": "",
     "grade": "normal",
     "type": "totem",
+    "pushimmune": true
+  },
+  "33100": {
+    "id": 33100,
+    "name": "",
+    "grade": "underling",
+    "type": "summoned",
     "pushimmune": true
   },
   "33200": {
@@ -111429,6 +111476,42 @@
   },
   "10105014": {
     "id": 10105014,
+    "name": "",
+    "grade": "underling",
+    "type": "pet"
+  },
+  "10105200": {
+    "id": 10105200,
+    "name": "",
+    "grade": "underling",
+    "type": "pet"
+  },
+  "10105201": {
+    "id": 10105201,
+    "name": "",
+    "grade": "underling",
+    "type": "pet"
+  },
+  "10105202": {
+    "id": 10105202,
+    "name": "",
+    "grade": "underling",
+    "type": "pet"
+  },
+  "10105210": {
+    "id": 10105210,
+    "name": "",
+    "grade": "underling",
+    "type": "pet"
+  },
+  "10105211": {
+    "id": 10105211,
+    "name": "",
+    "grade": "underling",
+    "type": "pet"
+  },
+  "10105212": {
+    "id": 10105212,
     "name": "",
     "grade": "underling",
     "type": "pet"
@@ -175276,6 +175359,48 @@
     "grade": "normal",
     "type": "townsfolk"
   },
+  "81949": {
+    "id": 81949,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "81950": {
+    "id": 81950,
+    "name": "",
+    "grade": "none",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "81951": {
+    "id": 81951,
+    "name": "",
+    "grade": "none",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "81952": {
+    "id": 81952,
+    "name": "",
+    "grade": "none",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "81953": {
+    "id": 81953,
+    "name": "",
+    "grade": "none",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "81954": {
+    "id": 81954,
+    "name": "",
+    "grade": "none",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
   "82000": {
     "id": 82000,
     "name": "",
@@ -218508,6 +218633,20 @@
     "grade": "normal",
     "type": "townsfolk"
   },
+  "49106": {
+    "id": 49106,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49107": {
+    "id": 49107,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
   "49108": {
     "id": 49108,
     "name": "",
@@ -218744,6 +218883,309 @@
     "type": "townsfolk",
     "pushimmune": true,
     "hp": 7
+  },
+  "49143": {
+    "id": 49143,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49144": {
+    "id": 49144,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49145": {
+    "id": 49145,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "49146": {
+    "id": 49146,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49147": {
+    "id": 49147,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49148": {
+    "id": 49148,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49149": {
+    "id": 49149,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49150": {
+    "id": 49150,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49151": {
+    "id": 49151,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "49152": {
+    "id": 49152,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49153": {
+    "id": 49153,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49154": {
+    "id": 49154,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49155": {
+    "id": 49155,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49156": {
+    "id": 49156,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49157": {
+    "id": 49157,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "49158": {
+    "id": 49158,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "49159": {
+    "id": 49159,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49160": {
+    "id": 49160,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49161": {
+    "id": 49161,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49162": {
+    "id": 49162,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49163": {
+    "id": 49163,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49164": {
+    "id": 49164,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49165": {
+    "id": 49165,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49166": {
+    "id": 49166,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49167": {
+    "id": 49167,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49168": {
+    "id": 49168,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49169": {
+    "id": 49169,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49170": {
+    "id": 49170,
+    "name": "",
+    "grade": "boss",
+    "type": "townsfolk",
+    "pushimmune": true,
+    "hp": 5
+  },
+  "49171": {
+    "id": 49171,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true,
+    "hp": 5
+  },
+  "49172": {
+    "id": 49172,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "49173": {
+    "id": 49173,
+    "name": "",
+    "grade": "boss",
+    "type": "townsfolk",
+    "pushimmune": true,
+    "hp": 5
+  },
+  "49174": {
+    "id": 49174,
+    "name": "",
+    "grade": "seed",
+    "type": "townsfolk",
+    "pushimmune": true,
+    "hp": 5
+  },
+  "49175": {
+    "id": 49175,
+    "name": "",
+    "grade": "seed",
+    "type": "townsfolk",
+    "pushimmune": true,
+    "hp": 5
+  },
+  "49176": {
+    "id": 49176,
+    "name": "",
+    "grade": "seed",
+    "type": "townsfolk",
+    "pushimmune": true,
+    "hp": 5
+  },
+  "49177": {
+    "id": 49177,
+    "name": "",
+    "grade": "seed",
+    "type": "townsfolk",
+    "pushimmune": true,
+    "hp": 5
+  },
+  "49178": {
+    "id": 49178,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "hp": 5
+  },
+  "49179": {
+    "id": 49179,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "hp": 5
+  },
+  "49180": {
+    "id": 49180,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "hp": 5
+  },
+  "49181": {
+    "id": 49181,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "hp": 5
+  },
+  "49182": {
+    "id": 49182,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "hp": 5
+  },
+  "49183": {
+    "id": 49183,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "hp": 5
+  },
+  "49184": {
+    "id": 49184,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49185": {
+    "id": 49185,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
   },
   "49186": {
     "id": 49186,
@@ -219032,6 +219474,99 @@
     "type": "townsfolk",
     "pushimmune": true
   },
+  "49230": {
+    "id": 49230,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "49231": {
+    "id": 49231,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "49232": {
+    "id": 49232,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49233": {
+    "id": 49233,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49234": {
+    "id": 49234,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "49235": {
+    "id": 49235,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "49236": {
+    "id": 49236,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49237": {
+    "id": 49237,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "49238": {
+    "id": 49238,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49239": {
+    "id": 49239,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49240": {
+    "id": 49240,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49241": {
+    "id": 49241,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49242": {
+    "id": 49242,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49243": {
+    "id": 49243,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
   "49244": {
     "id": 49244,
     "name": "",
@@ -219107,6 +219642,13 @@
     "type": "townsfolk",
     "pushimmune": true
   },
+  "49256": {
+    "id": 49256,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
   "49257": {
     "id": 49257,
     "name": "",
@@ -219125,6 +219667,26 @@
     "id": 49259,
     "name": "",
     "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49260": {
+    "id": 49260,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "49261": {
+    "id": 49261,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "49262": {
+    "id": 49262,
+    "name": "",
+    "grade": "boss",
     "type": "townsfolk",
     "pushimmune": true
   },
