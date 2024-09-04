@@ -128206,7 +128206,7 @@
     "desc": "마우스 방향으로 빠르게 돌진하며 베어버린다. 이동 시 범위 내의 적에게 <$MACRO physic @1:254101/>, <$MACRO physic @1:254102/>의 피해를 주고, 이동 공격에 피격된 적은 일정 시간 후 <$MACRO physic @1:254109/>의 피해를 받고 날아간다. 이동 중 모험가 및 가디언 몬스터까지 충돌이 무시된다.",
     "classid": 402,
     "icon": "bl_skill_01_24.png",
-    "groups": [27, 33, 36, 2250200, 2251000, 2251101, 2255000, 10000000, 11000002, 12000002, 14000000, 14000001]
+    "groups": [27, 33, 36, 2255000, 10000000, 11000002, 12000002, 14000000, 14000001]
   },
   "9925410": {
     "id": 9925410,
@@ -128214,7 +128214,7 @@
     "desc": "",
     "classid": 402,
     "icon": "bl_skill_01_24.png",
-    "groups": [2250200, 2251000, 2251101, 2255000]
+    "groups": [2255000]
   },
   "25420": {
     "id": 25420,
@@ -128222,7 +128222,7 @@
     "desc": "혼돈의 검을 생성하고 기운을 검에 압축시켜 전방의 적에게 최대 <FONT COLOR='#ffbb00'><$CALC_COMMA ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 254201/>/10000)+((<$TABLE_SKILLEFFECT ValueA 254201/> + <$TABLE_SKILLEFFECT ValueB 254201/>)/2))*12/></FONT>의 피해를 주고 하늘에서 무수한 검들을 소환하며 적을 넘어뜨리고 최대 <FONT COLOR='#ffbb00'><$CALC_COMMA ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 254202/>/10000)+((<$TABLE_SKILLEFFECT ValueA 254202/> + <$TABLE_SKILLEFFECT ValueB 254202/>)/2))*6/></FONT>의 피해를 준다.",
     "classid": 402,
     "icon": "bl_skill_01_25.png",
-    "groups": [27, 33, 36, 2250200, 2251000, 2251101, 2255000, 10000000, 11000002, 12000002, 14000000, 14000001]
+    "groups": [27, 33, 36, 2255000, 10000000, 11000002, 12000002, 14000000, 14000001]
   },
   "25430": {
     "id": 25430,
@@ -128600,7 +128600,7 @@
     "desc": "손을 들어올린 후 순간적으로 전방에 잠식 에너지를 발생시켜 중심부로 모으고 적에게 최대 <FONT COLOR='#00ccff'><$CALC_COMMA (((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)*(<$TABLE_SKILLEFFECT ValueF 279101/>/10000)+((<$TABLE_SKILLEFFECT ValueA 279101/> + <$TABLE_SKILLEFFECT ValueB 279101/>)/2)))*14/></FONT>의 피해를 주고 폭발하며 <$MACRO magic @1:279102/>의 피해를 주고 날려버린다.",
     "classid": 403,
     "icon": "dm_skill_01_30.png",
-    "groups": [27, 33, 36, 2270400, 2270900, 2275000, 10000000, 11000002, 12000002, 14000000, 14000001]
+    "groups": [27, 33, 36, 2275000, 10000000, 11000002, 12000002, 14000000, 14000001]
   },
   "27920": {
     "id": 27920,
@@ -128608,7 +128608,7 @@
     "desc": "악마의 힘을 폭발 시켜 손에 압축한 후 전방에 손톱을 휘둘러 <$MACRO magic @1:279203/>, <$MACRO magic @1:279204/>의 피해를 주고 지면을 그어버리며 땅에서 강력한 혈기 에너지를 솟아내 적에게 최대 <FONT COLOR='#00ccff'><$CALC_COMMA (((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)*(<$TABLE_SKILLEFFECT ValueF 279201/>/10000)+((<$TABLE_SKILLEFFECT ValueA 279201/> + <$TABLE_SKILLEFFECT ValueB 279201/>)/2)))*13/></FONT>의 피해를 준 후 혈기 에너지가 폭발하며 <$MACRO magic @1:279202/>의 피해를 주고 날려버린다.\n<FONT COLOR='#ff9999'>※ 악마화 상태에서 사용할 수 있습니다.</FONT>",
     "classid": 403,
     "icon": "dm_skill_01_31.png",
-    "groups": [27, 33, 36, 2270400, 2270500, 2270900, 2275000, 10000000, 11000002, 12000002, 14000000, 14000001]
+    "groups": [27, 33, 36, 2275000, 10000000, 11000002, 12000002, 14000000, 14000001]
   },
   "27930": {
     "id": 27930,
@@ -132143,7 +132143,7 @@
   "36240": {
     "id": 36240,
     "name": "알리사노스의 격노",
-    "desc": "검을 매개체로 자신의 몸안에 있는 신성 에너지를 폭발시키듯 하늘로 쏟아낸다. 하늘에서 증폭된 신성 에너지는 거대한 검의 형태로 형상화되어 지상으로 내리 꽂혀 <$MACRO magic @1:362401/>의 피해를 주며 적을 날려버린다.",
+    "desc": "검을 매개체로 자신의 몸 안에 있는 신성 에너지를 폭발시키듯 하늘로 쏟아낸다. 하늘에서 증폭된 신성 에너지는 거대한 검의 형태로 형상화되어 지상으로 내리 꽂혀 <$MACRO magic @1:362401/>의 피해를 주며 적을 날려버린다.",
     "classid": 105,
     "icon": "hk_skill_01_26.png",
     "groups": [27, 33, 36, 2365000, 2365100, 2365200, 10000000, 11000002, 12000002, 14000000, 14000001]
@@ -135245,7 +135245,7 @@
   "21330": {
     "id": 21330,
     "name": "콘체르토",
-    "desc": "찬란한 하프를 소환해 천사들과 함께 합주하여 최대 <FONT COLOR='#00ccff'><$CALC_COMMA ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 212800/>/10000)+((<$TABLE_SKILLEFFECT ValueA 212800/> + <$TABLE_SKILLEFFECT ValueB 212800/>)/2))*6/></FONT>의 [성] 속성 피해를 준다.\n폭발 시 <$MACRO magic @1:212802/> [성] 속성 피해를 주며, 공격에 적중된 적은 자신 및 파티원에게 받는 피해의 치명타 저항률이 <$MACRO bufftime @1:212801/>초간 <FONT COLOR='#99ff99'><$CALC_COMMA <$TABLE_SKILLBUFF ValueA 212801 1 21280/>/100/>%</FONT> 감소한다.",
+    "desc": "찬란한 하프를 소환해 천사들과 함께 합주하여 최대 <$MACRO magic_sum_1 @1:213300 @2:7/>의 [성] 속성 피해를 준다.\n폭발 시 <$MACRO magic @1:213302/> [성] 속성 피해를 주며, 공격에 적중된 적은 자신 및 파티원에게 받는 피해의 치명타 저항률이 <$MACRO bufftime @1:213301/>초간 <FONT COLOR='#99ff99'><$CALC_COMMA <$TABLE_SKILLBUFF ValueA 212801 1 21280/>/100/>%</FONT> 감소한다.",
     "classid": 204,
     "icon": "bd_skill_01_28.png",
     "groups": [27, 33, 36, 2215000, 10000000, 11000002, 12000002, 14000000, 14000001]
@@ -135730,7 +135730,7 @@
     "desc": "강력한 달의 기운을 지면에 생성하고 <$MACRO physic @1:269403/>의 피해를 준다. 주위의 적들에게 그림자처럼 기습하여 최대 <FONT COLOR='#ffbb00'><$CALC_COMMA (((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)*(<$TABLE_SKILLEFFECT ValueF 269400/>/10000)+((<$TABLE_SKILLEFFECT ValueA 269400/> + <$TABLE_SKILLEFFECT ValueB 269400/>)/2)))*6/></FONT>의 피해를 주며 당겨온 뒤, 마지막 공격 시에는 <$MACRO physic @1:269401/>의 피해를 주고 적을 날려버린다.",
     "classid": 404,
     "icon": "rp_skill_01_26.png",
-    "groups": [27, 33, 36, 430003, 2260901, 2265000, 10000000, 12000002, 14000000, 14000001]
+    "groups": [27, 33, 36, 430003, 2265000, 10000000, 12000002, 14000000, 14000001]
   },
   "26950": {
     "id": 26950,
@@ -135738,7 +135738,7 @@
     "desc": "정신을 집중하여 전방의 적을 달과 함께 베어버리며 <$MACRO physic @1:269500/>의 피해를 주고 적을 날려버린다. 스킬 사용 중 모험가 및 가디언 몬스터까지 충돌은 무시된다.",
     "classid": 404,
     "icon": "rp_skill_01_27.png",
-    "groups": [27, 27, 28, 30, 33, 36, 203, 430003, 991001, 2260901, 2265000, 10000000, 11000000, 12000002, 14000000, 14000000, 14000001, 14000001, 15000000]
+    "groups": [27, 27, 28, 30, 33, 36, 203, 430003, 991001, 2265000, 10000000, 11000000, 12000002, 14000000, 14000000, 14000001, 14000001, 15000000]
   },
   "26960": {
     "id": 26960,
@@ -137064,7 +137064,7 @@
     "desc": "사신과 함께 낫에 강력한 힘을 모은 후 번갈아가며 전방 베기를 펼치며 적에게 <$MACRO physic @1:466200/>의 피해를 <FONT COLOR='#ffff99'>3</FONT>회를 주며 지면을 갈라버린다. 갈라진 지면으로 사신이 들어가며 최대 <FONT COLOR='#ffbb00'><$CALC_COMMA (((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)*(<$TABLE_SKILLEFFECT ValueF 466202/>/10000)+((<$TABLE_SKILLEFFECT ValueA 466202/> + <$TABLE_SKILLEFFECT ValueB 466202/>)/2)))*5/></FONT>의 피해를 주고  마지막에는 폭발이 일어나 <$MACRO physic @1:466203/>의 피해를 주며 적을 넘어트린다.",
     "classid": 405,
     "icon": "se_skill_01_22.png",
-    "groups": [27, 33, 36, 2460500, 2465000, 10000000, 11000002, 12000002, 14000000, 14000001]
+    "groups": [27, 33, 36, 2465000, 10000000, 11000002, 12000002, 14000000, 14000001]
   },
   "46630": {
     "id": 46630,
@@ -137072,7 +137072,7 @@
     "desc": "강력한 영혼이 잠들어 있는 묘지와 함께 사신을 불러내어 묘지에 어둠의 기운을 불어넣으며 적에게 최대 <FONT COLOR='#ffbb00'><$CALC_COMMA (((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)*(<$TABLE_SKILLEFFECT ValueF 466301/>/10000)+((<$TABLE_SKILLEFFECT ValueA 466301/> + <$TABLE_SKILLEFFECT ValueB 466301/>)/2)))*9/></FONT>의 피해를 주고, 묘지를 폭파시키며 최대 <FONT COLOR='#ffbb00'><$CALC_COMMA (((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)*(<$TABLE_SKILLEFFECT ValueF 466302/>/10000)+((<$TABLE_SKILLEFFECT ValueA 466302/> + <$TABLE_SKILLEFFECT ValueB 466302/>)/2)))*7/></FONT>의 피해를 준다.",
     "classid": 405,
     "icon": "se_skill_01_23.png",
-    "groups": [27, 33, 36, 2460500, 2465000, 10000000, 11000002, 12000002, 14000000, 14000001]
+    "groups": [27, 33, 36, 2465000, 10000000, 11000002, 12000002, 14000000, 14000001]
   },
   "46640": {
     "id": 46640,

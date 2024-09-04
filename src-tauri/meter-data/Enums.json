@@ -251,7 +251,7 @@
     "197": "goddess_blessing",
     "198": "ap_awakening",
     "199": "ultimate_skill_charged_rage",
-    "200": "vf_fairy_harmony_delete__",
+    "200": "identity_soul_eater_scythe_enhance",
     "201": "vf_ancient_magic_delete__",
     "202": "vf_endurance_song_delete__",
     "203": "vf_master_song_delete__",
@@ -19304,7 +19304,8 @@
     "0": "status_effect",
     "1": "vf_iron_bubble",
     "2": "time_stop",
-    "3": "just_avoid"
+    "3": "just_avoid",
+    "4": "ultimate_skill_status_effect"
   },
   "superarmortooltiptype": {
     "0": "none",
