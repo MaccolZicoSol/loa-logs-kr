@@ -3855,7 +3855,7 @@
     "id": 77399999,
     "name": "도망자",
     "isnegative": false,
-    "icon": "buff_0.png",
+    "icon": "buff_137.png",
     "isengrave": false,
     "levels": {
       "1": {
@@ -6027,7 +6027,7 @@
     "id": 1302,
     "name": "긴급구조",
     "isnegative": false,
-    "icon": "buff_238.png",
+    "icon": "ability_238.png",
     "isengrave": false,
     "levels": {
       "1": {

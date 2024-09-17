@@ -1022,7 +1022,8 @@
     "368": "town_badge_display_update",
     "369": "memory_collection_added",
     "370": "just_guard",
-    "371": "war_board_kurzan_level_up"
+    "371": "war_board_kurzan_level_up",
+    "372": "change_battle_stack"
   },
   "achievementfinishorigin": {
     "0": "normal",
@@ -1720,7 +1721,8 @@
     "686": "colosseum_specified_type_battlee_stack_count",
     "687": "colosseum_specified_type_battlee_gauge_max_victory",
     "688": "colosseum_specified_type_order_character_victory",
-    "689": "colosseum_specified_type_awakening_skill_kill_win"
+    "689": "colosseum_specified_type_awakening_skill_kill_win",
+    "690": "colosseum_specified_type_battlee_stack_use_kill"
   },
   "achievementobjectiveupdateproc": {
     "0": "single",
@@ -3146,7 +3148,8 @@
     "0": "none",
     "1": "awakening_skill",
     "2": "get_up_skill",
-    "3": "get_up_by_counter_attack"
+    "3": "get_up_by_counter_attack",
+    "4": "custom_use"
   },
   "battlefieldassisttype": {
     "0": "pc",
@@ -4153,7 +4156,8 @@
     "16": "troop_accept",
     "17": "warp",
     "18": "one_deathmatch_no_select",
-    "19": "fail_change_class_type"
+    "19": "fail_change_class_type",
+    "20": "index_filter"
   },
   "colosseummemberstate": {
     "0": "idle",
@@ -5699,11 +5703,14 @@
   "directshopconditiontype": {
     "0": "none",
     "1": "item_level",
-    "2": "guild_research_level"
+    "2": "guild_research_level",
+    "3": "pvp_level",
+    "4": "pc_level"
   },
   "directshoptype": {
     "0": "none",
-    "1": "guild"
+    "1": "guild",
+    "2": "colosseum"
   },
   "directionalattacktooltiptype": {
     "0": "0",
@@ -8425,7 +8432,10 @@
     "1082": "town_pet_training_end",
     "1083": "town_pet_deploy",
     "1084": "pet_delete_marking",
-    "1085": "pc_transcendence_force_change"
+    "1085": "pc_transcendence_force_change",
+    "1086": "colosseum_one_deathmatch_ready",
+    "1087": "colosseum_one_deathmatch_round_start",
+    "1088": "colosseum_one_deathmatch_round_finish"
   },
   "gamenotebackgroundtype": {
     "0": "default",
@@ -9528,7 +9538,8 @@
     "58": "item_quality",
     "59": "item_amplification",
     "60": "direct_shop_key",
-    "61": "gem_promotion"
+    "61": "gem_promotion",
+    "62": "colosseum_rule"
   },
   "infighterconsumeshocktype": {
     "0": "full",
@@ -18255,6 +18266,11 @@
     "4": "pc",
     "5": "set"
   },
+  "slotultimatebordertype": {
+    "0": "none",
+    "1": "ultimate",
+    "2": "super"
+  },
   "smartdropbindtype": {
     "0": "character",
     "1": "expedition"
@@ -22080,7 +22096,11 @@
     "684": "minigame_exit",
     "685": "npc_interaction_pet_refund",
     "686": "input_buff_remove_state_metronome",
-    "687": "transcendence_reward"
+    "687": "transcendence_reward",
+    "688": "colosseum_one_death_match_character_select",
+    "689": "colosseum_one_death_match_progress",
+    "690": "colosseum_one_death_match_entrance_chatacter_select",
+    "691": "direct_shop"
   },
   "ultimateconditiontype": {
     "0": "none",

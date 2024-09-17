@@ -168132,6 +168132,644 @@
     "grade": "normal",
     "type": "townsfolk"
   },
+  "61241": {
+    "id": 61241,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61242": {
+    "id": 61242,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61243": {
+    "id": 61243,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61244": {
+    "id": 61244,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61245": {
+    "id": 61245,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61246": {
+    "id": 61246,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61247": {
+    "id": 61247,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61248": {
+    "id": 61248,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61249": {
+    "id": 61249,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61250": {
+    "id": 61250,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61251": {
+    "id": 61251,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61252": {
+    "id": 61252,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61253": {
+    "id": 61253,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61254": {
+    "id": 61254,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61255": {
+    "id": 61255,
+    "name": "",
+    "grade": "boss",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61256": {
+    "id": 61256,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61257": {
+    "id": 61257,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61258": {
+    "id": 61258,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61259": {
+    "id": 61259,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61260": {
+    "id": 61260,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61261": {
+    "id": 61261,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61262": {
+    "id": 61262,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61263": {
+    "id": 61263,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61264": {
+    "id": 61264,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61265": {
+    "id": 61265,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61266": {
+    "id": 61266,
+    "name": "",
+    "grade": "named",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61267": {
+    "id": 61267,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61268": {
+    "id": 61268,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61269": {
+    "id": 61269,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61270": {
+    "id": 61270,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61271": {
+    "id": 61271,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61272": {
+    "id": 61272,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61273": {
+    "id": 61273,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61274": {
+    "id": 61274,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61275": {
+    "id": 61275,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61276": {
+    "id": 61276,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61277": {
+    "id": 61277,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61278": {
+    "id": 61278,
+    "name": "",
+    "grade": "boss",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61279": {
+    "id": 61279,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61280": {
+    "id": 61280,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61281": {
+    "id": 61281,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61282": {
+    "id": 61282,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61283": {
+    "id": 61283,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61284": {
+    "id": 61284,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61285": {
+    "id": 61285,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61286": {
+    "id": 61286,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61287": {
+    "id": 61287,
+    "name": "",
+    "grade": "named",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61288": {
+    "id": 61288,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61289": {
+    "id": 61289,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61290": {
+    "id": 61290,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61291": {
+    "id": 61291,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61292": {
+    "id": 61292,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61293": {
+    "id": 61293,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61294": {
+    "id": 61294,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61295": {
+    "id": 61295,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61296": {
+    "id": 61296,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61297": {
+    "id": 61297,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61298": {
+    "id": 61298,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61299": {
+    "id": 61299,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61300": {
+    "id": 61300,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61301": {
+    "id": 61301,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61302": {
+    "id": 61302,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61303": {
+    "id": 61303,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61304": {
+    "id": 61304,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61305": {
+    "id": 61305,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61306": {
+    "id": 61306,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61307": {
+    "id": 61307,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61308": {
+    "id": 61308,
+    "name": "",
+    "grade": "named",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61309": {
+    "id": 61309,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61310": {
+    "id": 61310,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61311": {
+    "id": 61311,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61312": {
+    "id": 61312,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61313": {
+    "id": 61313,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61314": {
+    "id": 61314,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61315": {
+    "id": 61315,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61316": {
+    "id": 61316,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61317": {
+    "id": 61317,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61318": {
+    "id": 61318,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61319": {
+    "id": 61319,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61320": {
+    "id": 61320,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61321": {
+    "id": 61321,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61322": {
+    "id": 61322,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61323": {
+    "id": 61323,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61324": {
+    "id": 61324,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61325": {
+    "id": 61325,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
+  "61326": {
+    "id": 61326,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61327": {
+    "id": 61327,
+    "name": "",
+    "grade": "seed",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61328": {
+    "id": 61328,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61329": {
+    "id": 61329,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61330": {
+    "id": 61330,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61331": {
+    "id": 61331,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61332": {
+    "id": 61332,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61333": {
+    "id": 61333,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61334": {
+    "id": 61334,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk",
+    "pushimmune": true
+  },
+  "61335": {
+    "id": 61335,
+    "name": "",
+    "grade": "normal",
+    "type": "townsfolk"
+  },
   "62000": {
     "id": 62000,
     "name": "",
