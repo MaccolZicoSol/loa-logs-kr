@@ -64,8 +64,8 @@
                             d="M480 996q-86.035 0-162.566-33.158t-133.825-90.451q-57.293-57.294-90.451-133.802Q60 662.08 60 576.062 60 487 93.196 410.724q33.196-76.275 91.5-133.25Q243 220.5 320.769 187.75 398.538 155 487.189 155q83.023 0 157.706 28.207 74.683 28.207 131.885 77.88 57.202 49.672 90.711 118.242Q901 447.9 901 527q0 112.5-62.75 184.5t-175.664 72H605.5q-17 0-29.5 13.25T563.5 827q0 25.447 10 36.224 10 10.776 10 32.276 0 40-28.55 70.25T480 996Zm0-420Zm-222.5 24.5q19.7 0 34.1-14.4Q306 571.7 306 552q0-19.7-14.4-34.1-14.4-14.4-34.1-14.4-19.7 0-34.1 14.4Q209 532.3 209 552q0 19.7 14.4 34.1 14.4 14.4 34.1 14.4Zm121-162q20.2 0 34.6-14.4 14.4-14.4 14.4-34.1 0-20.7-14.4-34.6-14.4-13.9-34.1-13.9-20.7 0-34.6 13.9-13.9 13.9-13.9 34.1 0 20.2 13.9 34.6 13.9 14.4 34.1 14.4Zm203.5 0q20.2 0 34.6-14.4Q631 409.7 631 390q0-20.7-14.4-34.6-14.4-13.9-34.1-13.9-20.7 0-34.6 13.9-13.9 13.9-13.9 34.1 0 20.2 13.9 34.6 13.9 14.4 34.1 14.4Zm123.5 162q19.7 0 34.1-14.4Q754 571.7 754 552q0-19.7-14.4-34.1-14.4-14.4-34.1-14.4-20.7 0-34.6 14.4Q657 532.3 657 552q0 19.7 13.9 34.1 13.9 14.4 34.6 14.4Zm-229.342 304q7.592 0 11.717-3.545Q492 897.41 492 888.938 492 874.5 477.25 865q-14.75-9.5-14.75-47.5 0-48.674 32.73-87.087Q527.96 692 576.25 692h86.25q74 0 110-43.75t36-115.25q0-131-97.843-208.25t-223.16-77.25q-140.595 0-238.296 95.919T151.5 576.479q0 136.521 95.211 232.271t229.447 95.75Z" /></svg>
                 </button>
                 <div class="ml-5">
-                    <div class="text-gray-100">Accent Color</div>
-                    <div class="text-xs text-gray-300">Set the accent color for the app</div>
+                    <div class="text-gray-100">강조 색상</div>
+                    <div class="text-xs text-gray-300">앱의 강조 색상을 설정합니다.</div>
                 </div>
             </div>
             {#if colorDropdownOpen}
@@ -77,7 +77,7 @@
                                 on:click={() => {
                                     $settings.general.accentColor = "theme-red";
                                     colorDropdownOpen = false;
-                                }}>Red</button>
+                                }}>레드</button>
                         </li>
                         <li>
                             <button
@@ -85,7 +85,7 @@
                                 on:click={() => {
                                     $settings.general.accentColor = "theme-rose";
                                     colorDropdownOpen = false;
-                                }}>Rose</button>
+                                }}>로즈</button>
                         </li>
                         <li>
                             <button
@@ -93,7 +93,7 @@
                                 on:click={() => {
                                     $settings.general.accentColor = "theme-pink";
                                     colorDropdownOpen = false;
-                                }}>Pink</button>
+                                }}>핑크</button>
                         </li>
                         <li>
                             <button
@@ -101,7 +101,7 @@
                                 on:click={() => {
                                     $settings.general.accentColor = "theme-violet";
                                     colorDropdownOpen = false;
-                                }}>Violet</button>
+                                }}>바이올렛</button>
                         </li>
                         <li>
                             <button
@@ -109,7 +109,7 @@
                                 on:click={() => {
                                     $settings.general.accentColor = "theme-purple";
                                     colorDropdownOpen = false;
-                                }}>Purple</button>
+                                }}>퍼플</button>
                         </li>
                         <li>
                             <button
@@ -117,7 +117,7 @@
                                 on:click={() => {
                                     $settings.general.accentColor = "theme-blue";
                                     colorDropdownOpen = false;
-                                }}>Blue</button>
+                                }}>블루</button>
                         </li>
                         <li>
                             <button
@@ -125,7 +125,7 @@
                                 on:click={() => {
                                     $settings.general.accentColor = "theme-green";
                                     colorDropdownOpen = false;
-                                }}>Green</button>
+                                }}>그린</button>
                         </li>
                         <li>
                             <button
@@ -133,7 +133,7 @@
                                 on:click={() => {
                                     $settings.general.accentColor = "theme-yellow";
                                     colorDropdownOpen = false;
-                                }}>Yellow</button>
+                                }}>옐로우</button>
                         </li>
                         <li>
                             <button
@@ -141,35 +141,31 @@
                                 on:click={() => {
                                     $settings.general.accentColor = "theme-orange";
                                     colorDropdownOpen = false;
-                                }}>Orange</button>
+                                }}>오렌지</button>
                         </li>
                     </ul>
                 </div>
             {/if}
         </div>
         <SettingItem
-            name="Auto Launch Lost Ark"
-            description="Automatically start Lost Ark when the app is opened."
-            bind:setting={$settings.general.startLoaOnStart} />
-        <SettingItem
-            name="Low Performance Mode"
-            description="Lowers meter update frequency to reduce CPU usage. (Requires Restart)"
+            name="저전력 모드"
+            description="집계 업데이트 주기를 줄여 CPU 사용량을 감소시킵니다. (미터기 재시작 필요)"
             bind:setting={$settings.general.lowPerformanceMode} />
         <SettingItem
-            name="Show Player Names"
-            description="Show player names if it's loaded. If disabled, it will show the class name (e.g. Arcanist)."
+            name="플레이어 이름 표시"
+            description="플레이어 이름을 불러왔을 경우 표시합니다. 비활성화시 클래스 이름(예: 아르카나)이 표시됩니다."
             bind:setting={$settings.general.showNames} />
         <SettingItem
-            name="Show Gear Score"
-            description="Show player's item level if it's loaded."
+            name="아이템 레벨 표시"
+            description="플레이어 아이템 레벨을 불러왔을 경우 표시합니다."
             bind:setting={$settings.general.showGearScore} />
         <SettingItem
-            name="Hide Names"
-            description="Hides player names completely, will not show class name either."
+            name="이름 숨기기"
+            description="플레이어 이름을 완전히 숨기며, 클래스 이름도 표시되지 않습니다."
             bind:setting={$settings.general.hideNames} />
         <SettingItem
-            name="Show Esther"
-            description="Show damage dealt by Esther skills in meter and log view."
+            name="에스더 표시"
+            description="에스더 스킬로 입힌 피해량을 미터기와 로그에 표시합니다."
             bind:setting={$settings.general.showEsther} />
         <label class="flex items-center">
             <input
@@ -180,37 +176,37 @@
                 }}
                 class="text-accent-500 size-5 rounded bg-zinc-700 focus:ring-0 focus:ring-offset-0" />
             <div class="ml-5">
-                <div class="text-gray-100">Boss Only Damage</div>
-                <div class="text-xs text-gray-300">Only track damage dealt to bosses.</div>
+                <div class="text-gray-100">보스 전용 피해</div>
+                <div class="text-xs text-gray-300">보스에게 입힌 피해만 집계됩니다.</div>
             </div>
         </label>
         <SettingItem
-            name="Boss Only Damage Default On"
-            description={"This setting makes it so that the meter will start with boss only damage turned on every time."}
+            name="보스 전용 피해 기본 설정 ON"
+            description={"이 설정을 활성화하면, 미터기를 시작할 때마다 자동으로 보스 전용 피해 설정을 활성화합니다."}
             bind:setting={$settings.general.bossOnlyDamageDefaultOn} />
         <SettingItem
-            name="Show Raid Difficulty"
-            description={"Shows the difficulty of the raid."}
+            name="레이드 난이도 표시"
+            description={"레이드의 난이도를 표시합니다."}
             bind:setting={$settings.general.showDifficulty} />
         <SettingItem
-            name="Show Raid Gate"
-            description={"Shows the gate of the raid."}
+            name="레이드 관문 표시"
+            description={"레이드의 관문을 표시합니다."}
             bind:setting={$settings.general.showGate} />
         <SettingItem
-            name="Show Shield Tab"
-            description={"Shows the shield stats for the raid."}
+            name="쉴드 탭 표시"
+            description={"레이드의 쉴드 상태를 표시합니다."}
             bind:setting={$settings.general.showShields} />
         <SettingItem
-            name="Show Tanked Tab"
-            description={"Shows the damage taken by players."}
+            name="받은 피해량 탭 표시"
+            description={"플레이어가 받은 피해량을 표시합니다"}
             bind:setting={$settings.general.showTanked} />
         <SettingItem
-            name="Show Bosses Tab"
-            description={"Shows the damage dealt by bosses and its skill breakdowns."}
+            name="보스 탭 표시"
+            description={"보스가 입힌 피해량과 그 스킬의 세부 사항을 표시합니다."}
             bind:setting={$settings.general.showBosses} />
         <SettingItem
-            name="Show Details Tab"
-            description={"Shows an additional tab in meter for raw identity and stagger data."}
+            name="세부 사항 탭 표시"
+            description={"아이덴티티와 무력화의 raw 값 데이터에 대한 추가 탭을 표시합니다."}
             bind:setting={$settings.general.showDetails} />
         <div class="">
             <label class="flex items-center">
@@ -220,14 +216,14 @@
                     on:change={toggleAlwaysOnTop}
                     class="text-accent-500 size-5 rounded bg-zinc-700 focus:ring-0 focus:ring-offset-0" />
                 <div class="ml-5">
-                    <div class="text-gray-100">Always on Top</div>
-                    <div class="text-xs text-gray-300">Sets the live meter to always be on top of other windows.</div>
+                    <div class="text-gray-100">항상 위로</div>
+                    <div class="text-xs text-gray-300">미터기를 항상 다른 창 위에 표시되도록 설정합니다.</div>
                 </div>
             </label>
         </div>
         <SettingItem
-            name="Hide Logo in Screenshot"
-            description={'Hides the meter name "LOA Logs KR" in the screenshot.'}
+            name="스크린샷에서 로고 숨기기"
+            description={'스크린샷에서 미터기 이름 "LOA Logs KR"을 숨깁니다.'}
             bind:setting={$settings.general.hideLogo} />
         <div>
             <label class="flex items-center">
@@ -239,10 +235,9 @@
                     }}
                     class="text-accent-500 size-5 rounded bg-zinc-700 focus:ring-0 focus:ring-offset-0" />
                 <div class="ml-5">
-                    <div class="text-gray-100">Auto Network Selection</div>
+                    <div class="text-gray-100">자동 네트워크 선택</div>
                     <div class="text-xs text-gray-300">
-                        Automatically select network interface. If using a VPN, turn this off and select the VPN
-                        interface.
+                        네트워크 인터페이스를 자동으로 선택합니다. VPN을 사용하는 경우, 이 설정을 끄고 VPN 인터페이스를 선택하세요.
                     </div>
                 </div>
             </label>

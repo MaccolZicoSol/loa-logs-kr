@@ -82,7 +82,7 @@
             <div class="absolute inset-y-0 left-0 flex cursor-default items-center pl-2">
                 <div class="relative flex items-center">
                     <button
-                        use:tooltip={{ content: "Search Filter" }}
+                        use:tooltip={{ content: "필터 검색" }}
                         on:click|stopPropagation={() => {
                             filterMenu = !filterMenu;
                         }}>
@@ -114,7 +114,7 @@
                                         on:click={() => {
                                             filterTab = "Encounters";
                                         }}>
-                                        Encounters
+                                        전투
                                     </button>
                                     <button
                                         class="border-b px-1 {filterTab === 'Bosses'
@@ -123,7 +123,7 @@
                                         on:click={() => {
                                             filterTab = "Bosses";
                                         }}>
-                                        Bosses
+                                        가디언
                                     </button>
                                     <button
                                         class="border-b px-1 {filterTab === 'Classes'
@@ -132,7 +132,7 @@
                                         on:click={() => {
                                             filterTab = "Classes";
                                         }}>
-                                        Classes
+                                        클래스
                                     </button>
                                     <button
                                         class="border-b px-1 {filterTab === 'Duration'
@@ -141,7 +141,7 @@
                                         on:click={() => {
                                             filterTab = "Duration";
                                         }}>
-                                        Duration
+                                        소요 시간
                                     </button>
                                 </div>
                                 <button
@@ -153,28 +153,28 @@
                                         $searchFilter = sf;
                                         $pageStore = 1;
                                     }}>
-                                    Reset All
+                                    전부 초기화
                                 </button>
                             </div>
                             {#if filterTab === "Encounters"}
                                 <div class="h-36 overflow-auto px-2 py-1 text-xs">
                                     <div class="flex items-center space-x-4 px-2 py-1 text-xs">
                                         <label class="flex items-center">
-                                            <div class="mr-2 text-gray-100">Raid Cleared</div>
+                                            <div class="mr-2 text-gray-100">클리어만</div>
                                             <input
                                                 type="checkbox"
                                                 bind:checked={$searchFilter.cleared}
                                                 class="text-accent-500 size-4 rounded bg-zinc-700 focus:ring-0 focus:ring-offset-0" />
                                         </label>
                                         <label class="flex items-center">
-                                            <div class="mr-2 text-gray-100">Favorites</div>
+                                            <div class="mr-2 text-gray-100">즐겨찾기만</div>
                                             <input
                                                 type="checkbox"
                                                 bind:checked={$searchFilter.favorite}
                                                 class="text-accent-500 size-4 rounded bg-zinc-700 focus:ring-0 focus:ring-offset-0" />
                                         </label>
                                         <label class="flex items-center">
-                                            <div class="mr-2 text-gray-100">Boss Only</div>
+                                            <div class="mr-2 text-gray-100">보스 전용만</div>
                                             <input
                                                 type="checkbox"
                                                 bind:checked={$searchFilter.bossOnlyDamage}
@@ -231,21 +231,21 @@
                                 <div class="h-36 overflow-auto px-2 py-1 text-xs">
                                     <div class="flex items-center space-x-4 px-2 py-1 text-xs">
                                         <label class="flex items-center">
-                                            <div class="mr-2 text-gray-100">Raid Cleared</div>
+                                            <div class="mr-2 text-gray-100">클리어만</div>
                                             <input
                                                 type="checkbox"
                                                 bind:checked={$searchFilter.cleared}
                                                 class="text-accent-500 size-4 rounded bg-zinc-700 focus:ring-0 focus:ring-offset-0" />
                                         </label>
                                         <label class="flex items-center">
-                                            <div class="mr-2 text-gray-100">Favorites</div>
+                                            <div class="mr-2 text-gray-100">즐겨찾기만</div>
                                             <input
                                                 type="checkbox"
                                                 bind:checked={$searchFilter.favorite}
                                                 class="text-accent-500 size-4 rounded bg-zinc-700 focus:ring-0 focus:ring-offset-0" />
                                         </label>
                                         <label class="flex items-center">
-                                            <div class="mr-2 text-gray-100">Boss Only</div>
+                                            <div class="mr-2 text-gray-100">보스 전용만</div>
                                             <input
                                                 type="checkbox"
                                                 bind:checked={$searchFilter.bossOnlyDamage}
@@ -295,7 +295,7 @@
                                         <div class="flex items-center justify-between">
                                             <label class="flex items-center font-medium">
                                                 <div class="mr-2">
-                                                    <div class="text-gray-100">Min Duration:</div>
+                                                    <div class="text-gray-100">최소 소요 시간:</div>
                                                 </div>
                                                 <input
                                                     type="number"
@@ -303,14 +303,14 @@
                                                     class="h-6 w-20 rounded-md bg-zinc-700 text-xs text-gray-300"
                                                     bind:value={$searchFilter.minDuration}
                                                     placeholder={$settings.logs.minEncounterDuration} />
-                                                <div class="ml-2">seconds</div>
+                                                <div class="ml-2">초</div>
                                             </label>
                                             <button
                                                 class="mx-2 h-6 rounded bg-zinc-800 px-1 text-xs hover:bg-zinc-600"
                                                 on:click={() => {
                                                     $searchFilter.minDuration = $settings.logs.minEncounterDuration;
                                                 }}>
-                                                Reset
+                                                초기화
                                             </button>
                                         </div>
                                     </div>
@@ -325,7 +325,7 @@
                 maxlength="128"
                 bind:value={search}
                 class="focus:border-accent-500 block w-96 rounded-lg border border-gray-600 bg-zinc-700 px-8 text-sm text-zinc-300 placeholder-gray-400 focus:ring-0"
-                placeholder="Search encounters, names, or class:name pairs"
+                placeholder="전투, 이름 또는 클래스:이름(한쌍)을 검색하세요"
                 on:input={handleSearchInput} />
             {#if $searchStore.length > 0}
                 <button
@@ -364,7 +364,7 @@
             <svg class="size-5 fill-zinc-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
                 ><path
                     d="M191-99.5q-37.744 0-64.622-26.878T99.5-191v-578q0-38.156 26.878-65.328Q153.256-861.5 191-861.5h578q15.545 0 34.773 8.5Q823-844.5 833-836l-71 71v-4H191v578h578v-330l92.5-92.5V-191q0 37.744-27.172 64.622T769-99.5H191ZM467-296 247-516l48-48.5 172.158 172 392.342-392 47 49.5L467-296Z" /></svg>
-            <div class="px-1">Select</div>
+            <div class="px-1">선택</div>
         </button>
     </div>
 </div>
@@ -402,19 +402,19 @@
                                 d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                                 class="s-Qbr4I8QhaoSZ" /></svg>
                         <h3 class="mb-5 text-lg font-normal text-gray-400">
-                            Are you sure you want to delete {$selectedEncounters.size} encounters?
+                            정말로 {$selectedEncounters.size}개의 전투를 삭제하시겠습니까?
                         </h3>
                         <button
                             type="button"
                             class="mr-2 inline-flex items-center justify-center rounded-lg bg-red-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-red-800 focus:outline-none"
                             on:click={deleteSelected}>
-                            Yes, I'm sure
+                            네, 삭제합니다
                         </button>
                         <button
                             type="button"
                             class="inline-flex items-center justify-center rounded-lg bg-gray-800 bg-transparent px-5 py-2.5 text-center text-sm font-medium text-gray-400 hover:bg-zinc-700 hover:text-white focus:text-white focus:outline-none"
                             on:click={() => (deleteConfirm = false)}>
-                            No, cancel
+                            아니요, 취소
                         </button>
                     </div>
                 </div>

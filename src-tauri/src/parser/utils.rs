@@ -369,7 +369,7 @@ pub fn get_skill_name_and_icon(
                     {
                         if let Some(skill) = SKILL_DATA.get(source) {
                             return (
-                                skill.name.clone() + " (Summon)",
+                                skill.name.clone() + " (소환수)",
                                 skill.icon.clone(),
                                 Some(summon_source_skill.clone()),
                             );

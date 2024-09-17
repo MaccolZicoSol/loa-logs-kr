@@ -19,7 +19,7 @@
 <LogSidebar bind:hidden />
 <div class="custom-scroll h-screen overflow-y-scroll bg-zinc-800 pb-8">
     <div class="sticky top-0 flex h-16 justify-between bg-zinc-800 px-8 py-5 shadow-md">
-        <Title text="Changelog" bind:hidden />
+        <Title text="변경 내역" bind:hidden />
     </div>
     <div
         class="prose-a:text-accent-500 prose prose-sm prose-zinc prose-invert mx-14 my-6 tracking-tight text-gray-200 prose-img:-my-2 prose-img:rounded-md prose-img:border prose-img:border-zinc-600 prose-img:shadow-md">

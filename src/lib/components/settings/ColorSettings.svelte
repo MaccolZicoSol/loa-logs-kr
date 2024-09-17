@@ -13,7 +13,7 @@
         <div class="flex items-center justify-between">
             <div>
                 <div class="flex items-center pb-2">
-                    <div class="font-medium text-gray-100">Local Player Color</div>
+                    <div class="font-medium text-gray-100">로컬 플레이어</div>
                 </div>
             </div>
             <div class="flex items-center space-x-2">
@@ -28,7 +28,7 @@
                 <button
                     class="rounded-md bg-zinc-600 p-1 text-xs hover:bg-zinc-700"
                     on:click={() => resetDefaultColor("Local")}
-                    >Reset
+                    >초기화
                 </button>
             </div>
         </div>
@@ -57,7 +57,7 @@
                     <button
                         class="rounded-md bg-zinc-600 p-1 text-xs hover:bg-zinc-700"
                         on:click={() => resetDefaultColor(classColor[0])}
-                        >Reset
+                        >초기화
                     </button>
                 </div>
             </div>

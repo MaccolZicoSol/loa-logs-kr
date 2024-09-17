@@ -34,11 +34,11 @@
         <tr class="bg-zinc-900 tracking-tighter">
             <th class="w-14 px-2 text-left font-normal" />
             <th class="w-full" />
-            <th class="w-14 font-normal" use:tooltip={{ content: "Damage Dealt" }}>DMG</th>
-            <th class="w-14 font-normal" use:tooltip={{ content: "Damage per second" }}>DPS</th>
-            <th class="w-10 font-normal" use:tooltip={{ content: "Damage %" }}>D%</th>
-            <th class="w-10 font-normal" use:tooltip={{ content: "Total Casts" }}>Casts</th>
-            <th class="w-10 font-normal" use:tooltip={{ content: "Casts per minute" }}>CPM</th>
+            <th class="w-14 font-normal" use:tooltip={{ content: "입힌 피해량" }}>DMG</th>
+            <th class="w-14 font-normal" use:tooltip={{ content: "초당 피해량" }}>DPS</th>
+            <th class="w-10 font-normal" use:tooltip={{ content: "피해량 %" }}>D%</th>
+            <th class="w-10 font-normal" use:tooltip={{ content: "총 시전" }}>Casts</th>
+            <th class="w-10 font-normal" use:tooltip={{ content: "분당 시전" }}>CPM</th>
         </tr>
     </thead>
     <tbody on:contextmenu|preventDefault={handleRightClick} class="relative z-10">

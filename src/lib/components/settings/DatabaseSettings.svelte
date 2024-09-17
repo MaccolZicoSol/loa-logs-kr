@@ -62,12 +62,12 @@
 
 <div class="mt-4 flex flex-col space-y-2 px-2">
     <div class="flex items-center space-x-4">
-        <div>Database Folder:</div>
-        <button class="rounded-md bg-zinc-600 p-1 hover:bg-zinc-700" on:click={openDbFolder}> Open</button>
+        <div>데이터베이스 폴더:</div>
+        <button class="rounded-md bg-zinc-600 p-1 hover:bg-zinc-700" on:click={openDbFolder}>열기</button>
     </div>
     <div class="flex items-center space-x-4">
         <div use:tooltip={{ content: "Use this feature if searching is slow" }}>
-            Optimize Database (Only use if Search is Slow):
+            데이터베이스 최적화 (검색 속도가 느릴 때만 사용):
         </div>
         <button
             class="w-20 rounded-md p-1 {$optimized ? 'disabled bg-gray-600' : 'bg-accent-800 hover:bg-accent-900'}"
@@ -79,76 +79,76 @@
                 $optimized = true;
             }}>
             {#if $optimized}
-                Optimized
+                최적화됨
             {:else}
-                Optimize
+                최적화
             {/if}
         </button>
     </div>
     <SettingItem
-        name="Keep Favorites"
-        description="Encounters marked as favorites will not be deleted using the options below"
+        name="즐겨찾기 유지"
+        description="아래 옵션들을 사용해도 즐겨찾기한 전투는 삭제되지 않습니다."
         bind:setting={$settings.general.keepFavorites} />
     {#if encounterDbInfo}
         <div class="flex items-center space-x-2">
-            <div>Database Size:</div>
+            <div>데이터베이스 용량:</div>
             <div class="font-gothic">
                 {encounterDbInfo.size}
             </div>
         </div>
         <div class="flex items-center space-x-2">
-            <div use:tooltip={{ content: "Total encounters" }}>Total Encounters Saved:</div>
+            <div use:tooltip={{ content: "Total encounters" }}>저장된 총 전투 수:</div>
             <div class="font-gothic">
                 {encounterDbInfo.totalEncounters.toLocaleString()}
             </div>
         </div>
         {#if encounterDbInfo.totalEncounters - encounterDbInfo.totalEncountersFiltered > 0}
             <div class="flex items-center space-x-2">
-                <div use:tooltip={{ content: "Total encounters > minimum duration" }}>Total Encounters Filtered:</div>
+                <div use:tooltip={{ content: "Total encounters > minimum duration" }}>필터링된 총 전투 수:</div>
                 <div class="font-gothic">
                     {encounterDbInfo.totalEncountersFiltered.toLocaleString()}
                 </div>
             </div>
             <div class="flex items-center space-x-4">
-                <div>Delete Encounters Below Minimum Duration:</div>
+                <div>최소 소요 시간 이하의 전투 삭제:</div>
                 <button
                     class="rounded-md bg-red-800 p-1 hover:bg-red-900"
                     on:click={() => {
                         deleteConfirm = true;
-                        deleteMsg = `Are you sure you want to delete ${(
+                        deleteMsg = `정말로 ${(
                             encounterDbInfo.totalEncounters - encounterDbInfo.totalEncountersFiltered
-                        ).toLocaleString()} encounters? (might take a while)`;
+                        ).toLocaleString()}개의 전투를 삭제하시겠습니까? (시간이 걸릴 수 있습니다)`;
                         deleteFn = deleteEncounterBelowMinDuration;
                     }}>
-                    Delete
+                    삭제
                 </button>
             </div>
         {/if}
         {#if encounterDbInfo.totalEncounters > 0}
             <div class="flex items-center space-x-4">
-                <div>Delete all uncleared encounters:</div>
+                <div>클리어되지 않은 모든 전투 삭제:</div>
                 <button
                     class="rounded-md bg-red-800 p-1 hover:bg-red-900"
                     on:click={() => {
                         deleteConfirm = true;
-                        deleteMsg = `Are you sure you want to delete all encounters that were not cleared?`;
+                        deleteMsg = `정말로 클리어되지 않은 모든 전투를 삭제하시겠습니까?`;
                         deleteFn = deleteAllUnclearedEncounters;
                     }}>
-                    Delete
+                    삭제
                 </button>
             </div>
         {/if}
         {#if encounterDbInfo.totalEncounters > 0}
             <div class="flex items-center space-x-4">
-                <div>Delete all encounters:</div>
+                <div>모든 전투 삭제:</div>
                 <button
                     class="rounded-md bg-red-800 p-1 hover:bg-red-900"
                     on:click={() => {
                         deleteConfirm = true;
-                        deleteMsg = `Are you sure you want to delete ALL ${encounterDbInfo.totalEncounters.toLocaleString()} encounters? (this is unreversable)`;
+                        deleteMsg = `정말로 모든 ${encounterDbInfo.totalEncounters.toLocaleString()}개의 전투를 삭제하시겠습니까? (이 작업은 취소할 수 없습니다)`;
                         deleteFn = deleteAllEncounters;
                     }}>
-                    Delete
+                    삭제
                 </button>
             </div>
         {/if}
@@ -161,12 +161,12 @@
             <div class="relative mx-auto flex flex-col rounded-lg border-gray-700 bg-zinc-800 text-gray-400 shadow-md">
                 <div id="modal" class="flex-1 space-y-2 overflow-y-auto overscroll-contain p-6 text-center">
                     <div>
-                        Optimizing Database. Do <span class="font-bold">NOT</span> close the app.
+                        데이터베이스 최적화 중입니다. <span class="font-bold">앱을 닫지 마세요</span>.
                     </div>
                     <div>
-                        App might become unresponsive, please be patient.
+                        앱이 응답하지 않을 수 있습니다. 잠시만 기다려 주세요.
                     </div>
-                    <div class="">This might take a while...</div>
+                    <div class="">이 작업은 시간이 걸릴 수 있습니다...</div>
                 </div>
             </div>
         </div>
@@ -215,16 +215,16 @@
                                 type="button"
                                 class="mr-2 inline-flex items-center justify-center rounded-lg bg-red-700 px-5 py-2.5 text-center text-sm text-white hover:bg-red-800 focus:outline-none"
                                 on:click={deleteFn}>
-                                Yes, I'm sure
+                                네, 삭제합니다
                             </button>
                             <button
                                 type="button"
                                 class="inline-flex items-center justify-center rounded-lg bg-gray-800 bg-transparent px-5 py-2.5 text-center text-sm text-gray-400 hover:bg-zinc-700 hover:text-white focus:text-white focus:outline-none"
                                 on:click={() => (deleteConfirm = false)}>
-                                No, cancel
+                                아니요, 취소
                             </button>
                         {:else}
-                            <div>Deleting...</div>
+                            <div>삭제중...</div>
                         {/if}
                     </div>
                 </div>

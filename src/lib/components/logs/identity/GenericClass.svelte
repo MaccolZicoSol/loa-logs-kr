@@ -84,18 +84,18 @@
 <div class="px relative top-0">
     {#if identityStats.average}
         <div class="mt-4">
-            <div class="mb-2 text-lg font-medium tracking-tight">{className} Identity Stats</div>
+            <div class="mb-2 text-lg font-medium tracking-tight">{className} 아아덴티티 통계</div>
             <div>
-                Average Identity Gain: <span class="font-medium">{identityStats.average.toFixed(1)}%/s</span>
+                아이덴티티 평균 수급량: <span class="font-medium">{identityStats.average.toFixed(1)}%/초</span>
             </div>
             <div>
-                Identity per min: <span class="font-medium"
-                    >{((identityStats.average / 100) * 60).toFixed(1)} per min</span>
+                분당 아이덴티티: <span class="font-medium"
+                    >{((identityStats.average / 100) * 60).toFixed(1)} 분당</span>
             </div>
         </div>
     {/if}
     <div class="mt-4">
-        <div class="text-lg font-medium">Identity Log</div>
+        <div class="text-lg font-medium">아이덴티티 로그</div>
         <div class="mt-2 h-[200px]" use:chartable={identityLogOptions} style="width: calc(100vw - 4.5rem);" />
     </div>
 </div>

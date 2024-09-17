@@ -98,10 +98,10 @@
 
 <div class="mb-4 mt-2 min-h-[30rem]">
     <div class="flex justify-start text-lg font-medium">
-        <div use:menuTooltip={{ content: "Details about a skill casted during the raid" }}>Skill Cast Details</div>
+        <div use:menuTooltip={{ content: "레이드 중 시전된 스킬에 대한 세부 사항" }}>스킬 시전 세부 사항</div>
     </div>
     {#if $focusedSkillCast.skillId === 0}
-        <div>Click on a skill cast to show details.</div>
+        <div>스킬 시전을 클릭하여 세부 사항을 확인</div>
     {:else if skill}
         <div class="px-1 pb-2">
             <div class="flex items-center pt-1 pb-2">
@@ -114,7 +114,7 @@
                     Find Max Cast
                 </button>
                 <button
-                    use:tooltip={{ content: "Previous Cast" }}
+                    use:tooltip={{ content: "이전 시전" }}
                     class="pr-1"
                     on:click={() => {
                         if ($focusedSkillCast.cast > 0) {
@@ -131,7 +131,7 @@
                     </svg>
                 </button>
                 <button
-                    use:tooltip={{ content: "Next Cast" }}
+                    use:tooltip={{ content: "다음 시전" }}
                     class="px-1"
                     on:click={() => {
                         if ($focusedSkillCast.cast < skill.skillCastLog.length - 1) $focusedSkillCast.cast += 1;
@@ -147,10 +147,10 @@
                 </button>
             </div>
             <div class="pb-2 font-medium">
-                <span use:tooltip={{ content: "Skill duration, from cast to last tick of damage" }}>
+                <span use:tooltip={{ content: "스킬 지속 시간, 시전부터 마지막 피해 발생까지" }}>
                     {formatDurationFromMs(skillCast.timestamp)}-{formatDurationFromMs(skillCast.last)} ({round(
                         (skillCast.last - skillCast.timestamp) / 1000
-                    )}s)
+                    )}초)
                 </span>
             </div>
             <div class="flex items-center space-x-2">
@@ -159,131 +159,75 @@
                     {skill.name} #{$focusedSkillCast.cast + 1}
                 </div>
             </div>
-            <div class="py-2">
-                Total Damage: <span class="font-semibold" use:tooltip={{ content: totalDamage.toLocaleString() }}
-                    >{abbreviateNumber(totalDamage)}</span>
-            </div>
-            <div>
-                Crit: <span class="font-semibold">{round(skillCast.hits.length !== 0 ? (modInfo.crit / skillCast.hits.length) * 100 : 0)}%</span>
-                | CDMG:
-                <span class="font-semibold"
-                    >{round(totalDamage !== 0 ? (modInfo.critDamage / totalDamage) * 100 : 0)}%</span>
-                {#if modInfo.ba > 0}
-                    | BA: <span class="font-semibold">{round((modInfo.ba / skillCast.hits.length) * 100)}%</span>
-                {/if}
-                {#if modInfo.fa > 0}
-                    | FA: <span class="font-semibold">{round((modInfo.fa / skillCast.hits.length) * 100)}%</span>
-                {/if}
-            </div>
-            <div class="">
-                Buff: <span class="font-semibold"
-                    >{round(totalDamage !== 0 ? (supportBuffs.buff / totalDamage) * 100 : 0)}%</span>
-                | Brand:
-                <span class="font-semibold"
-                    >{round(totalDamage !== 0 ? (supportBuffs.brand / totalDamage) * 100 : 0)}%</span>
-                | Identity:
-                <span class="font-semibold"
-                    >{round(totalDamage !== 0 ? (supportBuffs.identity / totalDamage) * 100 : 0)}%</span>
-            </div>
-            <table class="mt-2 w-[60rem] table-fixed">
-                <thead>
-                    <tr>
-                        <td class="w-12 font-semibold" use:tooltip={{ content: "Each damage tick" }}>Hits</td>
-                        <td class="w-16 font-semibold" use:tooltip={{ content: "Time since previous damage tick" }}
-                            >Ticks</td>
-                        <td class="w-12 font-semibold" use:tooltip={{ content: "Hit modifiers, e.g. Crit, BA, FA" }}
-                            >Mods</td>
-                        <td class="w-18 font-semibold" use:tooltip={{ content: "Hit damage" }}>DMG</td>
-                        <td class="w-full font-semibold">
-                            <span use:tooltip={{ content: "Party Buffs" }}>
-                                <button
-                                    class={$buffType === "party" ? "text-accent-500" : "hover:text-accent-500"}
-                                    on:click={() => {
-                                        $buffType = "party";
-                                    }}>
-                                    Party
-                                </button>
-                            </span>
-                            |
-                            <span use:tooltip={{ content: "Self Buffs, including Relic Sets" }}>
-                                <button
-                                    class={$buffType === "self" ? "text-accent-500" : "hover:text-accent-500"}
-                                    on:click={() => {
-                                        $buffType = "self";
-                                    }}>
-                                    Self
-                                </button>
-                            </span>
-                            |
-                            <span use:tooltip={{ content: "All other buffs, e.g. Darks, Atros, etc." }}>
-                                <button
-                                    class={$buffType === "misc" ? "text-accent-500" : "hover:text-accent-500"}
-                                    on:click={() => {
-                                        $buffType = "misc";
-                                    }}>
-                                    Misc.
-                                </button>
-                            </span>
-                            Buffs
-                        </td>
-                    </tr>
-                </thead>
-                <tbody>
-                    {#each skillCast.hits as hit, i (i)}
+            {#if skillCast.hits.length === 0}
+                <div class="py-2">노 히트</div>
+            {:else}
+                <div class="py-2">
+                    총 피해량: <span class="font-semibold" use:tooltip={{ content: totalDamage.toLocaleString() }}
+                        >{abbreviateNumber(totalDamage)}</span>
+                </div>
+                <div>
+                    치명타: <span class="font-semibold">{round((modInfo.crit / skillCast.hits.length) * 100)}%</span>
+                    | 치명타 피해량:
+                    <span class="font-semibold"
+                        >{round(totalDamage !== 0 ? (modInfo.critDamage / totalDamage) * 100 : 0)}%</span>
+                    {#if modInfo.ba > 0}
+                        | 백어택: <span class="font-semibold">{round((modInfo.ba / skillCast.hits.length) * 100)}%</span>
+                    {/if}
+                    {#if modInfo.fa > 0}
+                        | 헤드어택: <span class="font-semibold">{round((modInfo.fa / skillCast.hits.length) * 100)}%</span>
+                    {/if}
+                </div>
+                <div class="">
+                    버프: <span class="font-semibold"
+                        >{round(totalDamage !== 0 ? (supportBuffs.buff / totalDamage) * 100 : 0)}%</span>
+                    | 낙인:
+                    <span class="font-semibold"
+                        >{round(totalDamage !== 0 ? (supportBuffs.brand / totalDamage) * 100 : 0)}%</span>
+                    | 아덴:
+                    <span class="font-semibold"
+                        >{round(totalDamage !== 0 ? (supportBuffs.identity / totalDamage) * 100 : 0)}%</span>
+                </div>
+                <table class="mt-2 w-[60rem] table-fixed">
+                    <thead>
                         <tr>
-                            <td class="h-7 font-gothic">#{i + 1}</td>
-                            {#if i === 0}
-                                <td class="font-gothic">
-                                    <span use:tooltip={{ content: `${formatDurationFromMs(hit.timestamp)}s` }}>
-                                        +{round((hit.timestamp - skillCast.timestamp) / 1000)}s
-                                    </span>
-                                </td>
-                            {:else}
-                                <td class="font-gothic">
-                                    <span use:tooltip={{ content: `${formatDurationFromMs(hit.timestamp)}s` }}>
-                                        +{round((hit.timestamp - skillCast.hits[i - 1].timestamp) / 1000)}s
-                                    </span>
-                                </td>
-                            {/if}
-                            <td class="font-gothic">
-                                {#if hit.crit}
-                                    <span use:tooltip={{ content: "Critical Hit" }}>C</span>
-                                {/if}
-                                {#if hit.backAttack}
-                                    <span use:tooltip={{ content: "Back Attack" }}>B</span>
-                                {/if}
-                                {#if hit.frontAttack}
-                                    <span use:tooltip={{ content: "Front Attack" }}>F</span>
-                                {/if}
-                                {#if !hit.crit && !hit.backAttack && !hit.frontAttack}
-                                    -
-                                {/if}
-                            </td>
-                            <td class="font-gothic">
-                                <span use:tooltip={{ content: hit.damage.toLocaleString() }}>
-                                    {abbreviateNumber(hit.damage)}
+                            <td class="w-12 font-semibold" use:tooltip={{ content: "각 피해 틱" }}>타격</td>
+                            <td class="w-18 font-semibold" use:tooltip={{ content: "이전 피해 발생 이후 경과 시간" }}
+                                >틱</td>
+                            <td class="w-16 font-semibold" use:tooltip={{ content: "타격 수식어, 예: 치명타, 헤드어택, 백어택" }}
+                                >수식어</td>
+                            <td class="w-18 font-semibold" use:tooltip={{ content: "타격 피해량" }}>피해량</td>
+                            <td class="w-full font-semibold">
+                                <span use:tooltip={{ content: "파티 버프" }}>
+                                    <button
+                                        class={$buffType === "party" ? "text-accent-500" : "hover:text-accent-500"}
+                                        on:click={() => {
+                                            $buffType = "party";
+                                        }}>
+                                        파티
+                                    </button>
                                 </span>
                                 |
-                                <span use:tooltip={{ content: "Self Buffs, including Relic Sets" }}>
+                                <span use:tooltip={{ content: "자버프, 방어구 세트 옵션 포함" }}>
                                     <button
                                         class={$buffType === "self" ? "text-accent-500" : "hover:text-accent-500"}
                                         on:click={() => {
                                             $buffType = "self";
                                         }}>
-                                        Self
+                                        자
                                     </button>
                                 </span>
                                 |
-                                <span use:tooltip={{ content: "All other buffs, e.g. Darks, Atros, etc." }}>
+                                <span use:tooltip={{ content: "기타 모든 버프" }}>
                                     <button
                                         class={$buffType === "misc" ? "text-accent-500" : "hover:text-accent-500"}
                                         on:click={() => {
                                             $buffType = "misc";
                                         }}>
-                                        Misc.
+                                        기타
                                     </button>
                                 </span>
-                                Buffs
+                                버프
                             </td>
                         </tr>
                     </thead>
@@ -292,27 +236,27 @@
                             <tr>
                                 <td class="h-7 font-mono">#{i + 1}</td>
                                 {#if i === 0}
-                                    <td class="font-mono">
-                                        <span use:tooltip={{ content: `${formatDurationFromMs(hit.timestamp)}s` }}>
-                                            +{round((hit.timestamp - skillCast.timestamp) / 1000)}s
+                                    <td class="font-gothic">
+                                        <span use:tooltip={{ content: `${formatDurationFromMs(hit.timestamp)}초` }}>
+                                            +{round((hit.timestamp - skillCast.timestamp) / 1000)}초
                                         </span>
                                     </td>
                                 {:else}
-                                    <td class="font-mono">
-                                        <span use:tooltip={{ content: `${formatDurationFromMs(hit.timestamp)}s` }}>
-                                            +{round((hit.timestamp - skillCast.hits[i - 1].timestamp) / 1000)}s
+                                    <td class="font-gothic">
+                                        <span use:tooltip={{ content: `${formatDurationFromMs(hit.timestamp)}초` }}>
+                                            +{round((hit.timestamp - skillCast.hits[i - 1].timestamp) / 1000)}초
                                         </span>
                                     </td>
                                 {/if}
                                 <td class="font-mono">
                                     {#if hit.crit}
-                                        <span use:tooltip={{ content: "Critical Hit" }}>C</span>
+                                        <span use:tooltip={{ content: "치명타 타격" }}>치</span>
                                     {/if}
                                     {#if hit.backAttack}
-                                        <span use:tooltip={{ content: "Back Attack" }}>B</span>
+                                        <span use:tooltip={{ content: "백 어택" }}>백</span>
                                     {/if}
                                     {#if hit.frontAttack}
-                                        <span use:tooltip={{ content: "Front Attack" }}>F</span>
+                                        <span use:tooltip={{ content: "헤드 어택" }}>헤</span>
                                     {/if}
                                     {#if !hit.crit && !hit.backAttack && !hit.frontAttack}
                                         -

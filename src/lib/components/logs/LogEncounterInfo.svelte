@@ -21,7 +21,7 @@
     <div class="flex items-center justify-between px-1 tracking-tight">
         <div>
             {#if cleared}
-                <span class="text-lime-400">[Cleared]</span>
+                <span class="text-lime-400">[클리어]</span>
             {/if}
             {#if bossOnlyDamage}
                 <BossOnlyDamage/>
@@ -61,7 +61,7 @@
                 {encounterDuration}
             </div>
             <div class="flex space-x-1 tracking-tighter text-gray-300">
-                <div>총 데미지:</div>
+                <div>총 피해량:</div>
                 {#if $settings.logs.abbreviateHeader}
                     <div class="text-white">
                         {abbreviateNumber(totalDamageDealt)}

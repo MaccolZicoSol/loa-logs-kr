@@ -105,9 +105,9 @@
     {#if $screenshotAlert}
         <Notification
             bind:showAlert={$screenshotError}
-            text={"Screenshot Copied to Clipboard"}
+            text={"스크린샷이 클립보드에 복사되었습니다."}
             dismissable={false}
-            width="18rem" />
+            width="19rem" />
     {/if}
     {#if $screenshotError}
         <Notification bind:showAlert={$screenshotError} text={"Error Taking Screenshot"} width="18rem" isError={true} />

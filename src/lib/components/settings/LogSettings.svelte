@@ -9,9 +9,9 @@
         <label class="flex flex-col pb-4 pt-2">
             <div class="flex items-center justify-between px-2">
                 <div class="pb-2">
-                    <div class="text-gray-100">Minimum Encounter Duration</div>
+                    <div class="text-gray-100">최소 전투 소요 시간</div>
                     <div class="text-xs text-gray-300">
-                        Only show encounters that are longer than the specified duration
+                        지정된 시간보다 긴 전투만 표시합니다.
                     </div>
                 </div>
                 <div class="rounded bg-zinc-700 px-2 py-1">
@@ -33,185 +33,181 @@
             </datalist>
         </label>
         <SettingItem
-            name="Abbreviate Header"
-            description="Abbreviates the Total DMG and Total DPS numbers in the header"
+            name="상단 축약"
+            description="상단에있는 총 피해량과 총 DPS 수치를 축약해서 표시합니다."
             bind:setting={$settings.logs.abbreviateHeader} />
         <SettingItem
-            name="Split Party Damage"
-            description="Split players into their respective parties for damage dealt"
-            bind:setting={$settings.logs.splitPartyDamage} />
-        <SettingItem
-            name="Split Party Buffs"
-            description="Split players into their respective parties for party buffs"
+            name="파티 버프 분리"
+            description="파티 버프를 위해 플레이어를 각자의 파티로 나눕니다."
             bind:setting={$settings.logs.splitPartyBuffs} />
         <SettingItem
-            name="Death Time"
-            description="Show how long a party member has died"
+            name="죽은 시간"
+            description="파티원이 죽고 경과한 시간을 표시합니다."
             bind:setting={$settings.logs.deathTime} />
         <SettingItem
-            name="Damage"
-            description="Show the damage dealt by the player in the current encounter"
+            name="피해량"
+            description="현재 전투에서 플레이어가 입힌 피해량을 표시합니다."
             bind:setting={$settings.logs.damage} />
         <SettingItem
-            name="Damage %"
-            description="Show the damage percentage of the player relative to the entire raid"
+            name="피해량 %"
+            description="공대에 대한 플레이어의 피해 비율을 표시합니다."
             bind:setting={$settings.logs.damagePercent} />
         <SettingItem
             name="DPS"
-            description="Show the current damage per second"
+            description="초당 피해량을 표시합니다."
             bind:setting={$settings.logs.dps} />
         <SettingItem
-            name="Crit Rate"
-            description="Show the critical strike rate"
+            name="치명타 비율"
+            description="치명타 비율을 표시합니다."
             bind:setting={$settings.logs.critRate} />
         <SettingItem
-            name="Crit Damage"
-            description="Show percentage of damage that crit"
+            name="치명타 피해량"
+            description="치명타 피해량의 비율을 표시합니다."
             bind:setting={$settings.logs.critDmg} />
         <SettingItem
-            name="Front Attack"
-            description="Show the front attack percentage"
+            name="헤드 어택"
+            description="헤드 어택 비율을 표시합니다."
             bind:setting={$settings.logs.frontAtk} />
         <SettingItem
-            name="Back Attack"
-            description="Show the back attack percentage"
+            name="백 어택"
+            description="백 어택 비율을 표시합니다."
             bind:setting={$settings.logs.backAtk} />
         <SettingItem
-            name="Crit Damage %"
-            description="Show crit damage percentage as % of total damage instead of % of hits"
+            name="치명타 피해량 %"
+            description="치명타 피해량 비율을 타격 수가 아닌 총 피해량의 비율로 표시합니다."
             bind:setting={$settings.logs.critDmgPercent} />
         <SettingItem
-            name="Positional Damage %"
-            description="Show front/back attack percentage as % of total damage instead of % of hits"
+            name="위치별 피해량 %"
+            description="헤드/백 어택의 비율을 타격 수가 아닌 총 피해량의 비율로 표시합니다."
             bind:setting={$settings.logs.positionalDmgPercent} />
         <SettingItem
-            name="Support Buff %"
-            description="Show the percentage of damage buffed by support attack power buff"
+            name="서폿 버프 %"
+            description="공격력 증가 버프로 증가된 피해량의 비율을 표시합니다."
             bind:setting={$settings.logs.percentBuffBySup} />
         <SettingItem
-            name="Support Brand %"
-            description="Show the percentage of damage buffed by support's brand skill (e.g. Bard's Sound Shock)"
+            name="서폿 낙인 %"
+            description="낙인 스킬(예: 사운드 쇼크, 빛의 충격, 난치기 등)로 증가된 피해량의 비율을 표시합니다."
             bind:setting={$settings.logs.percentBrand} />
         <SettingItem
-            name="Support Identity %"
-            description="Show the percentage of damage buffed by support identity"
+            name="서폿 아이덴티티 %"
+            description="아이덴티티로 증가된 피해량의 비율을 표시합니다."
             bind:setting={$settings.logs.percentIdentityBySup} />
         <SettingItem
-            name="Support Synergy %"
-            description="Show the percentage of damage gained from support synergies"
+            name="서폿 시너지 %"
+            description="서폿 시너지로 증가된 피해량의 비율을 표시합니다."
             bind:setting={$settings.logs.ssyn} />
         <SettingItem
-            name="Counters"
-            description="Show the number of counters hit"
+            name="카운터"
+            description="카운터 친 수를 표시합니다."
             bind:setting={$settings.logs.counters} />
     </div>
     <div class="pt-4">
         <div>RDPS</div>
         <div class="mt-4 flex flex-col space-y-2 px-2">
             <SettingItem
-                name="Split RDPS Parties"
-                description="Split players into their respective parties for RDPS"
+                name="RDPS 파티 분리"
+                description="RDPS를 위해 플레이어를 각자의 파티로 나눕니다."
                 bind:setting={$settings.logs.rdpsSplitParty} />
             <SettingItem
-                name="RDPS Received"
-                description="Total damage received from other players"
+                name="기여받은 RDPS"
+                description="다른 플레이어로부터 기여받은 총 피해량"
                 bind:setting={$settings.logs.rdpsDamageReceived} />
             <SettingItem
-                name="RDPS Given"
-                description="Total damage given to other players"
+                name="기여한 RDPS"
+                description="다른 플레이어에게 기여한 총 피해량"
                 bind:setting={$settings.logs.rdpsDamageGiven} />
             <SettingItem
-                name="Damage Contribution %"
-                description="Percentage of your damage that is from all other players' buffs other than your own"
+                name="피해 기여도 %"
+                description="자신의 버프가 아닌 다른 플레이어의 버프로 증가된 피해량 비율"
                 bind:setting={$settings.logs.rdpsContribution} />
             <SettingItem
-                name="Support Damage Contribution %"
-                description="Percentage of your damage that is from support buffs"
+                name="서폿 피해 기여도 %"
+                description="서폿 버프로 증가된 피해량 비율"
                 bind:setting={$settings.logs.rdpsSContribution} />
             <SettingItem
-                name="Dealer Damage Contribution %"
-                description="Percentage of your damage that is from dealer buffs"
+                name="딜러 피해 기여도 %"
+                description="딜러 버프로 증가된 피해량 비율"
                 bind:setting={$settings.logs.rdpsDContribution} />
             <SettingItem
-                name="Synergy %"
-                description="Show the percentage of damage gained from all synergies other than your own"
+                name="시너지 %"
+                description="자신의 시너지를 제외한 모든 시너지로 증가된 피해량의 비율을 표시합니다."
                 bind:setting={$settings.logs.rdpsSyn} />
             <SettingItem
-                name="Support Synergy %"
-                description="Show the percentage of damage gained from support synergies"
+                name="서폿 시너지 %"
+                description="서폿 시너지로 증가된 피해량의 비율을 표시합니다."
                 bind:setting={$settings.logs.rdpsSSyn} />
             <SettingItem
-                name="Dealer Synergy %"
-                description="Show the percentage of damage gained from dealer synergies"
+                name="딜러 시너지 %"
+                description="딜러 시너지로 증가된 피해량의 비율을 표시합니다."
                 bind:setting={$settings.logs.rdpsDSyn} />
         </div>
     </div>
     <div class="pt-4">
-        <div>Skill Breakdown</div>
+        <div>스킬 세부 사항</div>
         <div class="mt-4 flex flex-col space-y-2 px-2">
             <SettingItem
-                name="Skill Damage"
-                description="Show the total damage dealt by the skill"
+                name="스킬 피해량"
+                description="스킬이 입힌 총 피해량을 표시합니다."
                 bind:setting={$settings.logs.breakdown.damage} />
             <SettingItem
-                name="Skill Damage %"
-                description="Show the damage percentage of the skill relative to all skills"
+                name="스킬 피해량 %"
+                description="모든 스킬에 대한 상대적 피해량 비율을 표시합니다."
                 bind:setting={$settings.logs.breakdown.damagePercent} />
             <SettingItem
-                name="Skill DPS"
-                description="Show the damage per second of the skill"
+                name="스킬 DPS"
+                description="스킬의 초당 피해량을 표시합니다."
                 bind:setting={$settings.logs.breakdown.dps} />
             <SettingItem
-                name="Skill Crit Rate"
-                description="Show the critical strike rate of the skill"
+                name="스킬 치명타 비율"
+                description="스킬의 치명타 비율을 표시합니다."
                 bind:setting={$settings.logs.breakdown.critRate} />
             <SettingItem
-                name="Skill Crit Damage"
-                description="Show the percentage of damage that crit for the skill"
+                name="스킬 치명타 피해량"
+                description="스킬의 피해량 중 치명타 피해량 비율을 표시합니다."
                 bind:setting={$settings.logs.breakdown.critDmg} />
             <SettingItem
-                name="Skill Front Attack"
-                description="Show the front attack percentage of the skill"
+                name="스킬 헤드 어택"
+                description="스킬의 헤드 어택 비율을 표시합니다."
                 bind:setting={$settings.logs.breakdown.frontAtk} />
             <SettingItem
-                name="Skill Back Attack"
-                description="Show the back attack percentage of the skill"
+                name="스킬 백 어택"
+                description="스킬의 백 어택 비율을 표시합니다."
                 bind:setting={$settings.logs.breakdown.backAtk} />
             <SettingItem
-                name="Support Buff %"
-                description="Show the percentage of damage of the skill buffed by support"
+                name="서폿 버프 %"
+                description="공격력 증가 버프로 증가된 스킬 피해량의 비율을 표시합니다."
                 bind:setting={$settings.logs.breakdown.percentBuffBySup} />
             <SettingItem
-                name="Support Brand %"
-                description="Show the percentage of damage of the skill buffed by support's brand skill (e.g. Bard's Sound Shock)"
+                name="서폿 낙인 %"
+                description="낙인 스킬(예: 사운드 쇼크, 빛의 충격, 난치기 등)로 증가된 스킬 피해량의 비율을 표시합니다."
                 bind:setting={$settings.logs.breakdown.percentBrand} />
             <SettingItem
-                name="Support Identity %"
-                description="Show the percentage of damage of the skill buffed by support identity"
+                name="서폿 아이덴티티 %"
+                description="아이덴티티로 증가된 스킬 피해량의 비율을 표시합니다."
                 bind:setting={$settings.logs.breakdown.percentIdentityBySup} />
             <SettingItem
-                name="Skill Average Damage"
-                description="Show the average damage dealt by the skill"
+                name="스킬 평균 피해량"
+                description="스킬이 입힌 평균 피해량를 표시합니다."
                 bind:setting={$settings.logs.breakdown.avgDamage} />
             <SettingItem
-                name="Skill Max Damage"
-                description="Show the maximum damage dealt by the skill"
+                name="스킬 최대 피해량"
+                description="스킬이 입힌 최대 피해량를 표시합니다."
                 bind:setting={$settings.logs.breakdown.maxDamage} />
             <SettingItem
-                name="Skill Casts"
-                description="Show the total number of casts of the skill (note: cancelled skills still count as cast)"
+                name="스킬 시전 횟수"
+                description="스킬의 총 시전 횟수를 표시합니다(참고: 취소된 스킬도 시전 카운팅됨)."
                 bind:setting={$settings.logs.breakdown.casts} />
             <SettingItem
-                name="Skill Casts/min"
-                description="Show the casts per minute of the skill"
+                name="스킬 분당 시전 횟수"
+                description="스킬의 분당 시전 횟수를 표시합니다."
                 bind:setting={$settings.logs.breakdown.cpm} />
             <SettingItem
-                name="Skill Hits"
-                description="Show the hits of the skill (note: each tick of a multi-hit skill is counted as a hit)"
+                name="스킬 타격 수"
+                description="스킬의 타격 수를 표시합니다(주: 다단 히트 스킬의 각 틱도 타격으로 카운팅됨)."
                 bind:setting={$settings.logs.breakdown.hits} />
             <SettingItem
-                name="Skill Hits/min"
-                description="Show the hits per minute of the skill"
+                name="스킬 분당 타격 수"
+                description="스킬의 분당 타격 수를 표시합니다."
                 bind:setting={$settings.logs.breakdown.hpm} />
         </div>
     </div>

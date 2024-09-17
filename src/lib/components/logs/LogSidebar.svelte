@@ -17,33 +17,7 @@
         easing: sineIn
     };
     let spin = writable(false);
-    let updateText = writable("Check for Updates");
-
-    let loaRunning = false;
-
-    $: starting = false;
-
-    $: {
-        if (!hidden) {
-            checkLoaRunning();
-
-            setInterval(() => {
-                checkLoaRunning();
-            }, 5000);
-        }
-    }
-
-    onMount(() => {
-        checkLoaRunning();
-    });
-
-    async function checkLoaRunning() {
-        loaRunning = await invoke("check_loa_running");
-    }
-
-    function startLoa() {
-        invoke("start_loa_process");
-    }
+    let updateText = writable("업데이트 확인");
 </script>
 
 <Drawer
@@ -65,7 +39,7 @@
     </div>
     <div class="flex flex-col justify-between" style="height: calc(100vh - 3.75rem);">
         <div class="flex flex-col space-y-4 border-t-2 border-zinc-700 px-4 pt-4 text-gray-200">
-            <a href="/logs" class="hover:text-accent-500" on:click={() => (hidden = true)}> 기록 </a>
+            <a href="/logs" class="hover:text-accent-500" on:click={() => (hidden = true)}> 로그 </a>
             <a href="/about" class="hover:text-accent-500" on:click={() => (hidden = true)}> 소개 </a>
             <a href="/settings" class="hover:text-accent-500" on:click={() => (hidden = true)}> 설정 </a>
             <a href="/changelog" class="hover:text-accent-500" on:click={() => (hidden = true)}> 업데이트 내역 </a>

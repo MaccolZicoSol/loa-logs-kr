@@ -26,8 +26,8 @@
         <tr class="bg-zinc-900 tracking-tight">
             <th class="w-14 px-2 text-left font-normal" />
             <th class="w-full" />
-            <th class="w-16 font-normal" use:tooltip={{ content: "Damage Dealt" }}>DMG</th>
-            <th class="w-16 font-normal" use:tooltip={{ content: "Damage per second" }}>DPS</th>
+            <th class="w-16 font-normal" use:tooltip={{ content: "입힌 피해량" }}>DMG</th>
+            <th class="w-16 font-normal" use:tooltip={{ content: "초당 피해량" }}>DPS</th>
         </tr>
     </thead>
     <tbody class="relative z-10">

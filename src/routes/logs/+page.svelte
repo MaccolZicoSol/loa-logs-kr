@@ -195,11 +195,11 @@
 <LogSidebar bind:hidden />
 <div class="h-screen bg-zinc-800">
     <div class="flex h-16 items-center justify-between px-8 py-5 shadow-md">
-        <Title text="Past Encounters" bind:hidden />
+        <Title text="지난 전투" bind:hidden />
         <button
             class="bg-accent-900 hover:bg-accent-800 mr-4 rounded-md px-2 py-1 shadow-md"
             on:click={() => refresh()}>
-            Refresh
+            새로고침
         </button>
     </div>
     <div class="px-8">
@@ -247,9 +247,9 @@
                                 </button>
                             </th>
                         {/if}
-                        <th scope="col" class="w-[25%] px-3 py-3"> Encounter</th>
-                        <th scope="col" class="px-3 py-3"> Classes</th>
-                        <th scope="col" class="hidden w-32 px-3 py-3 md:table-cell lg:w-48"> Local Player</th>
+                        <th scope="col" class="w-[25%] px-3 py-3"> 전투</th>
+                        <th scope="col" class="px-3 py-3"> 클래스</th>
+                        <th scope="col" class="hidden w-32 px-3 py-3 md:table-cell lg:w-48"> 로컬 플레이어</th>
                         <th scope="col" class="hidden w-24 px-3 py-3 text-right lg:table-cell">
                             <button
                                 class="hover:text-accent-500 ml-auto flex items-center"
@@ -257,14 +257,14 @@
                                 {#if $searchFilter.sort === "my_dps"}
                                     <SortSymbol />
                                 {/if}
-                                MY DPS
+                                나의 DPS
                             </button>
                         </th>
                         <th scope="col" class="w-14 px-3 py-3">
                             <button
                                 class="hover:text-accent-500 flex items-center"
                                 on:click={() => setSort("duration")}>
-                                DUR
+                                소요 시간
                                 {#if $searchFilter.sort === "duration"}
                                     {#if $searchFilter.order === 2}
                                         <svg
@@ -291,7 +291,7 @@
                                 {#if $searchFilter.sort === "fight_start"}
                                     <SortSymbol />
                                 {/if}
-                                DATE
+                                날짜
                             </button>
                         </th>
                     </tr>
@@ -396,12 +396,11 @@
                         </tr>
                     {:else}
                         {#if $searchStore.length > 0}
-                            <div class="w-screen bg-neutral-800 p-2">No encounters found.</div>
+                            <div class="w-screen bg-neutral-800 p-2">전투를 찾을 수 없습니다.</div>
                         {:else}
-                            <div class="w-screen bg-neutral-800 p-2">No encounters recorded.</div>
+                            <div class="w-screen bg-neutral-800 p-2">기록된 전투가 없습니다.</div>
                             <div class="w-screen bg-neutral-800 p-2">
-                                Meter should be turned on at character select (before entering raid at latest) for best
-                                accuracy.
+                                정확한 집계를 위해, 미터기는 캐릭터 선택창에서 켜져 있어야 합니다 (최소한 레이드 입장 수락 전까지).
                             </div>
                         {/if}
                     {/each}
@@ -411,7 +410,7 @@
         {#if encounters.length > 0}
             <div class="flex items-center justify-between py-3">
                 <div class="flex items-center gap-2">
-                    <label for="rowsPerPage" class="text-sm text-gray-400">Rows per page:</label>
+                    <label for="rowsPerPage" class="text-sm text-gray-400">페이지당 행 수:</label>
                     <select
                         id="rowsPerPage"
                         class="focus:border-accent-500 inline rounded-lg border border-gray-600 bg-zinc-700 px-1 py-1 text-sm text-zinc-300 placeholder-gray-400 focus:ring-0"
@@ -422,20 +421,21 @@
                         <option selected={$settings.general.logsPerPage === 100}>100</option>
                     </select>
 
-                    <span class="text-sm text-gray-400"
-                        >Showing <span class="font-semibold dark:text-white"
+                    <span class="text-sm text-gray-400">
+                        <span class="font-semibold text-white">{totalEncounters === 0 ? 1 : totalEncounters}</span>
+                        개 중
+                        <span class="font-semibold dark:text-white"
                             >{($pageStore - 1) * $settings.general.logsPerPage + 1}-{Math.min(
                                 ($pageStore - 1) * $settings.general.logsPerPage + 1 + $settings.general.logsPerPage - 1,
                                 totalEncounters
                             )}</span>
-                        of
-                        <span class="font-semibold text-white">{totalEncounters === 0 ? 1 : totalEncounters}</span
-                        ></span>
+                        표시
+                    </span>
                 </div>
                 <ul class="inline-flex items-center -space-x-px">
-                    <li use:tooltip={{ content: "First" }}>
+                    <li use:tooltip={{ content: "처음" }}>
                         <button class="ml-0 block px-3" on:click={() => firstPage()}>
-                            <span class="sr-only">First</span>
+                            <span class="sr-only">처음</span>
                             <svg
                                 class="hover:fill-accent-800 size-5 fill-gray-400"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -445,9 +445,9 @@
                             </svg>
                         </button>
                     </li>
-                    <li use:tooltip={{ content: "Previous" }}>
+                    <li use:tooltip={{ content: "이전" }}>
                         <button class="ml-0 block px-3" on:click={() => previousPage()}>
-                            <span class="sr-only">Back</span>
+                            <span class="sr-only">이전</span>
                             <svg
                                 class="hover:fill-accent-800 size-5 fill-gray-400"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -456,9 +456,9 @@
                             </svg>
                         </button>
                     </li>
-                    <li use:tooltip={{ content: "Next" }}>
+                    <li use:tooltip={{ content: "다음" }}>
                         <button class="ml-0 block px-3" on:click={() => nextPage()}>
-                            <span class="sr-only">Next</span>
+                            <span class="sr-only">다음</span>
                             <svg
                                 class="hover:fill-accent-800 size-5 fill-gray-400"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -467,9 +467,9 @@
                             </svg>
                         </button>
                     </li>
-                    <li use:tooltip={{ content: "Last" }}>
+                    <li use:tooltip={{ content: "마지막" }}>
                         <button class="ml-0 block px-3" on:click={() => lastPage()}>
-                            <span class="sr-only">Last</span>
+                            <span class="sr-only">마지막</span>
                             <svg
                                 class="hover:fill-accent-800 size-5 fill-gray-400"
                                 xmlns="http://www.w3.org/2000/svg"

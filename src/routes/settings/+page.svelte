@@ -28,7 +28,7 @@
 <LogSidebar bind:hidden />
 <div class="custom-scroll h-screen overflow-y-scroll bg-zinc-800 pb-8">
     <div class="sticky top-0 z-10 flex h-16 justify-between bg-zinc-800 px-8 py-5 shadow-md">
-        <Title text="Settings" bind:hidden />
+        <Title text="설정" bind:hidden />
     </div>
     <div class="px-8">
         <div class="flex flex-wrap">
@@ -37,56 +37,56 @@
                     ? 'text-accent-500 border-accent-500'
                     : 'border-zinc-500 text-gray-400 hover:text-gray-200'}"
                 on:click={() => (currentTab = 0)}>
-                General
+                일반
             </button>
             <button
                 class="border-b px-3 py-4 {currentTab === 1
                     ? 'text-accent-500 border-accent-500'
                     : 'border-zinc-500 text-gray-400 hover:text-gray-200'}"
                 on:click={() => (currentTab = 1)}>
-                Live Meter
+                미터기
             </button>
             <button
                 class="border-b px-3 py-4 {currentTab === 2
                     ? 'text-accent-500 border-accent-500'
                     : 'border-zinc-500 text-gray-400 hover:text-gray-200'}"
                 on:click={() => (currentTab = 2)}>
-                Logs
+                로그
             </button>
             <button
                 class="border-b px-3 py-4 {currentTab === 3
                     ? 'text-accent-500 border-accent-500'
                     : 'border-zinc-500 text-gray-400 hover:text-gray-200'}"
                 on:click={() => (currentTab = 3)}>
-                Buffs
+                버프
             </button>
             <button
                 class="border-b px-3 py-4 {currentTab === 4
                     ? 'text-accent-500 border-accent-500'
                     : 'border-zinc-500 text-gray-400 hover:text-gray-200'}"
                 on:click={() => (currentTab = 4)}>
-                Shortcuts
+                단축키
             </button>
             <button
                 class="border-b px-3 py-4 {currentTab === 5
                     ? 'text-accent-500 border-accent-500'
                     : 'border-zinc-500 text-gray-400 hover:text-gray-200'}"
                 on:click={() => (currentTab = 5)}>
-                Class Colors
+                클래스 색상
             </button>
             <button
                 class="border-b px-3 py-4 {currentTab === 6
                     ? 'text-accent-500 border-accent-500'
                     : 'border-zinc-500 text-gray-400 hover:text-gray-200'}"
                 on:click={() => (currentTab = 6)}>
-                Accessibility
+                접근성
             </button>
             <button
                 class="border-b px-3 py-4 {currentTab === 7
                     ? 'text-accent-500 border-accent-500'
                     : 'border-zinc-500 text-gray-400 hover:text-gray-200'}"
                 on:click={() => (currentTab = 7)}>
-                Database
+                데이터베이스
             </button>
         </div>
         {#if currentTab === 0}

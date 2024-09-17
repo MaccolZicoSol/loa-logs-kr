@@ -27,8 +27,8 @@
 
 <div class="mt-2 mb-4">
     <div class="text-lg font-medium flex justify-start">
-        <div use:menuTooltip={{content: "First 15 skills casted"}}>
-            Opener Rotation
+        <div use:menuTooltip={{content: "처음 15개의 스킬 시전"}}>
+            처음 딜 사이클
         </div>
     </div>
     <div class="flex flex-wrap pt-2 items-center" style="width: calc(100vw - 4.5rem);">

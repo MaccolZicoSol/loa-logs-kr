@@ -26,14 +26,14 @@
 </script>
 
 {#if cards.length > 0}
-    <div class="mt-4 font-medium">Card Draw Distribution</div>
+    <div class="mt-4 font-medium">카드 뽑기 구분</div>
     <div class="mt-1 text-sm">
         <div>
-            Total Cards Drawn: <span class="font-semibold">{totalDraws.toLocaleString()}</span>
+            총 카드 드로우: <span class="font-semibold">{totalDraws.toLocaleString()}</span>
         </div>
         <div class="">
-            Draws per min: <span class="font-semibold"
-                >{(totalDraws / (duration / 1000 / 60)).toFixed(1)} cards/min</span>
+            분당 드로우: <span class="font-semibold"
+                >{(totalDraws / (duration / 1000 / 60)).toFixed(1)} 카드/분</span>
         </div>
     </div>
     <table class="relative mt-2 table-fixed" style="width: calc(100vw - 4rem)">

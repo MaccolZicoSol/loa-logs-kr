@@ -81,15 +81,15 @@
 <div class="px relative top-0">
     {#if staggerStats.average}
         <div class="mt-4">
-            <div class="mb-2 text-lg font-medium tracking-tight">Encounter Stagger Stats</div>
+            <div class="mb-2 text-lg font-medium tracking-tight">전투 중 무력량 통계</div>
             <div>
-                Average Stagger: <span class="font-medium">{staggerStats.average.toFixed(1)}%/s</span>
+                평균 무력량: <span class="font-medium">{staggerStats.average.toFixed(1)}%/초</span>
             </div>
             {#if staggerStats.staggersPerMin}
                 <div>
                     <span class="font-medium">{staggerStats.staggersPerMin.toFixed(1)}</span>
-                    staggers/min, or
-                    <span class="font-medium">{formatMinutes(1 / staggerStats.staggersPerMin)}</span> per stagger
+                    분당 무력화 또는, 
+                    <span class="font-medium">{formatMinutes(1 / staggerStats.staggersPerMin)}</span> 무력화당
                 </div>
             {/if}
         </div>

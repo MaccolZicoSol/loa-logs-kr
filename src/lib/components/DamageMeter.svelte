@@ -424,59 +424,57 @@
                             <th class="w-16 px-2 text-left font-normal" />
                             <th class="w-full" />
                             {#if anyDead && $settings.meter.deathTime}
-                                <th class="w-16 font-normal" use:tooltip={{ content: "Dead for" }}>Dead</th>
+                                <th class="w-16 font-normal" use:tooltip={{ content: "죽음" }}>Dead</th>
                             {/if}
                             {#if multipleDeaths && $settings.meter.deathTime}
                                 <th class="w-14 font-normal" use:tooltip={{ content: "Death Count" }}>Deaths</th>
                             {/if}
                             {#if $settings.meter.damage}
-                                <th class="w-16 font-normal" use:tooltip={{ content: "Damage Dealt" }}>DMG</th>
+                                <th class="w-16 font-normal" use:tooltip={{ content: "입힌 피해량" }}>DMG</th>
                             {/if}
                             {#if $settings.meter.dps}
-                                <th class="w-16 font-normal" use:tooltip={{ content: "Damage per second" }}>DPS</th>
+                                <th class="w-16 font-normal" use:tooltip={{ content: "초당 피해량" }}>DPS</th>
                             {/if}
                             {#if !isSolo && $settings.meter.damagePercent}
-                                <th class="w-14 font-normal" use:tooltip={{ content: "Damage %" }}>D%</th>
+                                <th class="w-14 font-normal" use:tooltip={{ content: "피해량 %" }}>D%</th>
                             {/if}
                             {#if $settings.meter.critRate}
-                                <th class="w-14 font-normal" use:tooltip={{ content: "Crit %" }}>CRIT</th>
+                                <th class="w-14 font-normal" use:tooltip={{ content: "치명타 %" }}>CRIT</th>
                             {/if}
                             {#if $settings.meter.critDmg}
-                                <th class="w-14 font-normal" use:tooltip={{ content: "% Damage that Crit" }}>CDMG</th>
+                                <th class="w-14 font-normal" use:tooltip={{ content: "치명타 피해량 %" }}>CDMG</th>
                             {/if}
                             {#if anyFrontAtk && $settings.meter.frontAtk}
-                                <th class="w-14 font-normal" use:tooltip={{ content: "Front Attack %" }}>F.A</th>
+                                <th class="w-14 font-normal" use:tooltip={{ content: "헤드 어택 %" }}>F.A</th>
                             {/if}
                             {#if anyBackAtk && $settings.meter.backAtk}
-                                <th class="w-14 font-normal" use:tooltip={{ content: "Back Attack %" }}>B.A</th>
+                                <th class="w-14 font-normal" use:tooltip={{ content: "백 어택 %" }}>B.A</th>
                             {/if}
                             {#if anySupportBuff && $settings.meter.percentBuffBySup}
                                 <th
                                     class="w-14 font-normal"
-                                    use:tooltip={{ content: "% Damage buffed by Support Atk. Power buff" }}
+                                    use:tooltip={{ content: "서폿 공격력 증가 버프로 증가된 피해량 %" }}
                                     >Buff%
                                 </th>
                             {/if}
                             {#if anySupportBrand && $settings.meter.percentBrand}
-                                <th class="w-14 font-normal" use:tooltip={{ content: "% Damage buffed by Brand" }}
+                                <th class="w-14 font-normal" use:tooltip={{ content: "서폿 낙인 스킬로 증가된 피해량 %" }}
                                     >B%</th>
                             {/if}
                             {#if anySupportIdentity && $settings.meter.percentIdentityBySup}
                                 <th
                                     class="w-14 font-normal"
-                                    use:tooltip={{ content: "% Damage buffed by Support Identity" }}
+                                    use:tooltip={{ content: "서폿 아이덴티티로 증가된 피해량 %" }}
                                     >Iden%
                                 </th>
                             {/if}
                             {#if anyRdpsData && $rdpsEventDetails === "" && $settings.meter.ssyn}
-                                <th
-                                    class="w-14 font-normal"
-                                    use:tooltip={{ content: "% Damage gained from Support" }}
-                                >sSyn%
+                                <th class="w-12 font-normal" use:tooltip={{ content: "서폿 아이덴티티로 증가된 피해량 %" }}
+                                    >sSyn%
                                 </th>
                             {/if}
                             {#if $settings.meter.counters}
-                                <th class="w-14 font-normal" use:tooltip={{ content: "Counters" }}>CTR</th>
+                                <th class="w-14 font-normal" use:tooltip={{ content: "카운터" }}>CTR</th>
                             {/if}
                         </tr>
                     </thead>
@@ -576,45 +574,45 @@
         {/if}
     </div>
     {#if zoneChangeAlert}
-        <Notification bind:showAlert={zoneChangeAlert} text="Changing Zone" width={"11rem"} dismissable={false} />
+        <Notification bind:showAlert={zoneChangeAlert} text="장소 변경" width={"11rem"} dismissable={false} />
     {/if}
     {#if resettingAlert}
-        <Notification bind:showAlert={resettingAlert} text="Resetting" width={"9rem"} dismissable={false} />
+        <Notification bind:showAlert={resettingAlert} text="초기화" width={"9rem"} dismissable={false} />
     {/if}
     {#if pauseAlert}
-        <Notification bind:showAlert={pauseAlert} text="Paused" width={"8rem"} dismissable={false} />
+        <Notification bind:showAlert={pauseAlert} text="정지" width={"8rem"} dismissable={false} />
     {/if}
     {#if saveAlert}
-        <Notification bind:showAlert={saveAlert} text="Saving" width={"8rem"} dismissable={false} />
+        <Notification bind:showAlert={saveAlert} text="저장" width={"8rem"} dismissable={false} />
     {/if}
     {#if raidClear}
-        <Notification bind:showAlert={raidClear} text="Phase Clear" width={"9.5rem"} dismissable={false} />
+        <Notification bind:showAlert={raidClear} text="단계 클리어" width={"9.5rem"} dismissable={false} />
     {/if}
     {#if raidWipe}
-        <Notification bind:showAlert={raidWipe} text="Phase Wipe" width={"9rem"} dismissable={false} />
+        <Notification bind:showAlert={raidWipe} text="단계 전멸" width={"9rem"} dismissable={false} />
     {/if}
     {#if bossDeadAlert}
-        <Notification bind:showAlert={bossDeadAlert} text="Boss Dead" width={"10rem"} dismissable={false} />
+        <Notification bind:showAlert={bossDeadAlert} text="보스 죽음" width={"10rem"} dismissable={false} />
     {/if}
     {#if adminAlert}
         <Notification
             bind:showAlert={adminAlert}
-            text="Please restart as Admin"
-            width={"16em"}
+            text="관리자 권한으로 다시 실행해주세요"
+            width={"20em"}
             dismissable={false}
             isError={true} />
     {/if}
     {#if $screenshotAlert}
         <Notification
             bind:showAlert={$screenshotError}
-            text={"Screenshot Copied to Clipboard"}
-            width="18rem"
+            text={"스크린샷이 클립보드에 복사되었습니다."}
+            width="19rem"
             dismissable={false} />
     {/if}
     {#if $screenshotError}
         <Notification
             bind:showAlert={$screenshotError}
-            text={"Error Taking Screenshot"}
+            text={"스크린샷 캡처 오류"}
             width="15rem"
             isError={true}
             dismissable={false} />

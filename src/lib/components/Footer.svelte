@@ -65,7 +65,7 @@
                     ? 'border-zinc-500'
                     : 'border-zinc-800'}"
                 on:click={() => setTab(MeterTab.DAMAGE)}>
-                데미지
+                피해량
             </button>
             <button
                 class="h-6 border-0 border-b-[3px] px-2 {tab === MeterTab.RDPS
@@ -103,7 +103,7 @@
                         ? 'border-zinc-500'
                         : 'border-zinc-800'}"
                     on:click={() => setTab(MeterTab.BOSS)}>
-                    Bosses
+                    보스
                 </button>
             {/if}
             {#if $settings.general.showDetails}
@@ -112,7 +112,7 @@
                         ? 'border-zinc-500'
                         : 'border-zinc-800'}"
                     on:click={() => setTab(MeterTab.DETAILS)}>
-                    Details
+                    세부 사항
                 </button>
             {/if}
             <div class="px-1">&nbsp;</div>

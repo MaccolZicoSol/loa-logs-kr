@@ -13,7 +13,7 @@
         <div class="flex justify-between">
             <label class="flex items-center" for="modifiers">
                 <div class="">
-                    <div class="text-gray-100">Show/Hide Meter</div>
+                    <div class="text-gray-100">미터기 창 띄우기 / 숨기기</div>
                 </div>
             </label>
             <div class="flex items-center space-x-2">
@@ -39,7 +39,7 @@
         <div class="flex justify-between">
             <label class="flex items-center" for="modifiers">
                 <div class="">
-                    <div class="text-gray-100">Show/Hide Logs</div>
+                    <div class="text-gray-100">로그 창 띄우기 / 숨기기</div>
                 </div>
             </label>
             <div class="flex items-center space-x-2">
@@ -65,7 +65,7 @@
         <div class="flex justify-between">
             <label class="flex items-center" for="modifiers">
                 <div class="">
-                    <div class="text-gray-100">Show Most Recent Encounter</div>
+                    <div class="text-gray-100">최근 전투 띄우기</div>
                 </div>
             </label>
             <div class="flex items-center space-x-2">
@@ -91,7 +91,7 @@
         <div class="flex justify-between">
             <label class="flex items-center" for="modifiers">
                 <div class="">
-                    <div class="text-gray-100">Reset Session</div>
+                    <div class="text-gray-100">세션 초기화</div>
                 </div>
             </label>
             <div class="flex items-center space-x-2">
@@ -117,7 +117,7 @@
         <div class="flex justify-between">
             <label class="flex items-center" for="modifiers">
                 <div class="">
-                    <div class="text-gray-100">Toggle Pause</div>
+                    <div class="text-gray-100">세션 정지 / 재개</div>
                 </div>
             </label>
             <div class="flex items-center space-x-2">
@@ -143,7 +143,7 @@
         <div class="flex justify-between">
             <label class="flex items-center" for="modifiers">
                 <div class="">
-                    <div class="text-gray-100">Manual Save</div>
+                    <div class="text-gray-100">수동 저장</div>
                 </div>
             </label>
             <div class="flex items-center space-x-2">
@@ -169,7 +169,7 @@
         <div class="flex justify-between">
             <label class="flex items-center" for="modifiers">
                 <div class="">
-                    <div class="text-gray-100">Toggle Clickthrough</div>
+                    <div class="text-gray-100">클릭 무시 ON / OFF</div>
                 </div>
             </label>
             <div class="flex items-center space-x-2">

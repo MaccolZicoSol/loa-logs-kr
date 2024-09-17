@@ -457,8 +457,8 @@ export function getSkillLogChart(
                         let output = "<div class='tooltip-scroll overflow-y-auto max-h-56 pt-1 pb-2 px-2'>";
                         output += `
                         <div class='flex justify-between'>
-                        <div class='font-semibold mb-1'>${param.name}-${formatDurationFromMs(param.value[2].last)} (${round((param.value[2].last - param.value[2].timestamp) / 1000)}s)</div>
-                        <div class='tracking-tight text-sm'>Scroll Down for Details</div>
+                        <div class='font-semibold mb-1'>${param.name}-${formatDurationFromMs(param.value[2].last)} (${round((param.value[2].last - param.value[2].timestamp) / 1000)}초)</div>
+                        <div class='tracking-tight text-sm'>아래로 스크롤 하여 세부 사항 확인</div>
                         </div>
                         `;
                         output += "<div>";
@@ -676,16 +676,16 @@ function skillCastBreakdownTooltip(
 ): string {
     const totalDamage = skillCast.hits.map((hit) => hit.damage).reduce((a, b) => a + b, 0);
     let output = "<div class='flex flex-col'>";
-    output += `<div>Total Damage: <span class='font-semibold'>${abbreviateNumber(totalDamage)}</span></div>`;
+    output += `<div>총 피해량: <span class='font-semibold'>${abbreviateNumber(totalDamage)}</span></div>`;
     output += `<div>`;
     let table = `
     <table class='table-fixed'>
         <thead>
             <tr>
-                <td class='w-10 font-semibold'>Hits</td>
-                <td class='w-14 font-semibold'>Mods</td>
-                <td class='w-16 font-semibold'>DMG</td>
-                <td class='w-60 font-semibold overflow-auto'>Buffs</td>
+                <td class='w-10 font-semibold'>타격</td>
+                <td class='w-14 font-semibold'>수식어</td>
+                <td class='w-16 font-semibold'>피해량</td>
+                <td class='w-60 font-semibold overflow-auto'>버프</td>
             </tr>
         </thead>
         <tbody>
@@ -707,16 +707,16 @@ function skillCastBreakdownTooltip(
         table += `<td class="font-gothic">#${i + 1}</td>`;
         let mods = "";
         if (hit.crit) {
-            mods += "C ";
+            mods += "치 ";
             modInfo.crit++;
             modInfo.critDamage += hit.damage;
         }
         if (hit.backAttack) {
-            mods += "B ";
+            mods += "백 ";
             modInfo.ba++;
         }
         if (hit.frontAttack) {
-            mods += "F ";
+            mods += "헤 ";
             modInfo.fa++;
         }
         table += `<td class="font-gothic">${mods.trim() ? mods : "-"}</td>`;
@@ -726,19 +726,19 @@ function skillCastBreakdownTooltip(
     }
     table += "</tbody></table>";
     output += `<div>
-    Crit: <span class='font-semibold'>${skillCast.hits.length !== 0 ? round((modInfo.crit / skillCast.hits.length) * 100): 0}%</span>
-    | CDMG: <span class='font-semibold'>${totalDamage !== 0 ? round((modInfo.critDamage / totalDamage) * 100) : 0}%</span>`;
+    치명타: <span class='font-semibold'>${round((modInfo.crit / skillCast.hits.length) * 100)}%</span>
+    | 치명타 피해량: <span class='font-semibold'>${totalDamage !== 0 ? round((modInfo.critDamage / totalDamage) * 100) : 0}%</span>`;
     if (modInfo.ba > 0) {
-        output += ` | BA: <span class='font-semibold'>${round((modInfo.ba / skillCast.hits.length) * 100)}%</span>`;
+        output += ` | 백어택: <span class='font-semibold'>${round((modInfo.ba / skillCast.hits.length) * 100)}%</span>`;
     }
     if (modInfo.fa > 0) {
-        output += ` | FA: <span class='font-semibold'>${round((modInfo.fa / skillCast.hits.length) * 100)}%</span>`;
+        output += ` | 헤드어택: <span class='font-semibold'>${round((modInfo.fa / skillCast.hits.length) * 100)}%</span>`;
     }
     output += "</div>";
     output += `<div>
-    Buff: <span class='font-semibold'>${supportBuffs.buff > 0 ? round((supportBuffs.buff / totalDamage) * 100) : 0}%</span>`;
-    output += ` | B: <span class='font-semibold'>${supportBuffs.brand > 0 ? round((supportBuffs.brand / totalDamage) * 100) : 0}%</span>`;
-    output += ` | Iden: <span class='font-semibold'>${supportBuffs.identity > 0 ? round((supportBuffs.identity / totalDamage) * 100) : 0}%</span>
+    버프: <span class='font-semibold'>${supportBuffs.buff > 0 ? round((supportBuffs.buff / totalDamage) * 100) : 0}%</span>`;
+    output += ` | 낙인: <span class='font-semibold'>${supportBuffs.brand > 0 ? round((supportBuffs.brand / totalDamage) * 100) : 0}%</span>`;
+    output += ` | 아덴: <span class='font-semibold'>${supportBuffs.identity > 0 ? round((supportBuffs.identity / totalDamage) * 100) : 0}%</span>
     </div>`;
     output += table;
     output += "</div></div>";
