@@ -50,13 +50,13 @@ async fn main() -> Result<()> {
         app::get_logger().unwrap().flush();
     }));
 
-    let quit = CustomMenuItem::new("quit".to_string(), "Quit");
-    let show_logs = CustomMenuItem::new("show-logs".to_string(), "Show Logs");
-    let show_meter = CustomMenuItem::new("show-meter".to_string(), "Show Meter");
-    let hide_meter = CustomMenuItem::new("hide".to_string(), "Hide Meter");
-    let load_saved_pos = CustomMenuItem::new("load".to_string(), "Load Saved");
-    let save_current_pos = CustomMenuItem::new("save".to_string(), "Save Position");
-    let reset = CustomMenuItem::new("reset".to_string(), "Reset Window");
+    let quit = CustomMenuItem::new("quit".to_string(), "종료");
+    let show_logs = CustomMenuItem::new("show-logs".to_string(), "로그 창 열기");
+    let show_meter = CustomMenuItem::new("show-meter".to_string(), "미터기 창 열기");
+    let hide_meter = CustomMenuItem::new("hide".to_string(), "미터기 창 숨기기");
+    let load_saved_pos = CustomMenuItem::new("load".to_string(), "위치 저장 불러오기");
+    let save_current_pos = CustomMenuItem::new("save".to_string(), "창 위치 저장");
+    let reset = CustomMenuItem::new("reset".to_string(), "창 초기화");
     let tray_menu = SystemTrayMenu::new()
         .add_item(show_logs)
         .add_native_item(SystemTrayMenuItem::Separator)
