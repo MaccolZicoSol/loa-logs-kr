@@ -90,7 +90,7 @@
         </div>
         {#if $takingScreenshot && !$settings.general.hideLogo}
             <div class="font-gothic text-xs">
-                {"github.com/MaccolSolZico/loa-logs-kr"}
+                {"github.com/MaccolZicoSol/loa-logs-kr"}
             </div>
         {/if}
     </div>

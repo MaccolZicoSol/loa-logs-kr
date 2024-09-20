@@ -1,10 +1,10 @@
 # <img src="https://i.imgur.com/eej47rS.png" width="30"/> LOA Logs KR
 
-[![GitHub](https://img.shields.io/github/downloads/MaccolSolZico/loa-logs-kr/total?style=for-the-badge&color=%23ff9800)](https://github.com/MaccolSolZico/loa-logs-kr/releases/latest) [![Discord](https://img.shields.io/discord/1240116892228780073?color=%235865F2&label=Discord&style=for-the-badge)](https://discord.gg/ybujC3sjMy)
+[![GitHub](https://img.shields.io/github/downloads/MaccolZicoSol/loa-logs-kr/total?style=for-the-badge&color=%23ff9800)](https://github.com/MaccolZicoSol/loa-logs-kr/releases/latest) [![Discord](https://img.shields.io/discord/1240116892228780073?color=%235865F2&label=Discord&style=for-the-badge)](https://discord.gg/ybujC3sjMy)
 
 
-[![GitHub](https://img.shields.io/github/v/release/MaccolSolZico/loa-logs-kr?style=flat-square)](https://github.com/MaccolSolZico/loa-logs-kr/releases)
-[![GitHub](https://img.shields.io/github/license/MaccolSolZico/loa-logs-kr?style=flat-square)](https://github.com/MaccolSolZico/loa-logs-kr/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/v/release/MaccolZicoSol/loa-logs-kr?style=flat-square)](https://github.com/MaccolZicoSol/loa-logs-kr/releases)
+[![GitHub](https://img.shields.io/github/license/MaccolZicoSol/loa-logs-kr?style=flat-square)](https://github.com/MaccolZicoSol/loa-logs-kr/blob/master/LICENSE)
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/maccolsolzico)
 
@@ -16,7 +16,7 @@ This project is an opinionated flavor of [LOA Details](https://github.com/lost-a
 This project was designed specifically with hell-raiding in mind.
 
 # Download
-https://github.com/MaccolSolZico/loa-logs-kr/releases
+https://github.com/MaccolZicoSol/loa-logs-kr/releases
 
 *currently only Windows 7 and up is supported
 

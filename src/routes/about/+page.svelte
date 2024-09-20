@@ -42,7 +42,7 @@
         <p class="mt-4 px-4 text-base">
             문제가 있거나 제안 사항이 있으시면,
             <a class="text-accent-500 hover:underline"
-            href="https://github.com/MaccolSolZico/loa-logs-kr/issues" target="_blank">이슈</a>를 열거나 <a class="text-accent-500 hover:underline" href="https://discord.gg/ybujC3sjMy"
+            href="https://github.com/MaccolZicoSol/loa-logs-kr/issues" target="_blank">이슈</a>를 열거나 <a class="text-accent-500 hover:underline" href="https://discord.gg/ybujC3sjMy"
             target="_blank"><code>Discord</code></a>에 메시지를 보내주세요.
         </p>
 

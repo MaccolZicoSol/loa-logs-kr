@@ -2,7 +2,7 @@
     "version": "v1.2.2",
     "platforms": {
         "windows-x86_64": {
-            "url": "https://github.com/MaccolSolZico/loa-logs-kr/releases/download/v1.2.2/LOA.Logs.KR_1.2.2_x64-setup.nsis.zip",
+            "url": "https://github.com/MaccolZicoSol/loa-logs-kr/releases/download/v1.2.2/LOA.Logs.KR_1.2.2_x64-setup.nsis.zip",
             "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUMmNsY1lkcTgxY1hNTlN6NkwxNWJ2ZzkraGdtc0dFa3BPZ2lGWFFvN3VXSkprNFkySnQ2QnEzTjdySWVjdFVkaE03dkhKNVJlT3FRVEl6MXBxMHMxeXdTaFc0b3JXM3dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzI2NjMyNTkwCWZpbGU6TE9BIExvZ3MgS1JfMS4yLjJfeDY0LXNldHVwLm5zaXMuemlwCm03RDBIVUdpa294Zi9iOGlUT0g3U09rRjVZYk9JdXVVbEtWclp0ZlNQM0hJV0ZyUkdMRGEyVGRRYjlLQzdoSEpUdjhZZDdHMjZxcEdRQnM1UEtFRkJ3PT0K"
         }
     }
