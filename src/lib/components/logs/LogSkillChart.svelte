@@ -250,7 +250,7 @@
                                 {/if}
                                 <td class="font-mono">
                                     {#if hit.crit}
-                                        <span use:tooltip={{ content: "치명타 타격" }}>치</span>
+                                        <span use:tooltip={{ content: "치명타" }}>치</span>
                                     {/if}
                                     {#if hit.backAttack}
                                         <span use:tooltip={{ content: "백 어택" }}>백</span>

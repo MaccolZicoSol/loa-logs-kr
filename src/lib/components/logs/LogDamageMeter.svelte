@@ -611,19 +611,19 @@
                                             class="s-Qbr4I8QhaoSZ" />
                                     </svg>
                                     <h3 class="mb-5 text-lg font-normal text-gray-400">
-                                        Are you sure you want to delete this encounter?
+                                        정말로 이 전투를 삭제하시겠습니까?
                                     </h3>
                                     <button
                                         type="button"
                                         class="mr-2 inline-flex items-center justify-center rounded-lg bg-red-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-red-800 focus:outline-none"
                                         on:click={deleteEncounter}>
-                                        Yes, I'm sure
+                                        네, 삭제합니다
                                     </button>
                                     <button
                                         type="button"
                                         class="inline-flex items-center justify-center rounded-lg bg-gray-800 bg-transparent px-5 py-2.5 text-center text-sm font-medium text-gray-400 hover:bg-zinc-700 hover:text-white focus:text-white focus:outline-none"
                                         on:click={() => (deleteConfirm = false)}>
-                                        No, cancel
+                                        아니요, 취소
                                     </button>
                                 </div>
                             </div>

@@ -6,4 +6,4 @@
     export let width = 1.5;
 </script>
 
-<img use:tooltip={{ content: "Boss Only Damage" }} src="{$imagePath.path + getImagePath("icons/boss.png")}" alt="Boss Only Damage" style="width: {width}rem;" />
+<img use:tooltip={{ content: "보스 전용 데미지" }} src="{$imagePath.path + getImagePath("icons/boss.png")}" alt="보스 전용 데미지" style="width: {width}rem;" />

@@ -32,16 +32,16 @@
     <div class="sticky top-0 z-50 flex h-16 w-full items-center bg-zinc-800 px-8 shadow-md">
         <div class="flex items-center justify-between py-4">
             <a href="/logs" class="bg-accent-900 hover:bg-accent-800 inline-flex rounded-md p-2">
-                <span class="sr-only">Back</span>
+                <span class="sr-only">뒤로</span>
                 <svg class="size-5 fill-gray-200" xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960"
                     ><path d="M480 903 153 576l327-327.5 65.5 64.5-216 217h478v91.5h-478l216 216L480 903Z" /></svg>
-                <span class="mx-1 text-gray-200">Back</span>
+                <span class="mx-1 text-gray-200 text-nowrap">뒤로</span>
             </a>
         </div>
         <div class="flex items-center justify-between" style="width: calc(100vw - 7.5rem);">
             <div class="flex items-center truncate pl-1 text-xl tracking-tighter">
                 <button
-                    use:tooltip={{ content: `${fav ? "Remove from" : "Add to"} Favorites` }}
+                    use:tooltip={{ content: `즐겨찾기 ${fav ? "삭제" : "추가"}` }}
                     on:click={toggle_favorite}>
                     {#if fav}
                         <svg
@@ -61,7 +61,7 @@
                 </button>
                 <div class="truncate pl-1 flex items-center space-x-1">
                     {#if $settings.general.showDifficulty && encounter.difficulty}
-                        <span class:text-lime-400={encounter.cleared} use:tooltip={{ content: "Cleared" }}
+                        <span class:text-lime-400={encounter.cleared} use:tooltip={{ content: "클리어" }}
                             >#{data.id.toLocaleString()}:
                         </span>
                         {#if encounter.bossOnlyDamage}

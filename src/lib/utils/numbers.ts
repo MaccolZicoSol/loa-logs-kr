@@ -81,9 +81,9 @@ export function formatTimestamp(timestampMs: number): string {
     };
     let formattedDate = timestampDate.toLocaleString(undefined, dateFormat);
     if (timestampDate.toDateString() === today.toDateString()) {
-        formattedDate = `Today @ ${formattedDate}`;
+        formattedDate = `오늘 @ ${formattedDate}`;
     } else if (timestampDate.toDateString() === yesterday.toDateString()) {
-        formattedDate = `Yesterday @ ${formattedDate}`;
+        formattedDate = `어제 @ ${formattedDate}`;
     } else {
         formattedDate = timestampDate
             .toLocaleString(undefined, {
