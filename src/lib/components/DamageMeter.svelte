@@ -424,10 +424,10 @@
                             <th class="w-16 px-2 text-left font-normal" />
                             <th class="w-full" />
                             {#if anyDead && $settings.meter.deathTime}
-                                <th class="w-16 font-normal" use:tooltip={{ content: "죽음" }}>Dead</th>
+                                <th class="w-16 font-normal" use:tooltip={{ content: "죽은 시간" }}>Dead</th>
                             {/if}
                             {#if multipleDeaths && $settings.meter.deathTime}
-                                <th class="w-14 font-normal" use:tooltip={{ content: "Death Count" }}>Deaths</th>
+                                <th class="w-14 font-normal" use:tooltip={{ content: "죽음" }}>Deaths</th>
                             {/if}
                             {#if $settings.meter.damage}
                                 <th class="w-16 font-normal" use:tooltip={{ content: "입힌 피해량" }}>DMG</th>
