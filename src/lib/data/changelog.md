@@ -1,6 +1,6 @@
 <div class="rounded-md flex space-x-2 items-center">
   <div class="text-lg font-semibold text-white">
-    v1.3.0
+    v1.3.1
   </div>
   <div class="bg-accent-500 px-2 font-medium rounded-md text-white">
     New
