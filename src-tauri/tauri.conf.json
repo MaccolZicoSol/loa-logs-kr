@@ -68,7 +68,7 @@
       "icon": [
         "icons/icon.ico"
       ],
-      "identifier": "MaccolZicoSol",
+      "identifier": "MaccolSolZico",
       "longDescription": "LOA Logs KR - Modern DPS Meter for Lost Ark written in Rust.",
       "macOS": {
         "entitlements": null,
