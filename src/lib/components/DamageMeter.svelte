@@ -574,31 +574,31 @@
         {/if}
     </div>
     {#if zoneChangeAlert}
-        <Notification bind:showAlert={zoneChangeAlert} text="장소 변경" width={"11rem"} dismissable={false} />
+        <Notification bind:showAlert={zoneChangeAlert} text="장소 변경" width={"7.5rem"} dismissable={false} />
     {/if}
     {#if resettingAlert}
-        <Notification bind:showAlert={resettingAlert} text="초기화" width={"9rem"} dismissable={false} />
+        <Notification bind:showAlert={resettingAlert} text="초기화" width={"6.5rem"} dismissable={false} />
     {/if}
     {#if pauseAlert}
-        <Notification bind:showAlert={pauseAlert} text="정지" width={"8rem"} dismissable={false} />
+        <Notification bind:showAlert={pauseAlert} text="정지" width={"6rem"} dismissable={false} />
     {/if}
     {#if saveAlert}
-        <Notification bind:showAlert={saveAlert} text="저장" width={"8rem"} dismissable={false} />
+        <Notification bind:showAlert={saveAlert} text="저장" width={"6rem"} dismissable={false} />
     {/if}
     {#if raidClear}
-        <Notification bind:showAlert={raidClear} text="단계 클리어" width={"9.5rem"} dismissable={false} />
+        <Notification bind:showAlert={raidClear} text="관문 클리어" width={"8.5rem"} dismissable={false} />
     {/if}
     {#if raidWipe}
-        <Notification bind:showAlert={raidWipe} text="단계 전멸" width={"9rem"} dismissable={false} />
+        <Notification bind:showAlert={raidWipe} text="관문 전멸" width={"7.5rem"} dismissable={false} />
     {/if}
     {#if bossDeadAlert}
-        <Notification bind:showAlert={bossDeadAlert} text="보스 죽음" width={"10rem"} dismissable={false} />
+        <Notification bind:showAlert={bossDeadAlert} text="보스 죽음" width={"7.5rem"} dismissable={false} />
     {/if}
     {#if adminAlert}
         <Notification
             bind:showAlert={adminAlert}
             text="관리자 권한으로 다시 실행해주세요"
-            width={"20em"}
+            width={"19.5em"}
             dismissable={false}
             isError={true} />
     {/if}
@@ -606,14 +606,14 @@
         <Notification
             bind:showAlert={$screenshotError}
             text={"스크린샷이 클립보드에 복사되었습니다."}
-            width="19rem"
+            width="18.5rem"
             dismissable={false} />
     {/if}
     {#if $screenshotError}
         <Notification
             bind:showAlert={$screenshotError}
             text={"스크린샷 캡처 오류"}
-            width="15rem"
+            width="11rem"
             isError={true}
             dismissable={false} />
     {/if}
