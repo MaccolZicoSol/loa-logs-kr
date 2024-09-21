@@ -13,7 +13,7 @@
         <div class="flex justify-between">
             <label class="flex items-center" for="modifiers">
                 <div class="">
-                    <div class="text-gray-100">미터기 창 띄우기 / 숨기기</div>
+                    <div class="text-gray-100">미터기 창 열기 / 숨기기</div>
                 </div>
             </label>
             <div class="flex items-center space-x-2">
@@ -39,7 +39,7 @@
         <div class="flex justify-between">
             <label class="flex items-center" for="modifiers">
                 <div class="">
-                    <div class="text-gray-100">로그 창 띄우기 / 숨기기</div>
+                    <div class="text-gray-100">로그 창 열기 / 숨기기</div>
                 </div>
             </label>
             <div class="flex items-center space-x-2">
@@ -65,7 +65,7 @@
         <div class="flex justify-between">
             <label class="flex items-center" for="modifiers">
                 <div class="">
-                    <div class="text-gray-100">최근 전투 띄우기</div>
+                    <div class="text-gray-100">최근 로그 보기</div>
                 </div>
             </label>
             <div class="flex items-center space-x-2">

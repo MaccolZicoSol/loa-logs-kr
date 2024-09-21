@@ -82,16 +82,10 @@
                     {/await}
                 </div>
                 {#if $updateSettings.available}
-                    <button
-                        class="pr-1"
-                        use:tooltip={{ content: "Update Now" }}
-                        on:click={() => {
-                            $updateSettings.dismissed = false;
-                        }}>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 -960 960 960"
-                            class="fill-accent-500 size-5 animate-bounce">
+                    <button class="pr-1" use:tooltip={{content: "지금 업데이트"}}
+                            on:click={() => {$updateSettings.dismissed = false;}}>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                             class="size-5 fill-accent-500 animate-bounce">
                             <path
                                 d="M281.5-165v-57.5H679v57.5H281.5Zm170-165v-356L329-563.5 289-604l191-191 191.5 191-40.5 40.5L509-686v356h-57.5Z" />
                         </svg>

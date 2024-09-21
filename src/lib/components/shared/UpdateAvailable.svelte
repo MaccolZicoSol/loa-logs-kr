@@ -4,7 +4,7 @@
     import { updateSettings } from "$lib/utils/settings";
     import { markdownIt } from "$lib/utils/stores.js";
 
-    let updateText = writable("Update Now");
+    let updateText = writable("지금 업데이트");
 </script>
 
 {#if $updateSettings.available && $updateSettings.manifest && !$updateSettings.dismissed}
@@ -17,7 +17,7 @@
                     class="absolute right-2.5 top-3 ml-auto whitespace-normal rounded-lg p-1.5 hover:bg-zinc-600 focus:outline-none"
                     aria-label="Close modal"
                     on:click={() => ($updateSettings.dismissed = true)}>
-                    <span class="sr-only">Close modal</span>
+                    <span class="sr-only">창 닫기</span>
                     <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path
                             fill-rule="evenodd"
@@ -29,7 +29,7 @@
                     <div class="">
                         <div class="mb-1 flex items-center justify-center space-x-1">
                             {#if $updateSettings.isNotice}
-                                <div class="text-lg font-semibold text-gray-200 py-2">Notice</div>
+                                <div class="text-lg font-semibold text-gray-200 py-2">알림</div>
                             {:else}
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@
                                     <path
                                         d="M281.5-165v-57.5H679v57.5H281.5Zm170-165v-356L329-563.5 289-604l191-191 191.5 191-40.5 40.5L509-686v356h-57.5Z" />
                                 </svg>
-                                <div class="text-lg font-semibold text-gray-200">New Update Available!</div>
+                                <div class="text-lg font-semibold text-gray-200">새로운 업데이트가 있습니다.</div>
                             {/if}
                         </div>
                         <div class="prose-a:text-accent-500 prose prose-sm prose-zinc prose-invert mb-5" id="notes">
