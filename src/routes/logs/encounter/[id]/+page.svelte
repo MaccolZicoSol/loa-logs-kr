@@ -115,9 +115,9 @@
     {#if $ifaceChangedStore}
         <Notification
             bind:showAlert={$ifaceChangedStore}
-            text={"Network Interface Changed. Please fully Restart the App."}
+            text={"네트워크 인터페이스가 변경되었습니다. 앱을 다시 실행해주세요."}
             dismissable={false}
-            width="18rem"
+            width="27.5rem"
             isError={true} />
     {/if}
 </div>

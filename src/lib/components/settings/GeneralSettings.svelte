@@ -246,14 +246,14 @@
             <div class="relative" on:focusout={handleNetDropdownFocusLoss}>
                 <div class="flex items-center">
                     <div class="">
-                        <div class="text-gray-100">Select Network Interface</div>
+                        <div class="text-gray-100">네트워크 인터페이스 선택</div>
                         <div class="text-xs text-gray-300">
-                            Select your network interface from the list that Lost Ark is running on.
+                            로스트아크가 실행 중인 네트워크 인터페이스를 선택합니다.
                         </div>
                     </div>
                 </div>
                 <div class="flex items-baseline space-x-2">
-                    <div>Interface:</div>
+                    <div>인터페이스:</div>
                     <!-- svelte-ignore a11y-click-events-have-key-events -->
                     <div
                         role="button"
@@ -264,7 +264,7 @@
                             {#if $settings.general.ifDesc}
                                 {$settings.general.ifDesc}
                             {:else}
-                                No interface selected. Using default.
+                                인터페이스가 선택되지 않음. 기본값 사용.
                             {/if}
                         </div>
                     </div>
@@ -282,7 +282,7 @@
                                 networkDropdownOpen = false;
                                 $ifaceChangedStore = true;
                             }}>
-                            Default Network Interface
+                            기본 네트워크 인터페이스
                         </button>
                         {#each networkInterfaces as iface (iface)}
                             <button
@@ -315,8 +315,8 @@
                         bind:value={$settings.general.port}
                         placeholder={$settings.general.port} />
                     <div class="ml-5">
-                        <div class="text-gray-100">Port</div>
-                        <div class="text-xs text-gray-300">Set custom port if not using default. Default is 6040.</div>
+                        <div class="text-gray-100">포트</div>
+                        <div class="text-xs text-gray-300">기본값을 사용하지 않는 경우 사용자 지정 포트를 설정합니다. 기본값은 6040입니다.</div>
                     </div>
                 </label>
             </div>
@@ -330,8 +330,8 @@
                         }}
                         class="text-accent-500 size-5 rounded bg-zinc-700 focus:ring-0 focus:ring-offset-0" />
                     <div class="ml-5">
-                        <div class="text-gray-100">Raw Socket</div>
-                        <div class="text-xs text-gray-300">Enables raw socket capture. (manually restart as Admin)</div>
+                        <div class="text-gray-100">Raw 소켓</div>
+                        <div class="text-xs text-gray-300">Raw 소켓 캡처를 활성화합니다. (관리자로 재시작)</div>
                     </div>
                 </label>
             </div>
