@@ -53,24 +53,7 @@
                     </svg>
                 </div>
             </a>
-            {#if !loaRunning && !starting}
-                <button
-                    class="bg-accent-800 hover:bg-accent-900 mx-4 rounded-lg p-2"
-                    on:click={() => {
-                        starting = true;
-                        startLoa();
-                        setTimeout(() => {
-                            starting = false;
-                            checkLoaRunning();
-                        }, 20000);
-                    }}>
-                    Start Lost Ark
-                </button>
-            {:else if !loaRunning && starting}
-                <button class="mx-4 rounded-lg bg-zinc-700 p-2" disabled> Starting... </button>
-            {:else if loaRunning}
-                <button class="mx-4 rounded-lg bg-zinc-700 p-2" disabled> Lost Ark Running </button>
-            {/if}
+            <a href="/beta" class="hover:text-accent-500" on:click={() => (hidden = true)}> 베타 기능 </a>
         </div>
         <div class="px-3 py-2 text-gray-300">
             <div class="flex items-center justify-between">

@@ -728,6 +728,8 @@ pub struct GeneralSettings {
     pub boss_only_damage_default_on: bool,
     pub start_on_boot: bool,
     pub logs_per_page: i32,
+    pub save_packet: bool,
+    pub read_packet: bool,
 }
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]

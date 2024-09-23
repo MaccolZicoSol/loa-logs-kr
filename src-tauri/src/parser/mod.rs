@@ -27,7 +27,7 @@ use hashbrown::HashMap;
 use log::{info, warn};
 use meter_core::packets::definitions::*;
 use meter_core::packets::opcodes::Pkt;
-use meter_core::{start_capture, start_raw_capture};
+use meter_core::{read_capture, save_capture, start_capture, start_raw_capture};
 use reqwest::Client;
 use serde_json::json;
 use std::cell::RefCell;
@@ -61,6 +61,16 @@ pub fn start(
     resource_path.push("current_region");
     let region_file_path = resource_path.to_string_lossy();
     let mut stats_api = StatsApi::new(window.clone(), region_file_path.to_string());
+    let save_packet = if let Some(settings) = settings.clone() {
+        settings.general.save_packet
+    } else {
+        false
+    };
+    let read_packet = if let Some(settings) = settings.clone() {
+        settings.general.read_packet
+    } else {
+        false
+    };
     let rx = if raw_socket {
         if !meter_core::check_is_admin() {
             warn!("Not running as admin, cannot use raw socket");
@@ -78,11 +88,32 @@ pub fn start(
             }
         }
     } else {
-        match start_capture(ip, port, region_file_path.to_string()) {
-            Ok(rx) => rx,
-            Err(e) => {
-                warn!("Error starting capture: {}", e);
+        let mut resource_path = window.app_handle().path_resolver().resource_dir().unwrap();
+        resource_path.push("packets.bin");
+        let packets_file_path = resource_path.to_string_lossy();
+
+        if save_packet {
+            save_capture(ip, port, packets_file_path.to_string()); {
+                info!("saving packet");
                 return Ok(());
+            };
+        }
+
+        if read_packet {
+            match read_capture(port, region_file_path.to_string(), packets_file_path.to_string()) {
+                Ok(rx) => rx,
+                Err(e) => {
+                    warn!("Error starting capture: {}", e);
+                    return Ok(());
+                }
+            }
+        } else {
+            match start_capture(ip, port, region_file_path.to_string()) {
+                Ok(rx) => rx,
+                Err(e) => {
+                    warn!("Error starting capture: {}", e);
+                    return Ok(());
+                }
             }
         }
     };
@@ -204,6 +235,11 @@ pub fn start(
     let mut party_map_cache: HashMap<i32, Vec<String>> = HashMap::new();
 
     while let Ok((op, data)) = rx.recv() {
+        if data == vec![1,0,0,9, 3,2,6] {
+            let meter_window_clone = meter_window_clone.clone();
+            meter_window_clone.emit("finish-read-packet", "").ok();
+        }
+
         if reset.load(Ordering::Relaxed) {
             state.soft_reset(true);
             reset.store(false, Ordering::Relaxed);
@@ -542,7 +578,7 @@ pub fn start(
             //     let pkt = PKTSkillStageNotify::new(&data);
             // }
             Pkt::SkillDamageAbnormalMoveNotify => {
-                if Instant::now() - raid_end_cd < Duration::from_secs(10) {
+                if !read_packet && Instant::now() - raid_end_cd < Duration::from_secs(10) {
                     debug_print(format_args!(
                         "ignoring damage - SkillDamageAbnormalMoveNotify"
                     ));
@@ -595,7 +631,7 @@ pub fn start(
             }
             Pkt::SkillDamageNotify => {
                 // use this to make sure damage packets are not tracked after a raid just wiped
-                if Instant::now() - raid_end_cd < Duration::from_secs(10) {
+                if !read_packet && Instant::now() - raid_end_cd < Duration::from_secs(10) {
                     debug_print(format_args!("ignoring damage - SkillDamageNotify"));
                     continue;
                 }

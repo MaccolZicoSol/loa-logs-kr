@@ -29,7 +29,9 @@
         screenshotError,
         rdpsEventDetails,
         localPlayer,
-        missingInfo
+        missingInfo,
+        searchFilter
+
     } from "$lib/utils/stores";
     import html2canvas from "html2canvas";
     import Details from "./Details.svelte";
@@ -54,6 +56,9 @@
     let bossDeadAlert = false;
     let adminAlert = false;
     let raidInProgress = writable(true);
+    const saveChangedStore = writable($settings.general.savePacket);
+    const readChangedStore = writable($settings.general.readPacket);
+    let finishReadPacket = false;
 
     onMount(() => {
         setInterval(() => {
@@ -136,6 +141,12 @@
                 }
             });
 
+            let finishReadPacketEvent = await listen("finish-read-packet", () => {
+                $settings.general.readPacket = false;
+                finishReadPacket = true;
+                readChangedStore.set(false);
+            })
+
             events.push(
                 encounterUpdateEvent,
                 partyUpdateEvent,
@@ -146,7 +157,8 @@
                 phaseTransitionEvent,
                 raidStartEvent,
                 adminErrorEvent,
-                rdpsEvent
+                rdpsEvent,
+                finishReadPacketEvent
             );
         })();
     });
@@ -616,6 +628,29 @@
             width="11rem"
             isError={true}
             dismissable={false} />
+    {/if}
+    {#if $saveChangedStore}
+        <Notification
+            bind:showAlert={$saveChangedStore}
+            text="패킷 저장 중이므로 실시간 집계는 작동하지 않습니다."
+            width={"26.5em"}
+            dismissable={false}
+            isError={true} />
+    {/if}
+    {#if $readChangedStore}
+        <Notification
+            bind:showAlert={$readChangedStore}
+            text="저장된 패킷 집계중입니다. 이 알림이 자동으로 사라지기 전까지 잠시만 기다려주세요"
+            width={"24.5em"}
+            dismissable={false}
+            isError={true} />
+    {/if}
+    {#if finishReadPacket}
+        <Notification
+            bind:showAlert={finishReadPacket}
+            text="패킷 집계가 끝났습니다. 실시간 집계는 앱을 다시 실행해주세요"
+            width={"24.5em"}
+            dismissable={false}/>
     {/if}
     <Footer bind:tab />
 </div>
