@@ -1,9 +1,9 @@
 {
-    "version": "v1.3.2",
+    "version": "v1.3.3",
     "platforms": {
         "windows-x86_64": {
-            "url": "https://github.com/MaccolZicoSol/loa-logs-kr/releases/download/v1.3.2/LOA.Logs.KR_1.3.2_x64-setup.nsis.zip",
-            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUMmNsY1lkcTgxY1VIbmRpb3BJckN5SDhOQnNLZTJlN1RIb1JpUDlkYVN0SmwrRGpXU0cvYTF3bDcrZzREdjZxc214WHEzb3Mxc2N2UkFRYXp5Wkt3NU5wSy93U1VPU0FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzI3MDkzNTU4CWZpbGU6TE9BIExvZ3MgS1JfMS4zLjJfeDY0LXNldHVwLm5zaXMuemlwClJqNGVNZDNtOVR2QkYrTUJ3Ti9vUkhXbExpanAyUjliejFsVi9VSkQyS21aMjFjOGI0Ni84VXYvZ2JWSmRBWGMwQ2FMamttTDFIVFJDK1RweFYxZkFnPT0K"
+            "url": "https://github.com/MaccolZicoSol/loa-logs-kr/releases/download/v1.3.3/LOA.Logs.KR_1.3.3_x64-setup.nsis.zip",
+            "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUMmNsY1lkcTgxY1YwK0ducHBQTFhDRHpFRnVaRXNoc1lFQXRIQW1nOEswR1dSazdMbEFabXl2YmRXMFBEaU5PeVozZEd0Sy8zb0VyQzlHNGZ5TEJ0SWgrWlpMYWMxbUFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzI3MTc4MDQ2CWZpbGU6TE9BIExvZ3MgS1JfMS4zLjNfeDY0LXNldHVwLm5zaXMuemlwCkVxS2pMejdPSEtwcUk0aXFVMVFFTEVjUVVQVE92WFNQWWxGZENQcW9DMk1mREVpT2FsNURlTm9uMDE2djVzVm5BK25ERTVUZnRsa1ZuUDlrYUtoWERRPT0K"
         }
     }
 }
