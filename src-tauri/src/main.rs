@@ -197,11 +197,21 @@ async fn main() -> Result<()> {
                 logs_window.show().unwrap();
             }
 
-            task::spawn_blocking(move || {
-                parser::start(meter_window, ip, port, raw_socket, settings).map_err(|e| {
-                    error!("unexpected error occurred in parser: {}", e);
-                })
-            });
+            if let Some(settings) = settings.clone() {
+                if settings.general.read_packet || settings.general.save_packet {
+                    task::spawn_blocking(move || {
+                        parser::start_beta(meter_window, ip, port, raw_socket, Some(settings)).map_err(|e| {
+                            error!("unexpected error occurred in parser beta: {}", e);
+                        })
+                    });
+                } else {
+                    task::spawn_blocking(move || {
+                        parser::start(meter_window, ip, port, raw_socket, Some(settings)).map_err(|e| {
+                            error!("unexpected error occurred in parser: {}", e);
+                        })
+                    });
+                }
+            }
 
             // #[cfg(debug_assertions)]
             // {

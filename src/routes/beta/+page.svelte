@@ -29,24 +29,18 @@
 
     <div class="mx-8 my-4 tracking-tight text-gray-200">
         <p class="px-4 text-base">
-            로스트아크 패치 후 미터기의 새 업데이트가 올라올 때까지 패킷들을 저장해놨다가
+            로스트아크 패치 직후 미터기 업데이트가 아직 되지 않아 집계가 불가능할 때
         </p>
         <p class="px-4 text-base">
-            미터기 업데이트 후 저장해놨던 패킷들을 다시 읽어 로그를 남기는 기능
+            패킷을 저장해 두었다가 미터기 업데이트 후에 저장된 패킷을 다시 분석하고 집계하여 로그를 남기는 기능
         </p>
-        <p class="mt-4 px-4 text-base">
-            ※ 주의, 아직 미완성이므로 이 기능으로 집계된 로그들은 "딜"만 체크하는 용도로 사용하세요 
-        </p>
-        <p class="px-4 text-base">
-            그리고 현재는 패킷을 빠르게 읽어버리는 구조라 전투 시간이 30초 미만이 나올수도 있습니다
-        </p>
-        <p class="px-4 text-base">
-            패킷을 로그로 집계한 후 기존 패킷 파일은 삭제를 권합니다
+        <p class="mt-16 px-4 text-base">
+            ※ 저장된 패킷을 로그로 남긴 후 기존 패킷 파일은 삭제를 권합니다
         </p>
     </div>
 
     {#if !$readChangedStore}
-        <div class="mx-8 mt-4 flex flex-col space-y-2 px-4">
+        <div class="mx-8 mt-16 flex flex-col space-y-2 px-4">
             <div class="flex items-center space-x-4">
                 <div>저장된 패킷 파일 폴더(packets.bin):</div>
                 <button class="w-20 rounded-md p-1 bg-accent-800 hover:bg-accent-900" 
