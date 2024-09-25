@@ -2040,15 +2040,15 @@
     "levels": {
       "1": {
         "desc": "징벌 스킬의 피해량이 <FONT COLOR='#99ff99'>15%</FONT>, 징벌 스킬 타격 시 신앙게이지 획득량이 <FONT COLOR='#99ff99'>100%</FONT> 증가한다. 신의 집행자 지속 시간이 <FONT COLOR='#99ff99'>100%</FONT> 증가한다.",
-        "values": [1500, 10000, 5000, 552921]
+        "values": [1500, 0, 5000, 552921]
       },
       "2": {
         "desc": "징벌 스킬의 피해량이 <FONT COLOR='#99ff99'>22.5%</FONT>, 징벌 스킬 타격 시 신앙게이지 획득량이 <FONT COLOR='#99ff99'>100%</FONT> 증가한다. 신의 집행자 지속 시간이 <FONT COLOR='#99ff99'>125%</FONT> 증가한다.",
-        "values": [2250, 10000, 5556, 552921]
+        "values": [2250, 0, 5556, 552921]
       },
       "3": {
         "desc": "징벌 스킬의 피해량이 <FONT COLOR='#99ff99'>30%</FONT>, 징벌 스킬 타격 시 신앙게이지 획득량이 <FONT COLOR='#99ff99'>100%</FONT> 증가한다. 신의 집행자 지속 시간이 <FONT COLOR='#99ff99'>150%</FONT> 증가한다.",
-        "values": [3000, 10000, 6000, 552921]
+        "values": [3000, 0, 6000, 552921]
       }
     },
     "featuretype": 292,
@@ -3862,6 +3862,670 @@
         "desc": "이동기 재사용 대기시간이 10% 감소한다."
       }
     }
+  },
+  "11011": {
+    "id": 11011,
+    "name": "팔찌 1번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11012": {
+    "id": 11012,
+    "name": "팔찌 1번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11013": {
+    "id": 11013,
+    "name": "팔찌 1번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11014": {
+    "id": 11014,
+    "name": "팔찌 1번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11021": {
+    "id": 11021,
+    "name": "팔찌 2번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11022": {
+    "id": 11022,
+    "name": "팔찌 2번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11023": {
+    "id": 11023,
+    "name": "팔찌 2번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11024": {
+    "id": 11024,
+    "name": "팔찌 2번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11041": {
+    "id": 11041,
+    "name": "팔찌 4번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11042": {
+    "id": 11042,
+    "name": "팔찌 4번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11043": {
+    "id": 11043,
+    "name": "팔찌 4번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11044": {
+    "id": 11044,
+    "name": "팔찌 4번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11051": {
+    "id": 11051,
+    "name": "팔찌 5번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11052": {
+    "id": 11052,
+    "name": "팔찌 5번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11053": {
+    "id": 11053,
+    "name": "팔찌 5번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11054": {
+    "id": 11054,
+    "name": "팔찌 5번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11061": {
+    "id": 11061,
+    "name": "팔찌 6번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11062": {
+    "id": 11062,
+    "name": "팔찌 6번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11063": {
+    "id": 11063,
+    "name": "팔찌 6번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11064": {
+    "id": 11064,
+    "name": "팔찌 6번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11071": {
+    "id": 11071,
+    "name": "팔찌 7번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [3500, 3300]
+      }
+    },
+    "featuretype": 2
+  },
+  "11072": {
+    "id": 11072,
+    "name": "팔찌 7번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [3000, 2700]
+      }
+    },
+    "featuretype": 2
+  },
+  "11073": {
+    "id": 11073,
+    "name": "팔찌 7번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [3500, 3900]
+      }
+    },
+    "featuretype": 2
+  },
+  "11074": {
+    "id": 11074,
+    "name": "팔찌 7번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [3000, 2850]
+      }
+    },
+    "featuretype": 2
+  },
+  "11081": {
+    "id": 11081,
+    "name": "팔찌 8번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11082": {
+    "id": 11082,
+    "name": "팔찌 8번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11083": {
+    "id": 11083,
+    "name": "팔찌 8번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11084": {
+    "id": 11084,
+    "name": "팔찌 8번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11091": {
+    "id": 11091,
+    "name": "팔찌 9번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [1450]
+      }
+    },
+    "featuretype": 3
+  },
+  "11092": {
+    "id": 11092,
+    "name": "팔찌 9번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [1000]
+      }
+    },
+    "featuretype": 3
+  },
+  "11093": {
+    "id": 11093,
+    "name": "팔찌 9번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [1750]
+      }
+    },
+    "featuretype": 3
+  },
+  "11094": {
+    "id": 11094,
+    "name": "팔찌 9번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [1075]
+      }
+    },
+    "featuretype": 3
+  },
+  "11111": {
+    "id": 11111,
+    "name": "팔찌 11번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [521911]
+      }
+    },
+    "featuretype": 5
+  },
+  "11112": {
+    "id": 11112,
+    "name": "팔찌 11번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [521921]
+      }
+    },
+    "featuretype": 5
+  },
+  "11113": {
+    "id": 11113,
+    "name": "팔찌 11번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [521931]
+      }
+    },
+    "featuretype": 5
+  },
+  "11114": {
+    "id": 11114,
+    "name": "팔찌 11번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [521941]
+      }
+    },
+    "featuretype": 5
+  },
+  "11121": {
+    "id": 11121,
+    "name": "팔찌 12번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11122": {
+    "id": 11122,
+    "name": "팔찌 12번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11123": {
+    "id": 11123,
+    "name": "팔찌 12번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11124": {
+    "id": 11124,
+    "name": "팔찌 12번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11181": {
+    "id": 11181,
+    "name": "팔찌 18번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [1950, 2000]
+      }
+    },
+    "featuretype": 10
+  },
+  "11182": {
+    "id": 11182,
+    "name": "팔찌 18번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [1500, 2000]
+      }
+    },
+    "featuretype": 10
+  },
+  "11183": {
+    "id": 11183,
+    "name": "팔찌 18번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [2250, 2000]
+      }
+    },
+    "featuretype": 10
+  },
+  "11184": {
+    "id": 11184,
+    "name": "팔찌 18번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [1575, 2000]
+      }
+    },
+    "featuretype": 10
+  },
+  "11261": {
+    "id": 11261,
+    "name": "팔찌 26번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11262": {
+    "id": 11262,
+    "name": "팔찌 26번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11263": {
+    "id": 11263,
+    "name": "팔찌 26번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11264": {
+    "id": 11264,
+    "name": "팔찌 26번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": ""
+      }
+    }
+  },
+  "11341": {
+    "id": 11341,
+    "name": "팔찌 34번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [520111, 400, 0, 0, 0, 0, 0, 800]
+      }
+    },
+    "featuretype": 22
+  },
+  "11342": {
+    "id": 11342,
+    "name": "팔찌 34번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [520121, 400, 0, 0, 0, 0, 0, 1200]
+      }
+    },
+    "featuretype": 22
+  },
+  "11343": {
+    "id": 11343,
+    "name": "팔찌 34번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [520131, 400, 0, 0, 0, 0, 0, 2000]
+      }
+    },
+    "featuretype": 22
+  },
+  "11344": {
+    "id": 11344,
+    "name": "팔찌 34번 효과",
+    "isnegative": false,
+    "icon": "ability_100.png",
+    "isengrave": false,
+    "levels": {
+      "1": {
+        "desc": "",
+        "values": [520141, 400, 0, 0, 0, 0, 0, 1500]
+      }
+    },
+    "featuretype": 22
   },
   "1255": {
     "id": 1255,

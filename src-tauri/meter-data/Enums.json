@@ -2821,7 +2821,8 @@
     "0": "level",
     "1": "item",
     "2": "permanent",
-    "3": "admin"
+    "3": "stigma",
+    "4": "admin"
   },
   "arkpassivetier": {
     "0": "1",
@@ -3612,7 +3613,8 @@
     "0": "use_item",
     "1": "excess_storage",
     "2": "admin_cmd",
-    "3": "pending_command"
+    "3": "pending_command",
+    "4": "event_mission_style"
   },
   "cardbaseparam": {
     "0": "max_hp",
@@ -3996,6 +3998,10 @@
     "4": "bring_down",
     "5": "all"
   },
+  "checkpointrequesttype": {
+    "0": "none",
+    "1": "world_transfer"
+  },
   "checkquickslottype": {
     "0": "skill",
     "1": "life_skill",
@@ -4309,7 +4315,9 @@
     "30": "foundation_boosting",
     "31": "contents_event",
     "32": "specialraid_2",
-    "33": "engrave_support"
+    "33": "engrave_support",
+    "34": "styleupgrade",
+    "35": "jss_guide"
   },
   "combateffectactiontype": {
     "0": "none",
@@ -4967,7 +4975,8 @@
     "46": "emoticon",
     "47": "selfie",
     "48": "aos",
-    "49": "pc_type_npc"
+    "49": "pc_type_npc",
+    "50": "special_server"
   },
   "contentsrankingtype": {
     "0": "reverse_ruin",
@@ -5164,6 +5173,10 @@
     "2": "ship_wreck",
     "3": "party_joined",
     "4": "afk"
+  },
+  "coopquestresultgradechecktype": {
+    "0": "time_rate",
+    "1": "attain_rate"
   },
   "coopquestrewardbranchtype": {
     "0": "normal",
@@ -5579,7 +5592,8 @@
     "3": "feature_2",
     "4": "feature_3",
     "5": "feature_4",
-    "6": "feature_5"
+    "6": "feature_5",
+    "7": "achievement_finish"
   },
   "devmessagetype": {
     "0": "threat",
@@ -6714,7 +6728,12 @@
     "3": "gem",
     "4": "engrave",
     "5": "skill",
-    "6": "item_set"
+    "6": "item_set",
+    "7": "card",
+    "8": "bracelet",
+    "9": "elixir",
+    "10": "transcendence",
+    "11": "tripod_level"
   },
   "eventmissionpcstyle": {
     "0": "none",
@@ -6789,6 +6808,12 @@
     "2": "deadline",
     "3": "unlimited"
   },
+  "excessinfotype": {
+    "0": "none",
+    "1": "world_transfer_source_world",
+    "2": "world_transfer_level_reward",
+    "3": "world_transfer_character_reward"
+  },
   "excesspropertybindtype": {
     "0": "character",
     "1": "expedition"
@@ -6810,7 +6835,8 @@
     "7": "expired_pc_room_daily_reward",
     "8": "expired_memory_collection_reward",
     "9": "expired_story_pass_reward",
-    "10": "reverse_ruin_bonus_reward"
+    "10": "reverse_ruin_bonus_reward",
+    "11": "world_transfer"
   },
   "excesspropertyreftabletype": {
     "0": "none",
@@ -8323,119 +8349,126 @@
     "973": "world_transfer_cancel_begin",
     "974": "world_transfer_cancel_finish",
     "975": "world_transfer_progress_change",
-    "976": "skill_statistic",
-    "977": "dungeon_skill_statistic",
-    "978": "rvr_realm_change",
-    "979": "rvr_exp_change",
-    "980": "rvr_level_change",
-    "981": "rvr_instance_start",
-    "982": "contents_chart_config",
-    "983": "paid_buff_adjust_expire_time",
-    "984": "town_farm_object_change",
-    "985": "town_farm_object_harvest",
-    "986": "gold_pick_pc",
-    "987": "client_log_save",
-    "988": "client_log_user_report",
-    "989": "add_rvr_medal",
-    "990": "delete_rvr_medal",
-    "991": "change_main_rvr_medal",
-    "992": "town_activity_mission_point_add",
-    "993": "town_activity_diary_reset",
-    "994": "town_activity_mission_point_reward",
-    "995": "training_mode_enter",
-    "996": "training_mode_leave",
-    "997": "training_mode_damage",
-    "998": "town_badge_add",
-    "999": "weekly_town_badge_receive",
-    "1000": "town_trophy_add",
-    "1001": "town_trophy_display",
-    "1002": "town_trophy_display_remove_all",
-    "1003": "town_guest_book_bg_add",
-    "1004": "town_guest_book_update",
-    "1005": "town_guest_book_delete",
-    "1006": "town_guest_book_init",
-    "1007": "town_guest_book_info_change",
-    "1008": "town_play_action",
-    "1009": "town_play_action_stop",
-    "1010": "town_play_quiz_answer",
-    "1011": "town_play_quiz_next",
-    "1012": "town_play_preset_update",
-    "1013": "town_inner_warp_use",
-    "1014": "town_playground_slot_create",
-    "1015": "town_playground_slot_delete",
-    "1016": "town_playground_slot_modify",
-    "1017": "town_playground_enter",
-    "1018": "town_playground_enter_failed",
-    "1019": "town_playground_leave",
-    "1020": "town_playground_start",
-    "1021": "town_playground_end",
-    "1022": "town_monster_add",
-    "1023": "engrave_support_update",
-    "1024": "engrave_support_target_change",
-    "1025": "engrave_support_remove",
-    "1026": "publisher_wegame_credit_feedback",
-    "1027": "community_my_state_change",
-    "1028": "map_memo_add",
-    "1029": "map_memo_remove",
-    "1030": "map_memo_context_modify",
-    "1031": "map_memo_sort_modify",
-    "1032": "lost_survival_participate",
-    "1033": "lost_survival_result",
-    "1034": "lost_survival_starting_point",
-    "1035": "afk_kick_last_action_time_update",
-    "1036": "afk_kick",
-    "1037": "story_pass_mission_success",
-    "1038": "story_pass_mission_objective_count",
-    "1039": "story_pass_exp_add",
-    "1040": "story_pass_level_up",
-    "1041": "story_pass_level_reward_receive",
-    "1042": "story_pass_paid_action",
-    "1043": "check_point_change",
-    "1044": "contents_limit_change",
-    "1045": "confront_result",
-    "1046": "hp_notify",
-    "1047": "item_restriction_group_change",
-    "1048": "zone_balance_contents_point_add",
-    "1049": "zone_balance_contents_reward",
-    "1050": "zone_balance_contents_enter",
-    "1051": "zone_balance_contents_leave",
-    "1052": "foundation_boosting_reward_skip",
-    "1053": "foundation_boosting_reward_receive",
-    "1054": "foundation_boosting_complete_reward_receive",
-    "1055": "life_stack_skill_charge_count_change",
-    "1056": "war_board_kurzan_level_up",
-    "1057": "war_board_kurzan_level_reward_receive",
-    "1058": "war_board_kurzan_exp",
-    "1059": "engrave_selection_update",
-    "1060": "engrave_selection_active_index_change",
-    "1061": "engrave_selection_preset_expand",
-    "1062": "equip_preset_engrave_support_update",
-    "1063": "just_avoid",
-    "1064": "selectable_support_buff_change",
-    "1065": "ark_passive_activation_change",
-    "1066": "ark_passive_point_change",
-    "1067": "ark_passive_node_update",
-    "1068": "ark_passive_preset_change",
-    "1069": "pc_transcendence_release",
-    "1070": "pc_transcendence_release_failed",
-    "1071": "pc_transcendence_weapon_reroll",
-    "1072": "pc_transcendence_weapon_use",
-    "1073": "pc_transcendence_complete",
-    "1074": "event_token_auto_reward_get",
-    "1075": "rising_mission_part_start",
-    "1076": "rising_mission_part_end",
-    "1077": "rising_mission_refresh",
-    "1078": "elixir_install",
-    "1079": "elixir_change",
-    "1080": "town_pet_training_candidate_refresh",
-    "1081": "town_pet_training_start",
-    "1082": "town_pet_training_end",
-    "1083": "town_pet_deploy",
-    "1084": "pet_delete_marking",
-    "1085": "pc_transcendence_force_change",
-    "1086": "colosseum_one_deathmatch_ready",
-    "1087": "colosseum_one_deathmatch_round_start",
-    "1088": "colosseum_one_deathmatch_round_finish"
+    "976": "world_transfer_pc_select",
+    "977": "world_transfer_achievement_remove",
+    "978": "world_transfer_token_item_remove",
+    "979": "world_transfer_item_remove",
+    "980": "skill_statistic",
+    "981": "dungeon_skill_statistic",
+    "982": "rvr_realm_change",
+    "983": "rvr_exp_change",
+    "984": "rvr_level_change",
+    "985": "rvr_instance_start",
+    "986": "contents_chart_config",
+    "987": "paid_buff_adjust_expire_time",
+    "988": "town_farm_object_change",
+    "989": "town_farm_object_harvest",
+    "990": "gold_pick_pc",
+    "991": "client_log_save",
+    "992": "client_log_user_report",
+    "993": "add_rvr_medal",
+    "994": "delete_rvr_medal",
+    "995": "change_main_rvr_medal",
+    "996": "town_activity_mission_point_add",
+    "997": "town_activity_diary_reset",
+    "998": "town_activity_mission_point_reward",
+    "999": "training_mode_enter",
+    "1000": "training_mode_leave",
+    "1001": "training_mode_damage",
+    "1002": "town_badge_add",
+    "1003": "weekly_town_badge_receive",
+    "1004": "town_trophy_add",
+    "1005": "town_trophy_display",
+    "1006": "town_trophy_display_remove_all",
+    "1007": "town_guest_book_bg_add",
+    "1008": "town_guest_book_update",
+    "1009": "town_guest_book_delete",
+    "1010": "town_guest_book_init",
+    "1011": "town_guest_book_info_change",
+    "1012": "town_play_action",
+    "1013": "town_play_action_stop",
+    "1014": "town_play_quiz_answer",
+    "1015": "town_play_quiz_next",
+    "1016": "town_play_preset_update",
+    "1017": "town_inner_warp_use",
+    "1018": "town_playground_slot_create",
+    "1019": "town_playground_slot_delete",
+    "1020": "town_playground_slot_modify",
+    "1021": "town_playground_enter",
+    "1022": "town_playground_enter_failed",
+    "1023": "town_playground_leave",
+    "1024": "town_playground_start",
+    "1025": "town_playground_end",
+    "1026": "town_monster_add",
+    "1027": "engrave_support_update",
+    "1028": "engrave_support_target_change",
+    "1029": "engrave_support_remove",
+    "1030": "publisher_wegame_credit_feedback",
+    "1031": "community_my_state_change",
+    "1032": "map_memo_add",
+    "1033": "map_memo_remove",
+    "1034": "map_memo_context_modify",
+    "1035": "map_memo_sort_modify",
+    "1036": "lost_survival_participate",
+    "1037": "lost_survival_result",
+    "1038": "lost_survival_starting_point",
+    "1039": "afk_kick_last_action_time_update",
+    "1040": "afk_kick",
+    "1041": "story_pass_mission_success",
+    "1042": "story_pass_mission_objective_count",
+    "1043": "story_pass_exp_add",
+    "1044": "story_pass_level_up",
+    "1045": "story_pass_level_reward_receive",
+    "1046": "story_pass_paid_action",
+    "1047": "check_point_change",
+    "1048": "contents_limit_change",
+    "1049": "confront_result",
+    "1050": "hp_notify",
+    "1051": "item_restriction_group_change",
+    "1052": "zone_balance_contents_point_add",
+    "1053": "zone_balance_contents_reward",
+    "1054": "zone_balance_contents_enter",
+    "1055": "zone_balance_contents_leave",
+    "1056": "foundation_boosting_reward_skip",
+    "1057": "foundation_boosting_reward_receive",
+    "1058": "foundation_boosting_complete_reward_receive",
+    "1059": "life_stack_skill_charge_count_change",
+    "1060": "war_board_kurzan_level_up",
+    "1061": "war_board_kurzan_level_reward_receive",
+    "1062": "war_board_kurzan_exp",
+    "1063": "engrave_selection_update",
+    "1064": "engrave_selection_active_index_change",
+    "1065": "engrave_selection_preset_expand",
+    "1066": "equip_preset_engrave_support_update",
+    "1067": "just_avoid",
+    "1068": "selectable_support_buff_change",
+    "1069": "ark_passive_activation_change",
+    "1070": "ark_passive_point_change",
+    "1071": "ark_passive_node_update",
+    "1072": "ark_passive_preset_change",
+    "1073": "ark_passive_stigma_open",
+    "1074": "ark_passive_stigma_upgrade",
+    "1075": "pc_transcendence_release",
+    "1076": "pc_transcendence_release_failed",
+    "1077": "pc_transcendence_weapon_reroll",
+    "1078": "pc_transcendence_weapon_use",
+    "1079": "pc_transcendence_complete",
+    "1080": "event_token_auto_reward_get",
+    "1081": "rising_mission_part_start",
+    "1082": "rising_mission_part_end",
+    "1083": "rising_mission_refresh",
+    "1084": "elixir_install",
+    "1085": "elixir_change",
+    "1086": "town_pet_training_candidate_refresh",
+    "1087": "town_pet_training_start",
+    "1088": "town_pet_training_end",
+    "1089": "town_pet_deploy",
+    "1090": "pet_delete_marking",
+    "1091": "pc_transcendence_force_change",
+    "1092": "elixir_enchant_fixed_option",
+    "1093": "colosseum_one_deathmatch_ready",
+    "1094": "colosseum_one_deathmatch_round_start",
+    "1095": "colosseum_one_deathmatch_round_finish"
   },
   "gamenotebackgroundtype": {
     "0": "default",
@@ -8540,6 +8573,11 @@
   "grabbedsockettype": {
     "0": "head",
     "1": "body"
+  },
+  "gradecolorstringoptiontype": {
+    "0": "none",
+    "1": "tier3",
+    "2": "tier4"
   },
   "growthmodeaction": {
     "0": "enter",
@@ -9539,7 +9577,9 @@
     "59": "item_amplification",
     "60": "direct_shop_key",
     "61": "gem_promotion",
-    "62": "colosseum_rule"
+    "62": "colosseum_rule",
+    "63": "bracelet_upgrade",
+    "64": "esther_weapon_evolution"
   },
   "infighterconsumeshocktype": {
     "0": "full",
@@ -9960,6 +10000,7 @@
     "10130": "equip_weapon_sword_female",
     "10131": "equip_weapon_scythe",
     "10132": "equip_weapon_heavy_gauntlet_male",
+    "10133": "equip_weapon_scroll",
     "10201": "equip_armor_helmet",
     "10202": "equip_armor_top",
     "10203": "equip_armor_pants",
@@ -10332,6 +10373,7 @@
     "90231": "avatar_weapon_sword_female",
     "90232": "avatar_weapon_scythe",
     "90233": "avatar_weapon_heavy_gauntlet_male",
+    "90234": "avatar_weapon_scroll",
     "90301": "avatar_effect_footstep",
     "90400": "avatar_polymorph_skin",
     "100101": "astra_equip_will",
@@ -10447,6 +10489,7 @@
     "806": "enchant_skill_rune",
     "807": "enchant_install_gem",
     "808": "enchant_material_install_elixir",
+    "809": "enchant_material_stigma",
     "900": "battle",
     "901": "battle_potion",
     "902": "battle_item_heal",
@@ -10993,6 +11036,12 @@
     "3": "event",
     "4": "town"
   },
+  "jumpingtutorialskiptype": {
+    "0": "none",
+    "1": "enter",
+    "2": "skip",
+    "3": "skip_all"
+  },
   "jumpingtutorialtype": {
     "0": "none",
     "1": "prologue",
@@ -11416,7 +11465,8 @@
     "4": "excess_pc_get",
     "5": "excess_pc_put",
     "6": "login_without_main",
-    "7": "name_initialized"
+    "7": "name_initialized",
+    "8": "world_transfer"
   },
   "mapmarkertype": {
     "0": "shared_party",
@@ -12524,7 +12574,8 @@
     "1": "inc_out_damage",
     "2": "dec_out_damage",
     "3": "inc_in_damage",
-    "4": "dec_in_damage"
+    "4": "dec_in_damage",
+    "5": "inc_out_ultimate_damage"
   },
   "mvpmedaltype": {
     "0": "none",
@@ -13183,7 +13234,8 @@
   },
   "npcwavemethod": {
     "0": "time",
-    "1": "ratio"
+    "1": "ratio",
+    "2": "timeline"
   },
   "npcwavenodetype": {
     "0": "all",
@@ -15034,6 +15086,8 @@
     "96": "mod_cube_evny_reward",
     "97": "chaos_dungeon_entry",
     "98": "chaos_dungeon_reward",
+    "99": "ark_passive_stigma_open",
+    "100": "ark_passive_stigma_upgrade",
     "101": "quest_point_reward",
     "103": "town_give_result",
     "104": "life_reward_drop",
@@ -15262,7 +15316,8 @@
     "333": "pc_transcendence_weapon_reroll",
     "334": "pc_transcendence_weapon_use",
     "335": "pet_delete",
-    "336": "town_pet_training"
+    "336": "town_pet_training",
+    "337": "event_mission_pc_style_apply"
   },
   "publishreason": {
     "0": "move",
@@ -15374,7 +15429,8 @@
     "22": "clear_guardian_raid",
     "23": "enhance",
     "24": "clear_cube",
-    "25": "clear_tower"
+    "25": "clear_tower",
+    "26": "select_style"
   },
   "questcompleteorigin": {
     "0": "origin_normal",
@@ -17253,7 +17309,8 @@
     "9": "normal_peer_disconnect",
     "10": "abnormal_peer_disconnect",
     "11": "agent_disconnect",
-    "12": "slow_function"
+    "12": "slow_function",
+    "13": "world_transfer"
   },
   "servertimetype": {
     "0": "login",
@@ -17519,7 +17576,8 @@
     "35": "npc_stiffen_skill",
     "36": "confront",
     "37": "remove_skill",
-    "38": "move_to_pc"
+    "38": "move_to_pc",
+    "39": "just_avoid"
   },
   "skillcategory": {
     "0": "normal",
@@ -19029,6 +19087,11 @@
     "4": "higher",
     "5": "highest"
   },
+  "stigmamoneytype": {
+    "0": "none",
+    "1": "gold",
+    "2": "trade_gold"
+  },
   "stockcancelreason": {
     "0": "user_request",
     "1": "timeout",
@@ -19464,7 +19527,8 @@
     "44": "aos",
     "45": "town_inner_warp",
     "46": "confront",
-    "47": "voyage_anchor_volume"
+    "47": "voyage_anchor_volume",
+    "48": "class_preview_revert"
   },
   "teleportspotmode": {
     "0": "closest",
@@ -22096,11 +22160,18 @@
     "684": "minigame_exit",
     "685": "npc_interaction_pet_refund",
     "686": "input_buff_remove_state_metronome",
-    "687": "transcendence_reward",
-    "688": "colosseum_one_death_match_character_select",
-    "689": "colosseum_one_death_match_progress",
-    "690": "colosseum_one_death_match_entrance_chatacter_select",
-    "691": "direct_shop"
+    "687": "colosseum_entrance",
+    "688": "colosseum_season_info",
+    "689": "colosseum_season_ranking_board",
+    "690": "transcendence_reward",
+    "691": "colosseum_one_death_match_character_select",
+    "692": "jss_guide",
+    "693": "jss_guide_reward_window",
+    "694": "colosseum_one_death_match_progress",
+    "695": "colosseum_one_death_match_entrance_chatacter_select",
+    "696": "direct_shop",
+    "697": "ark_passive_stigma_map",
+    "698": "warboard_kurzan_level"
   },
   "ultimateconditiontype": {
     "0": "none",
@@ -22592,7 +22663,8 @@
     "2": "recommended",
     "3": "event",
     "4": "jump_start",
-    "5": "express"
+    "5": "express",
+    "6": "ignite"
   },
   "worldeventactiontype": {
     "0": "spawn_chaos_gate",
@@ -22655,6 +22727,11 @@
     "8": "goods_box_not_loaded",
     "9": "goods_box_product_exist"
   },
+  "worldtransferexecresult": {
+    "0": "success",
+    "1": "fail",
+    "2": "retry"
+  },
   "worldtransferprogressstatus": {
     "0": "none",
     "1": "target_world_transfer",
@@ -22663,6 +22740,12 @@
     "4": "billing_transfer",
     "5": "finished"
   },
+  "worldtransferqueryresult": {
+    "0": "success",
+    "1": "connection_fail",
+    "2": "query_fail",
+    "3": "query_pending"
+  },
   "worldtransferstatus": {
     "0": "none",
     "1": "applied",
@@ -22670,6 +22753,10 @@
     "3": "payment_completed",
     "4": "cancellation_pending",
     "5": "canceled"
+  },
+  "worldtransfertype": {
+    "0": "expedition",
+    "1": "character"
   },
   "worldtransferwaitqueryresult": {
     "0": "progress",

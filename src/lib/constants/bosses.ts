@@ -44,6 +44,7 @@ export const bossList = [
 
 
     // guardian raids
+    "스콜라키아",
     "아게오로스",
     "베스칼",
     "가르가디스",
