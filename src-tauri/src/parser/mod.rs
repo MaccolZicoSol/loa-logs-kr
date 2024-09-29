@@ -904,7 +904,7 @@ pub fn start(
                             state.raid_difficulty_id = 3;
                         }
                         4 => {
-                            state.raid_difficulty = "스페셜".to_string();
+                            state.raid_difficulty = "솔로".to_string();
                             state.raid_difficulty_id = 4;
                         }
                         5 => {

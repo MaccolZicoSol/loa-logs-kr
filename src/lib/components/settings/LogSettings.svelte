@@ -37,6 +37,10 @@
             description="상단에있는 총 피해량과 총 DPS 수치를 축약해서 표시합니다."
             bind:setting={$settings.logs.abbreviateHeader} />
         <SettingItem
+            name="파티 피해량 분리"
+            description="파티가 입힌 피해량을 위해 플레이어를 각자의 파티로 나눕니다."
+            bind:setting={$settings.logs.splitPartyDamage} />
+        <SettingItem
             name="파티 버프 분리"
             description="파티 버프를 위해 플레이어를 각자의 파티로 나눕니다."
             bind:setting={$settings.logs.splitPartyBuffs} />

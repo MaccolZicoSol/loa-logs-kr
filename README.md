@@ -1,4 +1,4 @@
-# <img src="https://i.imgur.com/eej47rS.png" width="30"/> LOA Logs KR
+# <img src="https://i.imgur.com/q2O4nnn.png" width="30"/> LOA Logs KR
 
 [![GitHub](https://img.shields.io/github/downloads/MaccolZicoSol/loa-logs-kr/total?style=for-the-badge&color=%23ff9800)](https://github.com/MaccolZicoSol/loa-logs-kr/releases/latest) [![Discord](https://img.shields.io/discord/1240116892228780073?color=%235865F2&label=Discord&style=for-the-badge)](https://discord.gg/ybujC3sjMy)
 
@@ -7,6 +7,8 @@
 [![GitHub](https://img.shields.io/github/license/MaccolZicoSol/loa-logs-kr?style=flat-square)](https://github.com/MaccolZicoSol/loa-logs-kr/blob/master/LICENSE)
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/maccolsolzico)
+
+[<img src="static/kakaotalk.png" alt="KakaoTalk" width="60"/>](https://open.kakao.com/me/meter)
 
 
 LOA Logs is a "blazingly fast" open source Lost Ark DPS meter, written in Rust by [Snow](https://github.com/snoww). 
@@ -29,15 +31,9 @@ https://github.com/MaccolZicoSol/loa-logs-kr/releases
 # Supporting the Project
 
 한섭 개발자에게 기프티콘을 선물해서 지원할 수 있습니다.
-<br/>
-[<img src="static/kakaotalk.png" alt="KakaoTalk" width="60"/>](https://open.kakao.com/me/meter)
+[kakaotalk](https://open.kakao.com/me/meter), [coffee.](https://www.buymeacoffee.com/maccolsolzico)
 
-You can support loa-logs' Snow's
-<br/>
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/synow)
-[<img src="static/kofi.png" alt="Ko-fi" width="230"/>](https://ko-fi.com/synow)
-
-You can also support LOA Details' Herysia's [Patreon.](https://patreon.com/Herysia)
+또한 loa-logs 제작자 Snow를 직접 지원할 수 있습니다. [coffee.](https://www.buymeacoffee.com/synow)
 
 # FAQ
 #### Q: METER NOT WORKING AFTER MAJOR PATCH!!!

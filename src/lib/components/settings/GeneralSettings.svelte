@@ -147,6 +147,10 @@
                 </div>
             {/if}
         </div>
+        <!-- <SettingItem
+            name="Auto Launch Lost Ark"
+            description="Automatically start Lost Ark when the app is opened."
+            bind:setting={$settings.general.startLoaOnStart} /> -->
         <SettingItem
             name="저전력 모드"
             description="집계 업데이트 주기를 줄여 CPU 사용량을 감소시킵니다. (미터기 재시작 필요)"

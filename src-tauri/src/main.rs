@@ -1486,6 +1486,8 @@ fn set_start_on_boot(window: tauri::Window, set: bool) {
 
 #[tauri::command]
 fn check_loa_running() -> bool {
+    return false;
+
     let system = System::new_all();
     let process_name = "lostark.exe";
 
@@ -1500,6 +1502,8 @@ fn check_loa_running() -> bool {
 
 #[tauri::command]
 fn start_loa_process() {
+    return;
+
     if !check_loa_running() {
         info!("starting lost ark process...");
         Command::new("cmd")

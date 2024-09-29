@@ -106,12 +106,12 @@
         <div class="px-1 pb-2">
             <div class="flex items-center pt-1 pb-2">
                 <button
-                    use:tooltip={{ content: "Go to highest damage cast." }}
+                    use:tooltip={{ content: "제일 높은 피해량을 입혔을 때의 시전으로 이동합니다." }}
                     class="mr-4 p-1 bg-accent-500 hover:bg-accent-800 rounded-md text-sm"
                     on:click={() => {
                         $focusedSkillCast.cast = getHighestDamageCastIndex();
                     }}>
-                    Find Max Cast
+                    고점 찾기
                 </button>
                 <button
                     use:tooltip={{ content: "이전 시전" }}
@@ -234,7 +234,7 @@
                     <tbody>
                         {#each skillCast.hits as hit, i (i)}
                             <tr>
-                                <td class="h-7 font-mono">#{i + 1}</td>
+                                <td class="h-7 font-gothic">#{i + 1}</td>
                                 {#if i === 0}
                                     <td class="font-gothic">
                                         <span use:tooltip={{ content: `${formatDurationFromMs(hit.timestamp)}초` }}>
@@ -248,7 +248,7 @@
                                         </span>
                                     </td>
                                 {/if}
-                                <td class="font-mono">
+                                <td class="font-gothic">
                                     {#if hit.crit}
                                         <span use:tooltip={{ content: "치명타" }}>치</span>
                                     {/if}
@@ -262,7 +262,7 @@
                                         -
                                     {/if}
                                 </td>
-                                <td class="font-mono">
+                                <td class="font-gothic">
                                     <span use:tooltip={{ content: hit.damage.toLocaleString() }}>
                                         {abbreviateNumber(hit.damage)}
                                     </span>

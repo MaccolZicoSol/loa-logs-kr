@@ -432,8 +432,10 @@
                             // console.log("titlebar clicked");
                         }}>
                         <tr class="bg-zinc-900 tracking-tighter">
-                            <th class="w-7 px-2 font-normal" />
-                            <th class="w-16 px-2 text-left font-normal" />
+                            <th class="w-7 px-2 font-normal">
+                                <MissingInfo />
+                            </th>
+                            <th class="w-14 px-2 text-left font-normal" />
                             <th class="w-full" />
                             {#if anyDead && $settings.meter.deathTime}
                                 <th class="w-16 font-normal" use:tooltip={{ content: "죽은 시간" }}>Dead</th>

@@ -670,8 +670,8 @@ fn get_npc_entity_type_name_grade(npc: &NpcStruct, max_hp: i64) -> (EntityType, 
             || npc_info.grade == "epic_raid"
             || npc_info.grade == "commander")
             && max_hp > 10_000
-            && !npc_info.name.contains('_')
-            // && npc_info.name.chars().all(|c| c.is_ascii()) 
+            && !npc_name.contains('_')
+            // && npc_name.chars().all(|c| c.is_ascii())
         {
             (BOSS, npc_name.clone(), npc_info.grade.clone())
         } else {

@@ -18,6 +18,32 @@
     };
     let spin = writable(false);
     let updateText = writable("업데이트 확인");
+
+    let loaRunning = false;
+
+    $: starting = false;
+
+    $: {
+        if (!hidden) {
+            checkLoaRunning();
+
+            setInterval(() => {
+                checkLoaRunning();
+            }, 5000);
+        }
+    }
+
+    onMount(() => {
+        checkLoaRunning();
+    });
+
+    async function checkLoaRunning() {
+        loaRunning = await invoke("check_loa_running");
+    }
+
+    function startLoa() {
+        invoke("start_loa_process");
+    }
 </script>
 
 <Drawer
@@ -43,10 +69,13 @@
             <a href="/about" class="hover:text-accent-500" on:click={() => (hidden = true)}> 소개 </a>
             <a href="/settings" class="hover:text-accent-500" on:click={() => (hidden = true)}> 설정 </a>
             <a href="/changelog" class="hover:text-accent-500" on:click={() => (hidden = true)}> 업데이트 내역 </a>
-            <a href="https://open.kakao.com/me/meter" class="hover:text-accent-500" target="_blank"
-               on:click={() => (hidden = true)}>
-                <div class="inline-flex space-x-1 items-center">
-                    <div>기프티콘 선물하기</div>
+            <a
+                href="https://open.kakao.com/me/meter"
+                class="hover:text-accent-500"
+                target="_blank"
+                on:click={() => (hidden = true)}>
+                <div class="inline-flex items-center space-x-1">
+                    <div>후원</div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-2 fill-gray-300" viewBox="0 0 512 512">
                         <path
                             d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z" />
@@ -54,6 +83,24 @@
                 </div>
             </a>
             <a href="/beta" class="hover:text-accent-500" on:click={() => (hidden = true)}> 베타 기능 </a>
+            <!-- {#if !loaRunning && !starting}
+                <button
+                    class="bg-accent-800 hover:bg-accent-900 mx-4 rounded-lg p-2"
+                    on:click={() => {
+                        starting = true;
+                        startLoa();
+                        setTimeout(() => {
+                            starting = false;
+                            checkLoaRunning();
+                        }, 20000);
+                    }}>
+                    Start Lost Ark
+                </button>
+            {:else if !loaRunning && starting}
+                <button class="mx-4 rounded-lg bg-zinc-700 p-2" disabled> Starting... </button>
+            {:else if loaRunning}
+                <button class="mx-4 rounded-lg bg-zinc-700 p-2" disabled> Lost Ark Running </button>
+            {/if} -->
         </div>
         <div class="px-3 py-2 text-gray-300">
             <div class="flex items-center justify-between">
@@ -65,10 +112,16 @@
                     {/await}
                 </div>
                 {#if $updateSettings.available}
-                    <button class="pr-1" use:tooltip={{content: "지금 업데이트"}}
-                            on:click={() => {$updateSettings.dismissed = false;}}>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
-                             class="size-5 fill-accent-500 animate-bounce">
+                    <button
+                        class="pr-1"
+                        use:tooltip={{ content: "지금 업데이트" }}
+                        on:click={() => {
+                            $updateSettings.dismissed = false;
+                        }}>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 -960 960 960"
+                            class="fill-accent-500 size-5 animate-bounce">
                             <path
                                 d="M281.5-165v-57.5H679v57.5H281.5Zm170-165v-356L329-563.5 289-604l191-191 191.5 191-40.5 40.5L509-686v356h-57.5Z" />
                         </svg>
@@ -78,7 +131,7 @@
                         class="pr-1"
                         use:tooltip={{ content: $updateText }}
                         on:click={async () => {
-                            if ($updateText === "No Updates Available") return;
+                            if ($updateText === "새로운 업데이트가 없습니다.") return;
                             if (!$spin) {
                                 $spin = true;
                                 setTimeout(() => {
@@ -92,9 +145,9 @@
                                     $updateSettings.available = true;
                                     $updateSettings.manifest = manifest;
                                 } else {
-                                    $updateText = "No Updates Available";
+                                    $updateText = "새로운 업데이트가 없습니다.";
                                     setTimeout(() => {
-                                        $updateText = "Check for Updates";
+                                        $updateText = "새 업데이트가 있는지 확인중";
                                     }, 5000);
                                 }
                             } catch (e) {

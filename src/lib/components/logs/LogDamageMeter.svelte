@@ -534,7 +534,7 @@
                                     </label>
                                 </button>
                                 <button class="flex items-center justify-between bg-gray-700 p-1">
-                                    <span class="text-sm">Split Party Damage</span>
+                                    <span class="text-sm">파티별로 피해량 분리</span>
                                     <label class="relative inline-flex cursor-pointer items-center">
                                         <input
                                             type="checkbox"
@@ -546,7 +546,7 @@
                                     </label>
                                 </button>
                                 <button class="flex items-center justify-between bg-gray-700 p-1">
-                                    <span class="text-sm">Show Esther</span>
+                                    <span class="text-sm">에스더 표시</span>
                                     <label class="relative inline-flex cursor-pointer items-center">
                                         <input
                                             type="checkbox"
@@ -641,80 +641,33 @@
         <div class="px relative top-0 overflow-x-auto overflow-y-visible">
             {#if tab === MeterTab.DAMAGE}
                 {#if state === MeterState.PARTY}
-                    <table class="relative w-full table-fixed">
-                        <thead
-                            class="z-30 h-6"
-                            on:contextmenu|preventDefault={() => {
-                                console.log("titlebar clicked");
-                            }}>
-                            <tr class="bg-zinc-900">
-                                <th class="w-7 px-2 font-normal" />
-                                <th class="w-16 px-2 text-left font-normal" />
-                                <th class="w-full" />
-                                {#if anyDead && $settings.logs.deathTime}
-                                    <th class="w-18 font-normal" use:tooltip={{ content: "죽음" }}>Dead for</th>
-                                {/if}
-                                {#if $settings.logs.damage}
-                                    <th class="w-16 font-normal" use:tooltip={{ content: "입힌 피해량" }}>DMG</th>
-                                {/if}
-                                {#if $settings.logs.dps}
-                                    <th class="w-16 font-normal" use:tooltip={{ content: "초당 피해량" }}>DPS</th>
-                                {/if}
-                                {#if !isSolo && $settings.logs.damagePercent}
-                                    <th class="w-14 font-normal" use:tooltip={{ content: "피해량 %" }}>D%</th>
-                                {/if}
-                                {#if $settings.logs.critRate}
-                                    <th class="w-14 font-normal" use:tooltip={{ content: "치명타 %" }}>CRIT</th>
-                                {/if}
-                                {#if $settings.logs.critDmg}
-                                    <th class="w-14 font-normal" use:tooltip={{ content: "치명타 피해량 %" }}
-                                        >CDMG
-                                    </th>
-                                {/if}
-                                {#if anyFrontAtk && $settings.logs.frontAtk}
-                                    <th class="w-14 font-normal" use:tooltip={{ content: "헤드 어택 %" }}>F.A</th>
-                                {/if}
-                                {#if anyBackAtk && $settings.logs.backAtk}
-                                    <th class="w-14 font-normal" use:tooltip={{ content: "백 어택 %" }}>B.A</th>
-                                {/if}
-                                {#if anySupportBuff && $settings.logs.percentBuffBySup}
-                                    <th class="w-14 font-normal" use:tooltip={{ content: "서폿 공격력 증가 버프로 증가된 피해량 %" }}
-                                        >Buff%
-                                    </th>
-                                {/if}
-                                {#if anySupportBrand && $settings.logs.percentBrand}
-                                    <th class="w-14 font-normal" use:tooltip={{ content: "서폿 낙인 스킬로 증가된 피해량 %" }}
-                                        >B%
-                                    </th>
-                                {/if}
-                                {#if anySupportIdentity && $settings.logs.percentIdentityBySup}
-                                    <th
-                                        class="w-14 font-normal"
-                                        use:tooltip={{ content: "서폿 아이덴티티로 증가된 피해량 %" }}
-                                        >Iden%
-                                    </th>
-                                {/if}
-                                {#if anyRdpsData && $settings.logs.ssyn}
-                                    <th
-                                        class="w-14 font-normal"
-                                        use:tooltip={{ content: "서폿 시너지로 증가된 피해량 %" }}
-                                        >sSyn%
-                                    </th>
-                                {/if}
-                                {#if $settings.logs.counters}
-                                    <th class="w-14 font-normal" use:tooltip={{ content: "카운터" }}>CTR</th>
-                                {/if}
-                            </tr>
-                        </thead>
-                        <tbody class="relative z-10">
-                            {#each players as player, i (player.name)}
-                                <tr
-                                    class="h-7 px-2 py-1 {$settings.general.underlineHovered ? 'hover:underline' : ''}"
-                                    on:click={() => inspectPlayer(player.name)}>
-                                    <LogDamageMeterRow
-                                        entity={player}
-                                        percentage={playerDamagePercentages[i]}
-                                        {totalDamageDealt}
+                    {#if $settings.logs.splitPartyDamage && encounterPartyInfo && Object.keys(encounterPartyInfo).length >= 2}
+                        <LogDamageMeterPartySplit
+                            {players}
+                            {encounterPartyInfo}
+                            {topDamageDealt}
+                            {totalDamageDealt}
+                            {anyFrontAtk}
+                            {anyBackAtk}
+                            {anySupportBuff}
+                            {anySupportIdentity}
+                            {anySupportBrand}
+                            {anyRdpsData}
+                            end={encounter.lastCombatPacket}
+                            {isSolo}
+                            {inspectPlayer} />
+                    {:else}
+                        <table class="relative w-full table-fixed">
+                            <thead
+                                class="z-30 h-6"
+                                on:contextmenu|preventDefault={() => {
+                                    console.log("titlebar clicked");
+                                }}>
+                                <tr class="bg-zinc-900">
+                                    <th class="w-7 px-2 font-normal" />
+                                    <th class="w-14 px-2 text-left font-normal" />
+                                    <th class="w-full" />
+                                    <LogDamageMeterHeader
                                         {anyDead}
                                         {multipleDeaths}
                                         {anyFrontAtk}

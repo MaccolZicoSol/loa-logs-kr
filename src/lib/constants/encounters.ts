@@ -64,7 +64,7 @@ export const encounterMap: { [key: string]: { [key: string]: Array<string> } } =
         ]
     },
     "베히모스": {
-        "베히모스 1관문": ["폭풍의 지휘관, 베히모스"],
+        "베히모스 1관문": ["폭풍의 지휘관, 베히모스", "비열한 스콜라키아", "거짓된 핏빛의 요호", "무자비한 라칸드로프", "악랄한 아게오로스"],
         "베히모스 2관문": ["잔혹한 폭풍의 처단자, 베히모스"]
     },
     "에기르": {
@@ -77,4 +77,4 @@ export const encounterMap: { [key: string]: { [key: string]: Array<string> } } =
     }
 };
 
-export const difficultyMap: Array<string> = ["노말", "하드", "헬", "도전", "시련", "익스트림", "더 퍼스트"];
+export const difficultyMap: Array<string> = ["노말", "하드", "헬", "도전", "솔로", "시련", "익스트림", "더 퍼스트"];
