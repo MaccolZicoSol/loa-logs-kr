@@ -129790,7 +129790,7 @@
   "25440": {
     "id": 25440,
     "name": "데스 슬래쉬",
-    "desc": "전방으로 빠르게 돌진한 뒤 사라졌다가 나타나며 적에게 <$MACRO physic @1:254402/>의 피해를 주고 적을 높게 띄운 뒤, 회오리 검술을 펼쳐 적에게 최대 <FONT COLOR='#ffbb00'><$CALC_COMMA ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 254401/>/10000)+((<$TABLE_SKILLEFFECT ValueA 254401/> + <$TABLE_SKILLEFFECT ValueB 254401/>)/2))*7/></FONT>의 피해를 준다.",
+    "desc": "전방으로 빠르게 돌진한 뒤 사라졌다가 나타나며 이동 중 모험가 및 몬스터와 충돌이 무시된다. 적에게 <$MACRO physic @1:254402/>의 피해를 주고 적을 높게 띄운 뒤, 회오리 검술을 펼쳐 적에게 최대 <FONT COLOR='#ffbb00'><$CALC_COMMA ((<$PLAYER_INFO STAT STAT_ATTACK_POWER/>)* (<$TABLE_SKILLEFFECT ValueF 254401/>/10000)+((<$TABLE_SKILLEFFECT ValueA 254401/> + <$TABLE_SKILLEFFECT ValueB 254401/>)/2))*7/></FONT>의 피해를 준다.",
     "classid": 402,
     "icon": "bl_skill_01_27.png",
     "identitycategory": "blade_normal",
@@ -146893,34 +146893,6 @@
     "id": 98363,
     "name": "춤추기",
     "desc": "모코코가 앞으로 나와 춤을 춘다.",
-    "classid": 0,
-    "icon": "vehicle_65.png"
-  },
-  "98370": {
-    "id": 98370,
-    "name": "",
-    "desc": "",
-    "classid": 0,
-    "icon": "vehicle_60.png"
-  },
-  "98371": {
-    "id": 98371,
-    "name": "",
-    "desc": "",
-    "classid": 0,
-    "icon": "vehicle_63.png"
-  },
-  "98372": {
-    "id": 98372,
-    "name": "",
-    "desc": "",
-    "classid": 0,
-    "icon": "vehicle_64.png"
-  },
-  "98373": {
-    "id": 98373,
-    "name": "",
-    "desc": "",
     "classid": 0,
     "icon": "vehicle_65.png"
   },

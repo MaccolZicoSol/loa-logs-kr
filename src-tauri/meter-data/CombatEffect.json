@@ -30694,6 +30694,18 @@
         "ratio": 10000,
         "cooldown": 0,
         "conditions": [{"type":"current_skill",  "actor":"self",  "arg":28290}],
+        "actions": [{"type":"modify_damage",  "actor":"target",  "args":[-5000,  0,  0,  0,  0,  0]}]
+      },
+      {
+        "ratio": 10000,
+        "cooldown": 0,
+        "conditions": [{"type":"current_skill",  "actor":"self",  "arg":28291}],
+        "actions": [{"type":"modify_damage",  "actor":"target",  "args":[-5000,  0,  0,  0,  0,  0]}]
+      },
+      {
+        "ratio": 10000,
+        "cooldown": 0,
+        "conditions": [{"type":"current_skill",  "actor":"self",  "arg":28290}],
         "actions": [{"type":"exec_after_skill",  "actor":"self",  "args":[2285801,  0,  0,  0,  0,  0]}]
       },
       {
@@ -30707,6 +30719,18 @@
   "2285802": {
     "id": 2285802,
     "effects": [
+      {
+        "ratio": 10000,
+        "cooldown": 0,
+        "conditions": [{"type":"current_skill",  "actor":"self",  "arg":28290}],
+        "actions": [{"type":"modify_damage",  "actor":"target",  "args":[-5000,  0,  0,  0,  0,  0]}]
+      },
+      {
+        "ratio": 10000,
+        "cooldown": 0,
+        "conditions": [{"type":"current_skill",  "actor":"self",  "arg":28291}],
+        "actions": [{"type":"modify_damage",  "actor":"target",  "args":[-5000,  0,  0,  0,  0,  0]}]
+      },
       {
         "ratio": 10000,
         "cooldown": 0,
