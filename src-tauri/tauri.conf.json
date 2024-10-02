@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "LOA Logs KR",
-    "version": "1.3.6"
+    "version": "1.3.7"
   },
   "tauri": {
     "allowlist": {
@@ -37,7 +37,9 @@
       "fs": {
         "readFile": true,
         "copyFile": true,
-        "scope": ["**"]
+        "scope": [
+          "**"
+        ]
       },
       "path": {
         "all": true
@@ -54,7 +56,9 @@
       "http": {
         "all": true,
         "request": true,
-        "scope": ["https://*"]
+        "scope": [
+          "https://*"
+        ]
       }
     },
     "bundle": {
@@ -103,7 +107,7 @@
       "csp": "default-src 'self'; img-src https: data: asset: https://asset.localhost; style-src 'self' 'unsafe-inline'; font-src 'self' data:"
     },
     "updater": {
-      "active": true, 
+      "active": true,
       "endpoints": [
         "https://MaccolZicoSol.github.io/latest.json"
       ],
