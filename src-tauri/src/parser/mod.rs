@@ -227,6 +227,8 @@ pub fn start(
             state.encounter.boss_only_damage = false;
         }
 
+        let local_players_only_tracking = false;
+
         match op {
             Pkt::CounterAttackNotify => {
                 if let Some(pkt) =
@@ -490,51 +492,55 @@ pub fn start(
             }
             Pkt::SkillCastNotify => {
                 if let Some(pkt) = parse_pkt(&data, PKTSkillCastNotify::new, "PKTSkillCastNotify") {
-                    let mut entity = entity_tracker.get_source_entity(pkt.source_id);
-                    entity_tracker.guess_is_player(&mut entity, pkt.skill_id);
-                    if entity.class_id == 202 {
-                        state.on_skill_start(
-                            &entity,
-                            pkt.skill_id,
-                            None,
-                            None,
-                            Utc::now().timestamp_millis(),
-                        );
+                    if !local_players_only_tracking || pkt.source_id == entity_tracker.local_entity_id {
+                        let mut entity = entity_tracker.get_source_entity(pkt.source_id);
+                        entity_tracker.guess_is_player(&mut entity, pkt.skill_id);
+                        if entity.class_id == 202 {
+                            state.on_skill_start(
+                                &entity,
+                                pkt.skill_id,
+                                None,
+                                None,
+                                Utc::now().timestamp_millis(),
+                            );
+                        }
                     }
                 }
             }
             Pkt::SkillStartNotify => {
                 if let Some(pkt) = parse_pkt(&data, PKTSkillStartNotify::new, "PKTSkillStartNotify")
                 {
-                    let mut entity = entity_tracker.get_source_entity(pkt.source_id);
-                    entity_tracker.guess_is_player(&mut entity, pkt.skill_id);
-                    let tripod_index =
-                        pkt.skill_option_data
-                            .tripod_index
-                            .map(|tripod_index| TripodIndex {
-                                first: tripod_index.first,
-                                second: tripod_index.second,
-                                third: tripod_index.third,
-                            });
-                    let tripod_level =
-                        pkt.skill_option_data
-                            .tripod_level
-                            .map(|tripod_level| TripodLevel {
-                                first: tripod_level.first,
-                                second: tripod_level.second,
-                                third: tripod_level.third,
-                            });
-                    let timestamp = Utc::now().timestamp_millis();
-                    let (skill_id, summon_source) = state.on_skill_start(
-                        &entity,
-                        pkt.skill_id,
-                        tripod_index,
-                        tripod_level,
-                        timestamp,
-                    );
-                    
-                    if entity.entity_type == EntityType::PLAYER && skill_id > 0 {
-                        state.skill_tracker.new_cast(entity.id, skill_id, summon_source, timestamp);
+                    if !local_players_only_tracking || pkt.source_id == entity_tracker.local_entity_id { // LocalPlayerCheck
+                        let mut entity = entity_tracker.get_source_entity(pkt.source_id);
+                        entity_tracker.guess_is_player(&mut entity, pkt.skill_id);
+                        let tripod_index =
+                            pkt.skill_option_data
+                                .tripod_index
+                                .map(|tripod_index| TripodIndex {
+                                    first: tripod_index.first,
+                                    second: tripod_index.second,
+                                    third: tripod_index.third,
+                                });
+                        let tripod_level =
+                            pkt.skill_option_data
+                                .tripod_level
+                                .map(|tripod_level| TripodLevel {
+                                    first: tripod_level.first,
+                                    second: tripod_level.second,
+                                    third: tripod_level.third,
+                                });
+                        let timestamp = Utc::now().timestamp_millis();
+                        let (skill_id, summon_source) = state.on_skill_start(
+                            &entity,
+                            pkt.skill_id,
+                            tripod_index,
+                            tripod_level,
+                            timestamp,
+                        );
+                        
+                        if entity.entity_type == EntityType::PLAYER && skill_id > 0 {
+                            state.skill_tracker.new_cast(entity.id, skill_id, summon_source, timestamp);
+                        }
                     }
                 }
             }
@@ -553,43 +559,45 @@ pub fn start(
                     PKTSkillDamageAbnormalMoveNotify::new,
                     "PKTSkillDamageAbnormalMoveNotify",
                 ) {
-                    let now = Utc::now().timestamp_millis();
-                    let owner = entity_tracker.get_source_entity(pkt.source_id);
-                    let local_character_id = id_tracker
-                        .borrow()
-                        .get_local_character_id(entity_tracker.local_entity_id);
-                    let target_count = pkt.skill_damage_abnormal_move_events.len() as i32;
-                    let player_stats = stats_api.get_stats(&state);
-                    for event in pkt.skill_damage_abnormal_move_events.iter() {
-                        let target_entity =
-                            entity_tracker.get_or_create_entity(event.skill_damage_event.target_id);
-                        let source_entity = entity_tracker.get_or_create_entity(pkt.source_id);
-                        let (se_on_source, se_on_target) = status_tracker
-                            .borrow_mut()
-                            .get_status_effects(&owner, &target_entity, local_character_id);
-                        let damage_data = DamageData {
-                            skill_id: pkt.skill_id,
-                            skill_effect_id: pkt.skill_effect_id,
-                            damage: event.skill_damage_event.damage,
-                            modifier: event.skill_damage_event.modifier as i32,
-                            target_current_hp: event.skill_damage_event.cur_hp,
-                            target_max_hp: event.skill_damage_event.max_hp,
-                            damage_attribute: event.skill_damage_event.damage_attr,
-                            damage_type: event.skill_damage_event.damage_type,
-                        };
+                    if !local_players_only_tracking || pkt.source_id == entity_tracker.local_entity_id { // LocalPlayerCheck
+                        let now = Utc::now().timestamp_millis();
+                        let owner = entity_tracker.get_source_entity(pkt.source_id);
+                        let local_character_id = id_tracker
+                            .borrow()
+                            .get_local_character_id(entity_tracker.local_entity_id);
+                        let target_count = pkt.skill_damage_abnormal_move_events.len() as i32;
+                        let player_stats = stats_api.get_stats(&state);
+                        for event in pkt.skill_damage_abnormal_move_events.iter() {
+                            let target_entity =
+                                entity_tracker.get_or_create_entity(event.skill_damage_event.target_id);
+                            let source_entity = entity_tracker.get_or_create_entity(pkt.source_id);
+                            let (se_on_source, se_on_target) = status_tracker
+                                .borrow_mut()
+                                .get_status_effects(&owner, &target_entity, local_character_id);
+                            let damage_data = DamageData {
+                                skill_id: pkt.skill_id,
+                                skill_effect_id: pkt.skill_effect_id,
+                                damage: event.skill_damage_event.damage,
+                                modifier: event.skill_damage_event.modifier as i32,
+                                target_current_hp: event.skill_damage_event.cur_hp,
+                                target_max_hp: event.skill_damage_event.max_hp,
+                                damage_attribute: event.skill_damage_event.damage_attr,
+                                damage_type: event.skill_damage_event.damage_type,
+                            };
 
-                        state.on_damage(
-                            &owner,
-                            &source_entity,
-                            &target_entity,
-                            damage_data,
-                            se_on_source,
-                            se_on_target,
-                            target_count,
-                            &entity_tracker,
-                            &player_stats,
-                            now,
-                        );
+                            state.on_damage(
+                                &owner,
+                                &source_entity,
+                                &target_entity,
+                                damage_data,
+                                se_on_source,
+                                se_on_target,
+                                target_count,
+                                &entity_tracker,
+                                &player_stats,
+                                now,
+                            );
+                        }
                     }
                 }
             }
@@ -602,42 +610,44 @@ pub fn start(
                 if let Some(pkt) =
                     parse_pkt(&data, PKTSkillDamageNotify::new, "PktSkillDamageNotify")
                 {
-                    let now = Utc::now().timestamp_millis();
-                    let owner = entity_tracker.get_source_entity(pkt.source_id);
-                    let local_character_id = id_tracker
-                        .borrow()
-                        .get_local_character_id(entity_tracker.local_entity_id);
-                    let target_count = pkt.skill_damage_events.len() as i32;
-                    let player_stats = stats_api.get_stats(&state);
-                    for event in pkt.skill_damage_events.iter() {
-                        let target_entity = entity_tracker.get_or_create_entity(event.target_id);
-                        // source_entity is to determine battle item
-                        let source_entity = entity_tracker.get_or_create_entity(pkt.source_id);
-                        let (se_on_source, se_on_target) = status_tracker
-                            .borrow_mut()
-                            .get_status_effects(&owner, &target_entity, local_character_id);
-                        let damage_data = DamageData {
-                            skill_id: pkt.skill_id,
-                            skill_effect_id: pkt.skill_effect_id.unwrap_or_default(),
-                            damage: event.damage,
-                            modifier: event.modifier as i32,
-                            target_current_hp: event.cur_hp,
-                            target_max_hp: event.max_hp,
-                            damage_attribute: event.damage_attr,
-                            damage_type: event.damage_type,
-                        };
-                        state.on_damage(
-                            &owner,
-                            &source_entity,
-                            &target_entity,
-                            damage_data,
-                            se_on_source,
-                            se_on_target,
-                            target_count,
-                            &entity_tracker,
-                            &player_stats,
-                            now,
-                        );
+                    if local_players_only_tracking || pkt.source_id == entity_tracker.local_entity_id { // LocalPlayerCheck
+                        let now = Utc::now().timestamp_millis();
+                        let owner = entity_tracker.get_source_entity(pkt.source_id);
+                        let local_character_id = id_tracker
+                            .borrow()
+                            .get_local_character_id(entity_tracker.local_entity_id);
+                        let target_count = pkt.skill_damage_events.len() as i32;
+                        let player_stats = stats_api.get_stats(&state);
+                        for event in pkt.skill_damage_events.iter() {
+                            let target_entity = entity_tracker.get_or_create_entity(event.target_id);
+                            // source_entity is to determine battle item
+                            let source_entity = entity_tracker.get_or_create_entity(pkt.source_id);
+                            let (se_on_source, se_on_target) = status_tracker
+                                .borrow_mut()
+                                .get_status_effects(&owner, &target_entity, local_character_id);
+                            let damage_data = DamageData {
+                                skill_id: pkt.skill_id,
+                                skill_effect_id: pkt.skill_effect_id.unwrap_or_default(),
+                                damage: event.damage,
+                                modifier: event.modifier as i32,
+                                target_current_hp: event.cur_hp,
+                                target_max_hp: event.max_hp,
+                                damage_attribute: event.damage_attr,
+                                damage_type: event.damage_type,
+                            };
+                            state.on_damage(
+                                &owner,
+                                &source_entity,
+                                &target_entity,
+                                damage_data,
+                                se_on_source,
+                                se_on_target,
+                                target_count,
+                                &entity_tracker,
+                                &player_stats,
+                                now,
+                            );
+                        }
                     }
                 }
             }
