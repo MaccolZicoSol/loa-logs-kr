@@ -610,7 +610,7 @@ pub fn start(
                 if let Some(pkt) =
                     parse_pkt(&data, PKTSkillDamageNotify::new, "PktSkillDamageNotify")
                 {
-                    if local_players_only_tracking || pkt.source_id == entity_tracker.local_entity_id { // LocalPlayerCheck
+                    if !local_players_only_tracking || pkt.source_id == entity_tracker.local_entity_id { // LocalPlayerCheck
                         let now = Utc::now().timestamp_millis();
                         let owner = entity_tracker.get_source_entity(pkt.source_id);
                         let local_character_id = id_tracker
