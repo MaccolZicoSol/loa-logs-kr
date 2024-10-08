@@ -40,7 +40,7 @@ export const cardIconMap: { [key: string]: string } = {
     "19288": "AR_CardDeck_ToolTip_18.png"
 };
 
-// not including emperor
+// not including emperor, knight of empress
 export const cardIds = [
     19090,
     19091,
@@ -58,5 +58,4 @@ export const cardIds = [
     19285,
     19286,
     19287,
-    19288,
 ];
