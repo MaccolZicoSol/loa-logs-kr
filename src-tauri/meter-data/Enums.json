@@ -20403,6 +20403,11 @@
     "2": "town",
     "3": "playground"
   },
+  "townplacementattachnpctrackingaxistype": {
+    "0": "yaw",
+    "1": "pitch",
+    "2": "yawandpitch"
+  },
   "townplacementattachnpctrackingtype": {
     "0": "none",
     "1": "local",

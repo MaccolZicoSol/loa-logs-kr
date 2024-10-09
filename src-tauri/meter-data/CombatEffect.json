@@ -23846,7 +23846,7 @@
     "effects": [
       {
         "ratio": 10000,
-        "cooldown": 0,
+        "cooldown": 100,
         "conditions": [{"type":"current_skill",  "actor":"self",  "arg":18030}],
         "actions": [{"type":"exec_active_effect_when_damage",  "actor":"caster",  "args":[2185600,  0,  0,  0,  0,  0]}]
       }
@@ -23857,7 +23857,7 @@
     "effects": [
       {
         "ratio": 10000,
-        "cooldown": 0,
+        "cooldown": 100,
         "conditions": [{"type":"current_skill",  "actor":"self",  "arg":18030}],
         "actions": [{"type":"exec_active_effect_when_damage",  "actor":"caster",  "args":[2185601,  0,  0,  0,  0,  0]}]
       }
@@ -23868,7 +23868,7 @@
     "effects": [
       {
         "ratio": 10000,
-        "cooldown": 0,
+        "cooldown": 100,
         "conditions": [{"type":"current_skill",  "actor":"self",  "arg":18030}],
         "actions": [{"type":"exec_active_effect_when_damage",  "actor":"caster",  "args":[2185602,  0,  0,  0,  0,  0]}]
       }
@@ -23963,7 +23963,7 @@
     "effects": [
       {
         "ratio": 10000,
-        "cooldown": 0,
+        "cooldown": 100,
         "conditions": [{"type":"current_skill",  "actor":"self",  "arg":18030}],
         "actions": [{"type":"exec_active_effect_when_damage",  "actor":"caster",  "args":[2185900,  0,  0,  0,  0,  0]}]
       },
@@ -23983,7 +23983,7 @@
     "effects": [
       {
         "ratio": 10000,
-        "cooldown": 0,
+        "cooldown": 100,
         "conditions": [{"type":"current_skill",  "actor":"self",  "arg":18030}],
         "actions": [{"type":"exec_active_effect_when_damage",  "actor":"caster",  "args":[2185901,  0,  0,  0,  0,  0]}]
       },
@@ -24003,7 +24003,7 @@
     "effects": [
       {
         "ratio": 10000,
-        "cooldown": 0,
+        "cooldown": 100,
         "conditions": [{"type":"current_skill",  "actor":"self",  "arg":18030}],
         "actions": [{"type":"exec_active_effect_when_damage",  "actor":"caster",  "args":[2185902,  0,  0,  0,  0,  0]}]
       },
