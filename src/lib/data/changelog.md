@@ -23,5 +23,3 @@
 -   무력
 -   아이덴티티
 -   기타 등등
-
-[디스코드](https://discord.gg/ybujC3sjMy)

@@ -191,11 +191,11 @@
                 bind:setting={$settings.logs.breakdown.percentIdentityBySup} />
             <SettingItem
                 name="스킬 평균 피해량"
-                description="스킬이 입힌 평균 피해량를 표시합니다."
+                description="스킬이 입힌 평균 피해량을 표시합니다."
                 bind:setting={$settings.logs.breakdown.avgDamage} />
             <SettingItem
                 name="스킬 최대 피해량"
-                description="스킬이 입힌 최대 피해량를 표시합니다."
+                description="스킬이 입힌 최대 피해량을 표시합니다."
                 bind:setting={$settings.logs.breakdown.maxDamage} />
             <SettingItem
                 name="스킬 시전 횟수"

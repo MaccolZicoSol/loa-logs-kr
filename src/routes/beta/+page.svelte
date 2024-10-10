@@ -24,7 +24,7 @@
 <LogSidebar bind:hidden />
 <div class="custom-scroll h-screen overflow-y-scroll bg-zinc-800 pb-8">
     <div class="sticky top-0 flex h-16 justify-between bg-zinc-800 px-8 py-5 shadow-md">
-        <Title text="베타 테스트" bind:hidden />
+        <Title text="패킷 임시 저장" bind:hidden />
     </div>
 
     <div class="mx-8 my-4 tracking-tight text-gray-200">

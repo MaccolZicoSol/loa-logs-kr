@@ -169,7 +169,7 @@
             bind:setting={$settings.general.hideNames} />
         <SettingItem
             name="에스더 표시"
-            description="에스더 스킬로 입힌 피해량을 미터기와 로그에 표시합니다."
+            description="에스더 스킬로 입힌 피해량을 미터기와 로그에 표시합니다. 이 설정을 활성화하면 인게임 MVP 창의 딜 %와 다르게 표시됩니다."
             bind:setting={$settings.general.showEsther} />
         <label class="flex items-center">
             <input
@@ -180,13 +180,13 @@
                 }}
                 class="text-accent-500 size-5 rounded bg-zinc-700 focus:ring-0 focus:ring-offset-0" />
             <div class="ml-5">
-                <div class="text-gray-100">보스 전용 피해</div>
+                <div class="text-gray-100">보스만 집계</div>
                 <div class="text-xs text-gray-300">보스에게 입힌 피해만 집계됩니다.</div>
             </div>
         </label>
         <SettingItem
-            name="보스 전용 피해 기본 설정 ON"
-            description={"이 설정을 활성화하면, 미터기를 시작할 때마다 자동으로 보스 전용 피해 설정을 활성화합니다."}
+            name="보스만 집계 기본 설정 ON"
+            description={"이 설정을 활성화하면, 미터기를 시작할 때마다 자동으로 보스만 집계 설정을 활성화합니다."}
             bind:setting={$settings.general.bossOnlyDamageDefaultOn} />
         <SettingItem
             name="레이드 난이도 표시"
@@ -241,7 +241,7 @@
                 <div class="ml-5">
                     <div class="text-gray-100">자동 네트워크 선택</div>
                     <div class="text-xs text-gray-300">
-                        네트워크 인터페이스를 자동으로 선택합니다. VPN을 사용하는 경우, 이 설정을 끄고 VPN 인터페이스를 선택하세요.
+                        네트워크 인터페이스를 자동으로 선택합니다. VPN을 사용하는 경우, 이 설정을 비활성화하고 수동으로 VPN 인터페이스를 선택하세요.
                     </div>
                 </div>
             </label>
