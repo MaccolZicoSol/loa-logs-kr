@@ -22,6 +22,7 @@ export interface Encounter {
     favorite: boolean;
     cleared: boolean;
     bossOnlyDamage: boolean;
+    sync?: string;
 }
 
 export interface EncountersOverview {
@@ -49,7 +50,6 @@ export interface EncounterDamageStats {
     totalDamageTaken: number;
     topDamageTaken: number;
     dps: number;
-    dpsIntervals: { [key: number]: number };
     mostDamageTakenEntity: MostDamageTakenEntity;
     buffs: { [key: number]: StatusEffect };
     debuffs: { [key: number]: StatusEffect };
@@ -125,6 +125,7 @@ export interface Skill {
     debuffedBy: { [key: number]: number };
     buffedBySupport: number;
     buffedByIdentity: number;
+    buffedByHat: number;
     debuffedBySupport: number;
     casts: number;
     hits: number;
@@ -173,10 +174,12 @@ export interface Tripod {
 export interface DamageStats {
     damageDealt: number;
     damageTaken: number;
+    hyperAwakeningDamage?: number;
     buffedBy: { [key: number]: number };
     debuffedBy: { [key: number]: number };
     buffedBySupport: number;
     buffedByIdentity: number;
+    buffedByHat?: number;
     debuffedBySupport: number;
     backAttackDamage: number;
     frontAttackDamage: number;

@@ -7,17 +7,20 @@
     export let dismissable = true;
     export let width: string;
     export let isError = false;
+    export let fixed = false;
 </script>
 
 <div transition:fade|global>
     <Alert
         color="none"
-        class="{isError ? "bg-red-800" : "bg-accent-800"} absolute inset-x-0 bottom-8 z-50 mx-auto bg-opacity-80 py-2 h-10"
+        class="{isError ? 'bg-red-800' : 'bg-accent-800'} {fixed
+            ? 'fixed bottom-20'
+            : 'absolute bottom-8'} inset-x-0 z-50 mx-auto h-10 py-2"
         style={`width: ${width};`}
         {dismissable}
         on:close={() => (showAlert = false)}>
-        <span slot="icon"
-            ><svg
+        <span slot="icon">
+            <svg
                 aria-hidden="true"
                 class="size-5"
                 fill="currentColor"

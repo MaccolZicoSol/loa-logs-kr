@@ -75,6 +75,7 @@ pub struct Encounter {
     pub favorite: bool,
     pub cleared: bool,
     pub boss_only_damage: bool,
+    pub sync: Option<String>,
 }
 
 #[derive(Debug, Serialize, Clone, Default)]
@@ -162,6 +163,7 @@ pub struct Skill {
     pub debuffed_by: HashMap<u32, i64>,
     pub buffed_by_support: i64,
     pub buffed_by_identity: i64,
+    pub buffed_by_hat: i64,
     pub debuffed_by_support: i64,
     pub casts: i64,
     pub hits: i64,
@@ -233,12 +235,14 @@ impl Eq for TripodIndex {}
 #[serde(rename_all = "camelCase", default)]
 pub struct DamageStats {
     pub damage_dealt: i64,
+    pub hyper_awakening_damage: i64,
     pub damage_taken: i64,
     pub buffed_by: HashMap<u32, i64>,
     pub debuffed_by: HashMap<u32, i64>,
     pub buffed_by_support: i64,
     pub buffed_by_identity: i64,
     pub debuffed_by_support: i64,
+    pub buffed_by_hat: i64,
     pub crit_damage: i64,
     pub back_attack_damage: i64,
     pub front_attack_damage: i64,
@@ -423,11 +427,11 @@ pub struct Esther {
 #[serde(rename_all = "camelCase")]
 pub struct SkillData {
     pub id: i32,
-    pub name: String,
-    pub desc: String,
+    pub name: Option<String>,
+    pub desc: Option<String>,
     #[serde(alias = "classid", alias = "classId")]
     pub class_id: u32,
-    pub icon: String,
+    pub icon: Option<String>,
     #[serde(alias = "identitycategory", alias = "identityCategory")]
     pub identity_category: Option<String>,
     #[serde(alias = "groups")]
@@ -464,40 +468,32 @@ pub struct SkillEffectData {
 #[serde(rename_all = "camelCase")]
 pub struct SkillBuffData {
     pub id: i32,
-    pub name: String,
-    pub desc: String,
-    pub icon: String,
-    #[serde(rename(deserialize = "iconshowtype"))]
-    pub icon_show_type: String,
+    pub name: Option<String>,
+    pub desc: Option<String>,
+    pub icon: Option<String>,
+    pub icon_show_type: Option<String>,
     pub duration: i32,
     // buff | debuff
     pub category: String,
     #[serde(rename(deserialize = "type"))]
     pub buff_type: String,
-    #[serde(rename(deserialize = "statuseffectvalues"))]
     pub status_effect_values: Option<Vec<i32>>,
-    #[serde(rename(deserialize = "buffcategory"))]
-    pub buff_category: String,
+    pub buff_category: Option<String>,
     pub target: String,
-    #[serde(rename(deserialize = "uniquegroup"))]
     pub unique_group: u32,
-    #[serde(rename(deserialize = "overlapflag"))]
+    #[serde(rename(deserialize = "overlap"))]
     pub overlap_flag: i32,
-    #[serde(skip_serializing, rename(deserialize = "passiveoption"))]
-    pub passive_option: Vec<PassiveOption>,
-    #[serde(rename(deserialize = "sourceskill"))]
-    pub source_skill: Option<Vec<u32>>,
-    #[serde(rename(deserialize = "setname"))]
+    pub passive_options: Vec<PassiveOption>,
+    pub source_skills: Option<Vec<u32>>,
     pub set_name: Option<String>,
 }
 
 #[derive(Debug, Default, Deserialize, Clone)]
+#[serde(rename_all = "camelCase")]
 pub struct PassiveOption {
     #[serde(rename(deserialize = "type"))]
     pub option_type: String,
-    #[serde(rename(deserialize = "keystat"))]
     pub key_stat: String,
-    #[serde(rename(deserialize = "keyindex"))]
     pub key_index: i32,
     pub value: i32,
 }
@@ -675,6 +671,7 @@ pub struct Settings {
     pub meter: MeterTabs,
     pub logs: LogTabs,
     pub buffs: BuffSettings,
+    pub sync: SyncSettings,
 }
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
@@ -870,6 +867,17 @@ pub struct BuffSettings {
     pub default: bool,
 }
 
+#[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase", default)]
+pub struct SyncSettings {
+    pub enabled: bool,
+    pub access_token: String,
+    pub auto: bool,
+    pub username: String,
+    pub valid_token: bool,
+    pub visibility: String,
+}
+
 #[derive(Default, Debug, Serialize)]
 #[serde(rename_all = "camelCase")]
 pub struct EncounterDbInfo {
@@ -1007,40 +1015,40 @@ lazy_static! {
         let json_str = include_str!("../../meter-data/Ability.json");
         serde_json::from_str(json_str).unwrap()
     };
-    pub static ref ITEM_SET_DATA: HashMap<String, HashMap<u8, ItemSet>> = {
-        let json_str = include_str!("../../meter-data/ItemSet.json");
-        serde_json::from_str(json_str).unwrap()
-    };
-    pub static ref ITEM_SET_INFO: ItemSetInfo = {
-        let mut item_set_ids: HashMap<u32, ItemSetShort> = HashMap::new();
-        let mut item_set_names: HashMap<String, ItemSetLevel> = HashMap::new();
-
-        for (set_name, set_name_data) in ITEM_SET_DATA.iter() {
-            let mut item_set_level: ItemSetLevel = HashMap::new();
-            for (level, set_level_data) in set_name_data.iter() {
-                let mut item_set_count: ItemSetCount = HashMap::new();
-                for (count, set_count_data) in set_level_data.value.iter() {
-                    item_set_count.insert(*count, set_count_data.clone());
-                }
-                item_set_level.insert(*level, item_set_count);
-                for item_id in set_level_data.item_ids.iter() {
-                    item_set_ids.insert(
-                        *item_id,
-                        ItemSetShort {
-                            set_name: set_name.clone(),
-                            level: *level,
-                        },
-                    );
-                }
-            }
-            item_set_names.insert(set_name.clone(), item_set_level);
-        }
-
-        ItemSetInfo {
-            item_ids: item_set_ids,
-            set_names: item_set_names,
-        }
-    };
+    // pub static ref ITEM_SET_DATA: HashMap<String, HashMap<u8, ItemSet>> = {
+    //     let json_str = include_str!("../../meter-data/ItemSet.json");
+    //     serde_json::from_str(json_str).unwrap()
+    // };
+    // pub static ref ITEM_SET_INFO: ItemSetInfo = {
+    //     let mut item_set_ids: HashMap<u32, ItemSetShort> = HashMap::new();
+    //     let mut item_set_names: HashMap<String, ItemSetLevel> = HashMap::new();
+    // 
+    //     for (set_name, set_name_data) in ITEM_SET_DATA.iter() {
+    //         let mut item_set_level: ItemSetLevel = HashMap::new();
+    //         for (level, set_level_data) in set_name_data.iter() {
+    //             let mut item_set_count: ItemSetCount = HashMap::new();
+    //             for (count, set_count_data) in set_level_data.value.iter() {
+    //                 item_set_count.insert(*count, set_count_data.clone());
+    //             }
+    //             item_set_level.insert(*level, item_set_count);
+    //             for item_id in set_level_data.item_ids.iter() {
+    //                 item_set_ids.insert(
+    //                     *item_id,
+    //                     ItemSetShort {
+    //                         set_name: set_name.clone(),
+    //                         level: *level,
+    //                     },
+    //                 );
+    //             }
+    //         }
+    //         item_set_names.insert(set_name.clone(), item_set_level);
+    //     }
+    // 
+    //     ItemSetInfo {
+    //         item_ids: item_set_ids,
+    //         set_names: item_set_names,
+    //     }
+    // };
     pub static ref ESTHER_DATA: Vec<Esther> = {
         let json_str = include_str!("../../meter-data/Esther.json");
         serde_json::from_str(json_str).unwrap()
@@ -1055,7 +1063,6 @@ lazy_static! {
             308040, 308041, 308042, 308043, 308044, 308239, 308339, 308410, 308411, 308412, 308414,
             308415, 308416, 308417, 308418, 308419, 308420, 308421, 308422, 308423, 308424, 308425,
             308426, 308428, 308429, 308430, 308437, 309020, 30865, 30866
-            // todo behemoth
         ];
 
         valid_zones.iter().cloned().collect()
