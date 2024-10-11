@@ -451,7 +451,7 @@ pub struct SkillEffectData {
     pub comment: String,
     #[serde(skip)]
     pub stagger: i32,
-    #[serde(alias = "summonsourceskills", alias = "summonSourceSkills")]
+    #[serde(alias = "sourceskills", alias = "sourceSkills")]
     pub source_skill: Option<Vec<u32>>,
     #[serde(rename(deserialize = "directionalmask"))]
     pub directional_mask: i32,
@@ -484,7 +484,7 @@ pub struct SkillBuffData {
     #[serde(rename(deserialize = "overlap"))]
     pub overlap_flag: i32,
     pub passive_options: Vec<PassiveOption>,
-    #[serde(alias = "summonsourceskills", alias = "summonSourceSkills")]
+    #[serde(alias = "sourceskills", alias = "sourceSkills")]
     pub source_skills: Option<Vec<u32>>,
     pub set_name: Option<String>,
 }
